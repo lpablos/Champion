@@ -38,15 +38,16 @@
         <div class="container">
             <div class="hleft">
                 <div class="dropdown">
-                    <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="./assets/images/user.png" alt=""/></a>                    
-                    <a href="estadisticas.html" class="nav-link icon"><i class="fa fa-pie-chart" data-toggle="tooltip" data-original-title="Estadisticas"></i></a>
-                    <a href="ciclos_inversion.html" class="nav-link icon"><i class="fa fa-history" data-toggle="tooltip" data-original-title="Ciclos de inversion"></i></a>
-                    <a href="usuarios.html"  class="nav-link icon app_inbox"><i class="fa fa-users" data-toggle="tooltip" data-original-title="Usuarios"></i></a>
-                    <a href="sorteos.html"  class="nav-link icon app_inbox"><i class="fa fa-ticket" data-toggle="tooltip" data-original-title="Sorteos"></i></a>
-                    <a href="pagos.html"  class="nav-link icon app_inbox"><i class="fa fa-usd" data-toggle="tooltip" data-original-title="Pagos"></i></a>
-                    <a href="comprobantes.html"  class="nav-link icon app_inbox"><i class="fa fa-wpforms" data-toggle="tooltip" data-original-title="Comprobantes"></i></a>
-                    <a href="administrador.html"  class="nav-link icon app_inbox"><i class="fa fa-user-secret" data-toggle="tooltip" data-original-title="Administrador"></i></a>
-                    <a href=""  class="nav-link icon app_inbox"><i class="fa fa-window-close" data-toggle="tooltip" data-original-title="Salir"></i></a>
+                    <!-- <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="./assets/images/user.png" alt=""/></a>                     -->
+                    <a href="estadisticas.html" class="nav-link icon" data-toggle="tooltip" data-original-title="Home"><i class="fa fa-home"></i></a>
+                    <a href="estadisticas.html" class="nav-link icon" data-toggle="tooltip" data-original-title="Estadisticas"><i class="fa fa-pie-chart"></i></a>
+                    <a href="ciclos_inversion.html" class="nav-link icon" data-toggle="tooltip" data-original-title="Ciclos de inversion"><i class="fa fa-history"></i></a>
+                    <a href="usuarios.html"  class="nav-link icon app_inbox" data-toggle="tooltip" data-original-title="Usuarios"><i class="fa fa-users"></i></a>
+                    <a href="sorteos.html"  class="nav-link icon app_inbox" data-toggle="tooltip" data-original-title="Sorteos"><i class="fa fa-ticket"></i></a>
+                    <a href="pagos.html"  class="nav-link icon app_inbox" data-toggle="tooltip" data-original-title="Pagos"><i class="fa fa-usd"></i></a>
+                    <a href="comprobantes.html"  class="nav-link icon app_inbox" data-toggle="tooltip" data-original-title="Comprobantes"><i class="fa fa-wpforms"></i></a>
+                    <a href="administrador.html"  class="nav-link icon app_inbox" data-toggle="tooltip" data-original-title="Administrador"><i class="fa fa-user-secret"></i></a>
+                    <a href=""  class="nav-link icon app_inbox" data-toggle="tooltip" data-original-title="Salir"><i class="fa fa-window-close"></i></a>
                    
                 </div>
             </div>
@@ -238,7 +239,7 @@
     <!-- start Main menu -->
     <div id="left-sidebar" class="sidebar">
         <div class="d-flex justify-content-between brand_name">
-            <h5 class="brand-name">Crush it</h5>
+            <h5 class="brand-name">Champion Sport</h5>
             <!-- <div class="theme_btn">
                 <a class="theme1" data-toggle="tooltip" title="Theme Radical" href="#" onclick="setStyleSheet('./assets/css/theme1.css', 0);"></a>
                 <a class="theme2" data-toggle="tooltip" title="Theme Turmeric" href="#" onclick="setStyleSheet('. /assets/css/theme2.css', 0);"></a>
@@ -246,12 +247,12 @@
                 <a class="theme4" data-toggle="tooltip" title="Theme Cascade" href="#" onclick="setStyleSheet('./assets/css/theme4.css', 0);"></a>
             </div> -->
         </div>
-        <!-- <div class="input-icon">
+        <div class="input-icon">
             <span class="input-icon-addon">
                 <i class="fe fe-search"></i>
             </span>
-            <input type="text" class="form-control" placeholder="Search...">
-        </div> -->
+            <input type="text" class="form-control" placeholder="Busqueda...">
+        </div>
         
         <div class="tab-content">
             <div class="tab-pane fade active show" id="all-tab">
@@ -268,7 +269,7 @@
                                 <li><a href="app-social.html"><span data-hover="Campaigns">Campaigns</span></a></li>
                             </ul>
                         </li> -->
-                        <li class="active"><a href="estadisticas.html"><i class="fe fe-bar-chart-2"></i><span data-hover="Estadisticas">Estadisticas</span></a></li>
+                        <li class="active"><a href="estadisticas.html"><i class="fa fa-play"></i><span data-hover="Estadisticas">Estadisticas</span></a></li>
                         <!-- <li><a href="app-chat.html"><i class="icon-speech"></i><span data-hover="Chat">Chat</span></a></li>
                         <li><a href="app-contact.html"><i class="icon-notebook"></i><span data-hover="Contact">Contact</span></a></li>
                         <li><a href="app-blog.html"><i class="icon-globe"></i><span data-hover="Blog">Blog</span></a></li>
@@ -319,7 +320,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 ">
                         <div class="card">
                             <div class="card-body">                                
-                                <h6>Ciclos Realizados</h6>
+                                <h6 class="text-success">Ciclos Realizados</h6>
                                 <h3 class="pt-3"><i class="fe fe-globe"></i><span class="counter"> 136.25402</span></h3>
                                 
                             </div>
@@ -328,7 +329,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 ">
                         <div class="card">
                             <div class="card-body">
-                                <h6>Ciclos pagados</h6>
+                                <h6 class="text-success">Ciclos pagados</h6>
                                 <h3 class="pt-3"><i class="fa fa-dollar"></i><span class="counter"> 251.25402</span></h3>                                
                             </div>
                         </div>
@@ -336,7 +337,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 ">
                         <div class="card">
                             <div class="card-body">
-                                <h6>Ciclos por págar</h6>
+                                <h6 class="text-success">Ciclos por págar</h6>
                                 <h3 class="pt-3"><i class="fa fa-dollar"></i><span class="counter"> 32.96512</span></h3>                                
                             </div>
                         </div>
@@ -344,7 +345,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 ">
                         <div class="card">
                             <div class="card-body">
-                                <h6>Cantidad de usuarios en la plataforma</h6>
+                                <h6 class="text-success">Cantidad de usuarios en la plataforma</h6>
                                 <h3 class="pt-3"><i class="fe fe-users"></i><span class="counter"> 98,532.02</span></h3>                              
                             </div>
                         </div>
@@ -352,7 +353,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 ">
                         <div class="card">
                             <div class="card-body">
-                                <h6>Cantidad de usuarios activos en el ciclo</h6>
+                                <h6 class="text-success">Cantidad de usuarios activos en el ciclo</h6>
                                 <h3 class="pt-3"><i class="fe fe-user-check"></i><span class="counter">98,532.02</span></h3>                            
                             </div>
                         </div>
@@ -360,7 +361,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 ">
                         <div class="card">
                             <div class="card-body">
-                                <h6>Cantidad de usuarios nuevos en el ciclo</h6>
+                                <h6 class="text-success">Cantidad de usuarios nuevos en el ciclo</h6>
                                 <h3 class="pt-3"><i class="fe fe-user-plus"></i> <span class="counter">98,532.02</span></h3>                             
                             </div>
                         </div>
