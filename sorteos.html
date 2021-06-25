@@ -34,12 +34,12 @@
 <div id="main_content">
 
     <!-- Small icon top menu -->
-    <div id="header_top" class="header_top">
+    <div id="header_top" class="header_top dark">
         <div class="container">
             <div class="hleft">
                 <div class="dropdown">
-                    <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="./assets/images/user.png" alt=""/></a>
-                    
+                    <!-- <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="./assets/images/user.png" alt=""/></a> -->
+                    <a href="estadisticas.html" class="nav-link icon" data-toggle="tooltip" data-original-title="Home"><i class="fa fa-home"></i></a>
                     <a href="estadisticas.html" class="nav-link icon" data-toggle="tooltip" data-original-title="Estadisticas"><i class="fa fa-pie-chart"></i></a>
                     <a href="ciclos_inversion.html" class="nav-link icon" data-toggle="tooltip" data-original-title="Ciclos de inversion"><i class="fa fa-history"></i></a>
                     <a href="usuarios.html"  class="nav-link icon app_inbox" data-toggle="tooltip" data-original-title="Usuarios"><i class="fa fa-users"></i></a>
@@ -53,7 +53,7 @@
             </div>
             <div class="hright">
                 <div class="dropdown">
-                    <!-- <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-bell"></i></a> -->
+                    <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-bell"></i></a>
                     <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa fa-navicon"></i></a>
                 </div>            
             </div>
@@ -237,9 +237,9 @@
     </div>
 
     <!-- start Main menu -->
-    <div id="left-sidebar" class="sidebar">
+    <div id="left-sidebar" class="sidebar" style="background: rgba(48, 122, 213, 0.138);">
         <div class="d-flex justify-content-between brand_name">
-            <h5 class="brand-name">Crush it</h5>
+            <h5 class="brand-name">Champion Sport</h5>
             <!-- <div class="theme_btn">
                 <a class="theme1" data-toggle="tooltip" title="Theme Radical" href="#" onclick="setStyleSheet('./assets/css/theme1.css', 0);"></a>
                 <a class="theme2" data-toggle="tooltip" title="Theme Turmeric" href="#" onclick="setStyleSheet('. /assets/css/theme2.css', 0);"></a>
@@ -247,12 +247,12 @@
                 <a class="theme4" data-toggle="tooltip" title="Theme Cascade" href="#" onclick="setStyleSheet('./assets/css/theme4.css', 0);"></a>
             </div> -->
         </div>
-        <!-- <div class="input-icon">
+        <div class="input-icon">
             <span class="input-icon-addon">
                 <i class="fe fe-search"></i>
             </span>
-            <input type="text" class="form-control" placeholder="Search...">
-        </div> -->
+            <input type="text" class="form-control" placeholder="Buscar...">
+        </div>
         
         <div class="tab-content">
             <div class="tab-pane fade active show" id="all-tab">
@@ -304,13 +304,59 @@
             <div class="container-fluid">
                 <!-- Formulario -->
                 <div class="row clearfix">
-                    <div class="col-lg-12">                      
-                                              <!--  -->
+                    <div class="col-lg-12">
+                         <form class="card">
+                            <div class="card-body">
+                                <!-- <h3 class="card-title">Ingrese los parametro para dar inicio a un ciclo</h3> -->
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-4">
+                                        <div class="form-group">  
+                                            <label class="form-label">Ingresar Numeros Ganadores</label>                                          
+                                            <input type="number" class="form-control" placeholder="Ingresar Numeros Ganadores" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Edita números Ganadores</label>
+                                            <input type="number" class="form-control" placeholder="Fecha de inicio" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Cambiar Fecha Sorteo por jugar</label>
+                                            <input type="number" class="form-control" placeholder="Cambiar Fecha Sorteo por Jugar">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Cambiar Loteria Sorteo por Jugar</label>
+                                            <input type="number" class="form-control" placeholder="Cambiar Loteria Sorteo por Jugar">
+                                        </div>
+                                    </div>                                  
+                                </div>
+                            </div>
+                            <div class="card-footer text-right">
+                                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                            </div>
+                        </form>
+                                              
                     </div>
                 </div>
                 <!-- Tabla -->
                <div class="row clearfix">
-                    <div class="col-lg-12 mt-5">
+                   <div class="col-12 mt-5">
+                       <div class="dropdown">
+                            <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+                                Filtrar
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Por Realizar</a>
+                                <a class="dropdown-item" href="#">Realizado</a>
+                                <a class="dropdown-item" href="#">Pago</a>
+                            </div>
+                        </div>
+                   </div>
+                    <div class="col-lg-12 mt-3">
                         <div class="table-responsive mb-4">
                             <div class="card">
                                 <div class="card-body">
@@ -325,6 +371,7 @@
                                                 <th>Código Usuario Ganador</th>
                                                 <th>Nombre Usuario Ganador</th>
                                                 <th>Estado</th>
+                                                <th>Opciones</th>
                                             </tr>
                                         </thead>                             
                                         <tbody>
@@ -337,6 +384,17 @@
                                                 <td>- - -</td>
                                                 <td>- - -</td>
                                                 <td class="text-green">Por realizar</td>
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-envira"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar"></i>
+                                                    </button>                                                  
+                                                </td>
                                             </tr>                                         
                                             <tr>
                                                 <td>Inventivo de rango champion 50</td>
@@ -347,6 +405,17 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td class="text-red">Realizado</td>
+                                                <td>
+                                                     <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-envira"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar"></i>
+                                                    </button>  
+                                                </td>
                                             </tr>                                         
                                             <tr>
                                                 <td>Inventivo de rango champion 100</td>
@@ -357,6 +426,17 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td class="text-yellow">Pago</td>
+                                                 <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-envira"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar"></i>
+                                                    </button>  
+                                                </td>
                                             </tr>                                         
                                             <tr>
                                                 <td>Inventivo de rango champion 200</td>
@@ -367,6 +447,17 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td class="text-green">Por realizar</td>
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-envira"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar"></i>
+                                                    </button>  
+                                                </td>
                                             </tr>                                         
                                             <tr>
                                                 <td>Inventivo de rango champion 300</td>
@@ -377,6 +468,17 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td class="text-red">Realizado</td>
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-envira"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar"></i>
+                                                    </button>  
+                                                </td>
                                             </tr>                                         
                                             <tr>
                                                 <td>Inventivo de rango champion 400</td>
@@ -387,6 +489,17 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td class="text-yellow">Pago</td>
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-envira"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar"></i>
+                                                    </button>  
+                                                </td>
                                             </tr>                                         
                                             <tr>
                                                 <td>Inventivo de rango champion 500</td>
@@ -397,6 +510,17 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td class="text-yellow">Pago</td>
+                                                <td>
+                                                     <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-envira"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar"></i>
+                                                    </button>  
+                                                </td>
                                             </tr> 
                                             <tr>
                                                 <td> Incentivo por referidos (2) </td>
@@ -407,6 +531,17 @@
                                                 <td>- - -</td>
                                                 <td>- - - </td>
                                                 <td class="text-green">Por realizar </td>
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-envira"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar"></i>
+                                                    </button>  
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Incentivo por referidos (5)</td>
@@ -417,6 +552,17 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario ejemplo</td>
                                                 <td class="text-red">Realizado</td>
+                                                <td>
+                                                     <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-envira"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar"></i>
+                                                    </button>  
+                                                </td>
                                             </tr> 
                                             <tr>
                                                 <td>Incentivo por referidos (2)</td>
@@ -427,6 +573,17 @@
                                                 <td>Pago</td>
                                                 <td>1/1/21</td>
                                                 <td class="text-yellow">Pago</td>
+                                                 <td>
+                                                     <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-envira"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar"></i>
+                                                    </button>  
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Incentivo por referidos (10)</td>
@@ -437,6 +594,17 @@
                                                 <td>- - - -</td>
                                                 <td>- - - </td>
                                                 <td class="text-green">Por realizar</td>
+                                                 <td>
+                                                     <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-envira"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar"></i>
+                                                    </button>  
+                                                </td>
                                             </tr>
                                             
                                                     
@@ -450,8 +618,79 @@
                 </div>
             </div>
         </div>
-       
-     
+
+        <div id="exampleModalLive" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Editar</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">                       
+                        <form action="" class="row">
+                         
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label class="form-label">Sorteo</label>
+                                    <input type="text" class="form-control" placeholder="Documento" value="Incentivo de inversión" maxlength="10">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label class="form-label">Fecha del Sorteo</label>
+                                    <input type="date" class="form-control" placeholder="Fecha del Sorteo" value="1/1/21">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label class="form-label">Numeros ganadores</label>
+                                    <input type="number" class="form-control" placeholder="Numeros ganadores">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label class="form-label">Serie</label>
+                                    <input type="text" class="form-control" placeholder="Serie">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label class="form-label">Loteria</label>
+                                    <input type="email" class="form-control" placeholder="Loteria" value="Dorado tarde">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label class="form-label">Código Usuario Ganador</label>
+                                    <input type="tel" class="form-control" placeholder="Código Usuario Ganador">
+                                </div>
+                            </div>
+                            
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label class="form-label">Nombre Usuario Ganador</label>
+                                    <input type="text" class="form-control" placeholder="Nombre Usuario Ganador">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label class="form-label">Estado</label>
+                                    <input type="text" class="form-control" placeholder="Estado" value="Por realizar">
+                                </div>
+                            </div>
+                            <hr>
+                            
+                            <div class="col-12 text-right">
+                                <button type="submit" class="btn btn-primary">Editar</button>
+                            </div>
+                        </form> 
+                         
+                    </div>                   
+                </div>
+            </div>
+        </div>
 
         <!-- Start page footer -->
         <!-- <div class="section-body">
