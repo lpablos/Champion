@@ -34,12 +34,12 @@
 <div id="main_content">
 
     <!-- Small icon top menu -->
-    <div id="header_top" class="header_top">
+    <div id="header_top" class="header_top dark">
         <div class="container">
             <div class="hleft">
                 <div class="dropdown">
-                    <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="./assets/images/user.png" alt=""/></a>
-                    
+                    <!-- <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="./assets/images/user.png" alt=""/></a> -->
+                    <a href="estadisticas.html" class="nav-link icon" data-toggle="tooltip" data-original-title="Home"><i class="fa fa-home"></i></a>
                     <a href="estadisticas.html" class="nav-link icon" data-toggle="tooltip" data-original-title="Estadisticas"><i class="fa fa-pie-chart"></i></a>
                     <a href="ciclos_inversion.html" class="nav-link icon" data-toggle="tooltip" data-original-title="Ciclos de inversion"><i class="fa fa-history"></i></a>
                     <a href="usuarios.html"  class="nav-link icon app_inbox" data-toggle="tooltip" data-original-title="Usuarios"><i class="fa fa-users"></i></a>
@@ -53,7 +53,7 @@
             </div>
             <div class="hright">
                 <div class="dropdown">
-                    <!-- <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-bell"></i></a> -->
+                    <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-bell"></i></a>
                     <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa fa-navicon"></i></a>
                 </div>            
             </div>
@@ -237,9 +237,9 @@
     </div>
 
     <!-- start Main menu -->
-    <div id="left-sidebar" class="sidebar">
+    <div id="left-sidebar" class="sidebar" style="background: rgba(48, 122, 213, 0.138);">
         <div class="d-flex justify-content-between brand_name">
-            <h5 class="brand-name">Crush it</h5>
+            <h5 class="brand-name">Champion Sport</h5>
             <!-- <div class="theme_btn">
                 <a class="theme1" data-toggle="tooltip" title="Theme Radical" href="#" onclick="setStyleSheet('./assets/css/theme1.css', 0);"></a>
                 <a class="theme2" data-toggle="tooltip" title="Theme Turmeric" href="#" onclick="setStyleSheet('. /assets/css/theme2.css', 0);"></a>
@@ -247,12 +247,12 @@
                 <a class="theme4" data-toggle="tooltip" title="Theme Cascade" href="#" onclick="setStyleSheet('./assets/css/theme4.css', 0);"></a>
             </div> -->
         </div>
-        <!-- <div class="input-icon">
+        <div class="input-icon">
             <span class="input-icon-addon">
                 <i class="fe fe-search"></i>
             </span>
-            <input type="text" class="form-control" placeholder="Search...">
-        </div> -->
+            <input type="text" class="form-control" placeholder="Busqueda...">
+        </div>
         
         <div class="tab-content">
             <div class="tab-pane fade active show" id="all-tab">
@@ -300,42 +300,43 @@
                             <div class="card-body">
                                 <h3 class="card-title">Ingrese los parametro para dar inicio a un ciclo</h3>
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-sm-3 col-md-4">
                                         <div class="form-group">  
                                             <label class="form-label">Ingrese % derendimiento</label>                                          
-                                            <input type="text" class="form-control" placeholder="Ingrese % derendimiento" value="">
+                                            <input type="number" class="form-control" placeholder="Ingrese % derendimiento" value="">
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 col-md-3">
+                                    <div class="col-sm-3 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Fecha de inicio</label>
                                             <input type="date" class="form-control" placeholder="Fecha de inicio" value="">
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 col-md-3">
+                                    <div class="col-sm-3 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Hora de inicio</label>
                                             <input type="time" class="form-control" placeholder="Hora de inicio">
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 col-md-3">
-                                        <div class="form-group">
-                                            <label class="form-label">Fecha de Finalización</label>
-                                            <input type="date" class="form-control" placeholder="Fecha de Finalización">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-md-3">
-                                        <div class="form-group">
-                                            <label class="form-label">Hora de Finalización</label>
-                                            <input type="time" class="form-control" placeholder="Hora de Finalización">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-md-3">
+                                    <div class="col-sm-3 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Fecha de pago</label>
                                             <input type="date" class="form-control" placeholder="Fecha de pago">
                                         </div>
                                     </div> 
+                                    <div class="col-sm-3 col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Fecha de Finalización</label>
+                                            <input type="date" class="form-control" placeholder="Fecha de Finalización">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Hora de Finalización</label>
+                                            <input type="time" class="form-control" placeholder="Hora de Finalización">
+                                        </div>
+                                    </div>
+                                 
                                     <!-- <div class="col-sm-3 col-md-3">
                                         <div class="form-group text-right">
                                            <button type="submit" class="btn btn-primary">Dar inicio al ciclo</button>
