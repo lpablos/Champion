@@ -20,6 +20,14 @@
 <!-- Core css -->
 <link rel="stylesheet" href="./assets/css/main.css"/>
 <link rel="stylesheet" href="./assets/css/theme4.css" id="stylesheet"/>
+
+<style>
+    .table .thead-light th {
+        color: #0a0a0a !important;
+        background-color: #e9ecef !important;
+        border-color: #dee2e6 !important;
+    }
+</style>
 </head>
 
 <body class="font-opensans">
@@ -34,12 +42,12 @@
 <div id="main_content">
 
     <!-- Small icon top menu -->
-    <div id="header_top" class="header_top">
+    <div id="header_top" class="header_top dark">
         <div class="container">
             <div class="hleft">
                 <div class="dropdown">
-                    <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="./assets/images/user.png" alt=""/></a>
-                    
+                    <!-- <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="./assets/images/user.png" alt=""/></a> -->
+                    <a href="estadisticas.html" class="nav-link icon" data-toggle="tooltip" data-original-title="Home"><i class="fa fa-home"></i></a>
                     <a href="estadisticas.html" class="nav-link icon" data-toggle="tooltip" data-original-title="Estadisticas"><i class="fa fa-pie-chart"></i></a>
                     <a href="ciclos_inversion.html" class="nav-link icon" data-toggle="tooltip" data-original-title="Ciclos de inversion"><i class="fa fa-history"></i></a>
                     <a href="usuarios.html"  class="nav-link icon app_inbox" data-toggle="tooltip" data-original-title="Usuarios"><i class="fa fa-users"></i></a>
@@ -53,7 +61,7 @@
             </div>
             <div class="hright">
                 <div class="dropdown">
-                    <!-- <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-bell"></i></a> -->
+                    <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-bell"></i></a>
                     <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa fa-navicon"></i></a>
                 </div>            
             </div>
@@ -171,88 +179,18 @@
             </div>
         </div>
     </div>
-
-    <!-- start User detail -->
-    <div class="user_div">
-        <h5 class="brand-name mb-4">User Crush<a href="javascript:void(0)" class="user_btn"><i class="icon-close"></i></a></h5>
-        <div class="card">
-            <img class="card-img-top" src="./assets/images/gallery/6.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Daniel Kristeen</h5>
-                <p class="card-text">795 Folsom Ave, Suite 600 San Francisco, 94107</p>
-                <div class="row">
-                    <div class="col-4">
-                        <h6><strong>3265</strong></h6>
-                        <small>Post</small>
-                    </div>
-                    <div class="col-4">
-                        <h6><strong>1358</strong></h6>
-                        <small>Followers</small>
-                    </div>
-                    <div class="col-4">
-                        <h6><strong>10K</strong></h6>
-                        <small>Likes</small>
-                    </div>
-                </div>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">michael@example.com</li>
-                <li class="list-group-item">+ 202-555-2828</li>
-                <li class="list-group-item">October 22th, 1990</li>
-            </ul>
-            <div class="card-body">
-                <a href="javascript:void(0);" class="card-link">View More</a>
-                <a href="javascript:void(0);" class="card-link">Another link</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <div class="form-group">
-                    <label class="d-block">Total Income<span class="float-right">77%</span></label>
-                    <div class="progress progress-xs">
-                        <div class="progress-bar bg-blue" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="d-block">Total Expenses <span class="float-right">50%</span></label>
-                    <div class="progress progress-xs">
-                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
-                    </div>
-                </div>
-                <div class="form-group mb-0">
-                    <label class="d-block">Gross Profit <span class="float-right">23%</span></label>
-                    <div class="progress progress-xs">
-                        <div class="progress-bar bg-green" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style="width: 23%;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="d-block">Storage <span class="float-right">77%</span></label>
-            <div class="progress progress-sm">
-                <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
-            </div>
-            <button type="button" class="btn btn-primary btn-block mt-3">Upgrade Storage</button>
-        </div>
-    </div>
-
+    
     <!-- start Main menu -->
-    <div id="left-sidebar" class="sidebar">
+    <div id="left-sidebar" class="sidebar" style="background: rgba(48, 122, 213, 0.138);">
         <div class="d-flex justify-content-between brand_name">
-            <h5 class="brand-name">Crush it</h5>
-            <!-- <div class="theme_btn">
-                <a class="theme1" data-toggle="tooltip" title="Theme Radical" href="#" onclick="setStyleSheet('./assets/css/theme1.css', 0);"></a>
-                <a class="theme2" data-toggle="tooltip" title="Theme Turmeric" href="#" onclick="setStyleSheet('. /assets/css/theme2.css', 0);"></a>
-                <a class="theme3" data-toggle="tooltip" title="Theme Caribbean" href="#" onclick="setStyleSheet('./assets/css/theme3.css', 0);"></a>
-                <a class="theme4" data-toggle="tooltip" title="Theme Cascade" href="#" onclick="setStyleSheet('./assets/css/theme4.css', 0);"></a>
-            </div> -->
+            <h5 class="brand-name">Champion Sport</h5>          
         </div>
-        <!-- <div class="input-icon">
+        <div class="input-icon">
             <span class="input-icon-addon">
                 <i class="fe fe-search"></i>
             </span>
-            <input type="text" class="form-control" placeholder="Search...">
-        </div> -->
+            <input type="text" class="form-control" placeholder="Busqueda...">
+        </div>
         
         <div class="tab-content">
             <div class="tab-pane fade active show" id="all-tab">
@@ -306,9 +244,7 @@
                         <h1 class="page-title">Pagos</h1>
                     </div>
                     <div class="right">
-                        <div class="notification d-flex">
-                            <!-- <button type="button" class="btn btn-facebook"><i class="fa fa-info-circle mr-2"></i>Need Help</button>
-                            <button type="button" class="btn btn-facebook"><i class="fa fa-file-text mr-2"></i>Data export</button> -->
+                        <div class="notification d-flex">                           
                             <button type="button" class="btn btn-facebook"><i class="fa fa-power-off mr-2"></i>Cerrar Sesión</button>
                         </div>
                     </div>
@@ -320,49 +256,75 @@
                 <!-- Formulario -->
                 <div class="row clearfix">
                     <div class="col-lg-12">
-                        <div class="dropdown">
-                            <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
-                                Por Pagar
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Por pagar</a>
-                                <a class="dropdown-item" href="#">Pagado</a>
-                                <a class="dropdown-item" href="#">Reclamo</a>
+                        <div class="d-flex justify-content-between">
+                            <div class="">
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+                                        Filtros
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Por pagar</a>
+                                        <a class="dropdown-item" href="#">Pagado</a>
+                                        <a class="dropdown-item" href="#">Reclamo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="input-group">
+                                    <div class="input-group-prepend bg-gray">
+                                        <span class="input-group-text text-white">Generar Excel</span>
+                                    </div>                       
+                                    <div class="input-group-append">
+                                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipo de Pago</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Bono de Bienvenida</a>
+                                            <a class="dropdown-item" href="#">Compesación por referidos</a>
+                                            <a class="dropdown-item" href="#">Reembolso</a>
+                                            <a class="dropdown-item" href="#">Bono Rango Champion 50</a>
+                                            <a class="dropdown-item" href="#">Bono Rango Champion 100</a>
+                                            <a class="dropdown-item" href="#">Bono Rango Champion 200</a>
+                                            <a class="dropdown-item" href="#">Bono Rango Champion 300</a>
+                                            <a class="dropdown-item" href="#">Bono Rango Champion 400</a>
+                                            <a class="dropdown-item" href="#">Bono Rango Champion 500</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo de inversión</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 50</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 100</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 200</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 300</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 400</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 500</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo por referidos (2)</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo por referidos (5)</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo por referidos (10)</a>
+                                            <a class="dropdown-item" href="#">Sorteo Pago $2000</a>
+                                            <a class="dropdown-item" href="#">Sorteo Pago $5000</a>
+                                            <a class="dropdown-item" href="#">Sorteo Pago $10.000</a>
+                                            <a class="dropdown-item" href="#">Sorteo Pago $20.000</a>
+                                        </div>
+                                    </div>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Estado</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">POr pagar</a>
+                                            <a class="dropdown-item" href="#">Pagado</a>
+                                            <a class="dropdown-item" href="#">Reclamo</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <button class="btn btn-primary">Pagar</button>
-                        <button class="btn btn-primary">Reversar Pago</button>
-                        <button class="btn btn-primary">Generar Excel</button>
-                        <div class="dropdown">
-                            <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
-                                Tipo de Pago
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Paypal</a>
-                                <a class="dropdown-item" href="#">Wester</a>
-                                <a class="dropdown-item" href="#">Deposito</a>                            
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
-                                Estado
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Por pagar</a>
-                                <a class="dropdown-item" href="#">Pagado</a>
-                                <a class="dropdown-item" href="#">Reclamo</a>                            
-                            </div>
-                        </div>
+                        
+                        
                     </div>
                 </div>
                 <!-- Tabla -->
                <div class="row clearfix">
-                    <div class="col-lg-12 mt-5">
+                    <div class="col-lg-12 mt-2">
                         <div class="table-responsive mb-4">
                             <div class="card">
                                 <div class="card-body">
                                     <table class="table table-hover js-basic-example dataTable table_custom spacing5">
-                                        <thead>
+                                        <thead >
                                             <tr>
                                                 <th>Sorteo</th>
                                                 <th>Fecha del Sorteo</th>
@@ -372,6 +334,7 @@
                                                 <th>Código Usuario Ganador</th>
                                                 <th>Nombre Usuario Ganador</th>
                                                 <th>Estado</th>
+                                                <th>Opciones</th>
                                             </tr>
                                         </thead>                             
                                         <tbody>
@@ -384,6 +347,26 @@
                                                 <td>- - -</td>
                                                 <td>- - -</td>
                                                 <td class="text-green">Por realizar</td>
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                </td>
                                             </tr>                                         
                                             <tr>
                                                 <td>Inventivo de rango champion 50</td>
@@ -394,6 +377,24 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td class="text-red">Realizado</td>
+                                                <td><button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button> </td>
                                             </tr>                                         
                                             <tr>
                                                 <td>Inventivo de rango champion 100</td>
@@ -404,6 +405,24 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td class="text-yellow">Pago</td>
+                                                <td><button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button> </td>
                                             </tr>                                         
                                             <tr>
                                                 <td>Inventivo de rango champion 200</td>
@@ -414,6 +433,24 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td class="text-green">Por realizar</td>
+                                                <td><button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button> </td>
                                             </tr>                                         
                                             <tr>
                                                 <td>Inventivo de rango champion 300</td>
@@ -424,6 +461,24 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td class="text-red">Realizado</td>
+                                                <td><button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button> </td>
                                             </tr>                                         
                                             <tr>
                                                 <td>Inventivo de rango champion 400</td>
@@ -434,6 +489,24 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td class="text-yellow">Pago</td>
+                                                <td><button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button> </td>
                                             </tr>                                         
                                             <tr>
                                                 <td>Inventivo de rango champion 500</td>
@@ -444,6 +517,24 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td class="text-yellow">Pago</td>
+                                                <td><button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button> </td>
                                             </tr> 
                                             <tr>
                                                 <td> Incentivo por referidos (2) </td>
@@ -454,6 +545,24 @@
                                                 <td>- - -</td>
                                                 <td>- - - </td>
                                                 <td class="text-green">Por realizar </td>
+                                                <td><button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button> </td>
                                             </tr>
                                             <tr>
                                                 <td>Incentivo por referidos (5)</td>
@@ -464,6 +573,24 @@
                                                 <td>US-123456</td>
                                                 <td>Usuario ejemplo</td>
                                                 <td class="text-red">Realizado</td>
+                                                <td><button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button> </td>
                                             </tr> 
                                             <tr>
                                                 <td>Incentivo por referidos (2)</td>
@@ -474,6 +601,24 @@
                                                 <td>Pago</td>
                                                 <td>1/1/21</td>
                                                 <td class="text-yellow">Pago</td>
+                                                <td><button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button> </td>
                                             </tr>
                                             <tr>
                                                 <td>Incentivo por referidos (10)</td>
@@ -484,6 +629,24 @@
                                                 <td>- - - -</td>
                                                 <td>- - - </td>
                                                 <td class="text-green">Por realizar</td>
+                                                <td><button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button> </td>
                                             </tr>
                                             
                                                     
@@ -497,28 +660,6 @@
                 </div>
             </div>
         </div>
-       
-     
-
-        <!-- Start page footer -->
-        <!-- <div class="section-body">
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            Copyright © 2019 <a href="https://themeforest.net/user/puffintheme">PuffinTheme</a>.
-                        </div>
-                        <div class="col-md-6 col-sm-12 text-md-right">
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item"><a href="https://themeforest.net/user/puffintheme/portfolio">Portfolio</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">Buy Now</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div> -->
     </div>
 </div>
 
