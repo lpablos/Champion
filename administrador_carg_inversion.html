@@ -270,8 +270,8 @@
                             </ul>
                         </li> -->                        
                         <li><a href="administrador.html"><i class="fa fa-play"></i><span data-hover="Crear Usuarios">Crear Usuarios</span></a></li>
-                        <li class="active"><a href="administrador_list_admin.html"><i class="fa fa-play"></i><span data-hover="List. Administradores">Listado Administradores</span></a></li>
-                        <li><a href="administrador_carg_inversion.html"><i class="fa fa-play"></i><span data-hover="CargarInversión">Cargar Inversión</span></a></li>
+                        <li><a href="administrador_list_admin.html"><i class="fa fa-play"></i><span data-hover="List. Administradores">Listado Administradores</span></a></li>
+                        <li class="active"><a href="administrador_carg_inversion.html"><i class="fa fa-play"></i><span data-hover="CargarInversión">Cargar Inversión</span></a></li>
                         <li><a href="administrador.html"><i class="fa fa-play"></i><span data-hover="Verificar Núm. Sorteo">Verificar Números Sorteo</span></a></li>
                        
                         
@@ -320,62 +320,259 @@
                                     <table class="table table-hover js-basic-example dataTable table_custom spacing5">
                                         <thead>
                                             <tr>
-                                                <th>Numero</th>
-                                                <th>Nombre Del Administrador</th>
-                                                <th>Contraseña</th>
-                                                <th>Fecha de Creación</th>
-                                                <th>Ultimo Acceso</th>
-                                                <th>Opciones</th>
+                                                <th>Código del Usuario</th>
+                                                <th>No. Documento</th>
+                                                <th>Nombre</th>
+                                                <th>Codigo del líder</th>
+                                                <th>Nombre del Líder</th>
+                                                <th>Fecha Ultima Inversión</th>
+                                                <th># de referidos inactivos</th>
+                                                <th># de ciclos inactivos</th>
+                                                <th>Estado</th>
+                                                <th>Inversión</th>
+                                                <th>Opciones</th>                                                      
                                             </tr>
                                         </thead>                             
                                         <tbody>
                                             <tr>
-                                                <td>1</td>
-                                                <td>Admin Ejemplo 1</td>
-                                                <td>+++++</td>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <td>US-0123456</td>
+                                                <td>Lider Ejemplo 1</td>
                                                 <td>1/1/21</td>
-                                                <td>1/1/21 12:00AM</td>                                                
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td class="text-green">Nuevo</td>
+                                                <td>- - - </td>                                                   
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
                                                         data-toggle="modal" 
                                                         data-target="#exampleModalLive"
                                                         >
-                                                        <i class="fa fa-user"  
+                                                        <i class="fa fa-upload"  
                                                             data-toggle="tooltip"
                                                             title
-                                                            data-original-title="Ver-Editar Perfil">
+                                                            data-original-title="Cargar Inversión">
+                                                        </i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-undo"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Editar Inversión">
                                                         </i>
                                                     </button>
                                                 </td>   
                                             </tr>                                           
                                             <tr>
-                                                <td>1</td>
-                                                <td>Admin Ejemplo 2</td>
-                                                <td>+++++</td>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <td>US-0123456</td>
+                                                <td>Lider Ejemplo 1</td>
                                                 <td>1/1/21</td>
-                                                <td>1/1/21 12:00AM</td>                                                
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td class="text-red">Activo</td>
+                                                <td>- - - </td>                                                   
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
                                                         data-toggle="modal" 
                                                         data-target="#exampleModalLive"
                                                         >
-                                                        <i class="fa fa-user"  
+                                                        <i class="fa fa-upload"  
                                                             data-toggle="tooltip"
                                                             title
-                                                            data-original-title="Ver-Editar Perfil">
+                                                            data-original-title="Cargar Inversión">
+                                                        </i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-undo"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Editar Inversión">
                                                         </i>
                                                     </button>
                                                 </td>   
                                             </tr>                                           
                                             <tr>
-                                                <td>1</td>
-                                                <td>Admin Ejemplo 3</td>
-                                                <td>+++++</td>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <td>US-0123456</td>
+                                                <td>Lider Ejemplo 1</td>
                                                 <td>1/1/21</td>
-                                                <td>1/1/21 12:00AM</td>                                                
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td class="text-yellow">Inactivo por inversion</td>
+                                                <td>- - - </td>                                                   
+                                                 <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-upload"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Cargar Inversión">
+                                                        </i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-undo"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Editar Inversión">
+                                                        </i>
+                                                    </button>
+                                                </td>   
+                                            </tr>                                           
+                                            <tr>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <td>US-0123456</td>
+                                                <td>Lider Ejemplo 1</td>
+                                                <td>1/1/21</td>
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td class="text-blue">Inactivo por referido</td>
+                                                <td>- - - </td>                                                   
+                                                 <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-upload"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Cargar Inversión">
+                                                        </i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-undo"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Editar Inversión">
+                                                        </i>
+                                                    </button>
+                                                </td>   
+                                            </tr>                                           
+                                            <tr>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <td>US-0123456</td>
+                                                <td>Lider Ejemplo 1</td>
+                                                <td>1/1/21</td>
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td class="text-indigo">Doble Inactivo</td>
+                                                <td>- - - </td>                                                   
+                                                 <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-upload"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Cargar Inversión">
+                                                        </i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-undo"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Editar Inversión">
+                                                        </i>
+                                                    </button>
+                                                </td>   
+                                            </tr>                                           
+                                            <tr>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <td>US-0123456</td>
+                                                <td>Lider Ejemplo 1</td>
+                                                <td>1/1/21</td>
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td class="text-green">Inactivo Permanente</td>
+                                                <td>- - - </td>                                                   
+                                                 <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-upload"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Cargar Inversión">
+                                                        </i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-undo"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Editar Inversión">
+                                                        </i>
+                                                    </button>
+                                                </td>   
+                                            </tr>                                           
+                                            <tr>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <td>US-0123456</td>
+                                                <td>Lider Ejemplo 1</td>
+                                                <td>1/1/21</td>
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td class="text-yellow">Inscrito</td>
+                                                <td>- - - </td>                                                   
                                                 <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-upload"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Cargar Inversión">
+                                                        </i>
+                                                    </button>
                                                     <button type="button" 
                                                         class="btn" 
                                                         data-toggle="modal" 
@@ -384,11 +581,120 @@
                                                         <i class="fa fa-user"  
                                                             data-toggle="tooltip"
                                                             title
-                                                            data-original-title="Ver-Editar Perfil">
+                                                            data-original-title="Editar Inversión">
                                                         </i>
                                                     </button>
                                                 </td>   
                                             </tr>                                           
+                                            <tr>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <td>US-0123456</td>
+                                                <td>Lider Ejemplo 1</td>
+                                                <td>1/1/21</td>
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td>Nuevo</td>
+                                                <td>- - - </td>                                                   
+                                                 <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-upload"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Cargar Inversión">
+                                                        </i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-undo"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Editar Inversión">
+                                                        </i>
+                                                    </button>
+                                                </td>   
+                                            </tr>                                           
+                                            <tr>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <td>US-0123456</td>
+                                                <td>Lider Ejemplo 1</td>
+                                                <td>1/1/21</td>
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td>Nuevo</td>
+                                                <td>- - - </td>                                                   
+                                                 <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-upload"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Cargar Inversión">
+                                                        </i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-undo"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Editar Inversión">
+                                                        </i>
+                                                    </button>
+                                                </td>   
+                                            </tr>                                           
+                                            <tr>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <td>US-0123456</td>
+                                                <td>Lider Ejemplo 1</td>
+                                                <td>1/1/21</td>
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td>Nuevo</td>
+                                                <td>- - - </td>                                                   
+                                                 <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-upload"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Cargar Inversión">
+                                                        </i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-undo"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Editar Inversión">
+                                                        </i>
+                                                    </button>
+                                                </td>   
+                                            </tr>                                           
+                                                                                  
                                                                                  
                                         </tbody>
                                     </table> 
@@ -401,46 +707,7 @@
         </div>
        
         <!-- Modal section -->
-        <div id="exampleModalLive" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="display: none;" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLiveLabel">Crear-Editar Administrador</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">                       
-                        <form action="" class="row" id="general">
-                            <div class="col-sm-12 col-md-12">
-                                <h5>Datos Generales</h5>                                        
-                            </div>
-                            <div class="col-sm-3 col-md-4">
-                                <div class="form-group">
-                                    <label class="form-label">Nombre de Administrador </label>
-                                    <input type="text" class="form-control" placeholder="Nombre de Administrador " value="">
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="form-group">
-                                    <label class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" placeholder="Contraseña">
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="form-group">
-                                    <label class="form-label">Verificar Contraseña</label>
-                                    <input type="password" class="form-control" placeholder="Verificar Contraseña">
-                                </div>
-                            </div>
-                            <div class="col-12 text-right">
-                                <button type="submit" class="btn btn-primary">Guardar</button>
-                            </div>
-                        </form> 
-                    </div>                   
-                </div>
-            </div>
-        </div>
+       
 
        
     </div>
