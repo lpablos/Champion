@@ -307,9 +307,9 @@
             <div class="container-fluid">
                  <div class="row clearfix">
                     <div class="col-lg-12 mb-4">                      
-                        <button class="btn btn-dark"  data-toggle="modal" data-target="#exampleModalLive">
+                        <!-- <button class="btn btn-dark"  data-toggle="modal" data-target="#exampleModalLive">
                             Crear Administrador
-                        </button>
+                        </button> -->
                     </div>
                 </div>
                 <div class="row clearfix mt-2">
@@ -320,17 +320,17 @@
                                     <table class="table table-hover js-basic-example dataTable table_custom spacing5">
                                         <thead>
                                             <tr>
-                                                <th>Código del Usuario</th>
-                                                <th>No. Documento</th>
+                                                <th>Cód. Usuario</th>
+                                                <th>N.° Documento</th>
                                                 <th>Nombre</th>
-                                                <th>Codigo del líder</th>
-                                                <th>Nombre del Líder</th>
-                                                <th>Fecha Ultima Inversión</th>
-                                                <th># de referidos inactivos</th>
-                                                <th># de ciclos inactivos</th>
-                                                <th>Estado</th>
+                                                <th>Cód. Líder</th>
+                                                <th>N. Líder</th>
+                                                <th>D/F. Ult. Inversión</th>
+                                                <th>N. Ref. Inactivos</th>
+                                                <th>N. Ciclos Inactivos</th>
+                                                <th>Est.</th>
                                                 <th>Inversión</th>
-                                                <th>Opciones</th>                                                      
+                                                <th>Opc.</th>                                                      
                                             </tr>
                                         </thead>                             
                                         <tbody>
@@ -728,7 +728,9 @@
 <!-- Start core js and page js -->
 <script src="./assets/js/core.js"></script>
 <script src="./assets/js/page/index.js"></script>
-
+<!-- start plugin js file  -->
+<script src="./assets/bundles/dataTables.bundle.js"></script>
+<script src="./assets/js/table/datatable.js"></script>
 <script>
 function setStyleSheet(url){
     var stylesheet = document.getElementById("stylesheet");
