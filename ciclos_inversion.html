@@ -258,11 +258,11 @@
             <div class="tab-pane fade active show" id="all-tab">
                 <nav class="sidebar-nav">
                     <ul class="metismenu ci-effect-1">
-                        <li class="active"><a href="ciclos_inversion.html"><i class="fa fa-play"></i><span data-hover="Ciclos Inversión">Ciclos Inversión</span></a></li>
-                        <li><a href="ciclos_inversion.html"><i class="fa fa-play"></i><span data-hover="Activo">Activo</span></a></li>
-                        <li><a href="ciclos_inversion.html"><i class="fa fa-play"></i><span data-hover="Finalizado">Finalizado</span></a></li>
-                        <li><a href="ciclos_inversion.html"><i class="fa fa-play"></i><span data-hover="FinalizadoAnticipado">Finalizado Anticipado</span></a></li>
-                        <li><a href="ciclos_inversion.html"><i class="fa fa-play"></i><span data-hover="Pagado">Pagado</span></a></li>
+                        <!-- <li class="active"><a href="ciclos_inversion.html"><i class="fa fa-play"></i><span data-hover="Ciclos Inversión">Ciclos Inversión</span></a></li> -->
+                        <li><a href="ciclos_inversion.html"><span data-hover="Activo">Activo</span></a></li>
+                        <li><a href="ciclos_inversion.html"><span data-hover="Finalizado">Finalizado</span></a></li>
+                        <li><a href="ciclos_inversion.html"><span data-hover="FinalizadoAnticipado">Finalizado Anticipado</span></a></li>
+                        <li><a href="ciclos_inversion.html"><span data-hover="Pagado">Pagado</span></a></li>
                         
                     </ul>
                 </nav>
@@ -314,6 +314,18 @@
                                     </div>
                                     <div class="col-sm-3 col-md-4">
                                         <div class="form-group">
+                                            <label class="form-label">Valor Minimo de Inversión</label>
+                                            <input type="number" class="form-control" placeholder="Valor Minimo de Inversión" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Valor Máximo de Inversión</label>
+                                            <input type="number" class="form-control" placeholder="Valor Máximo de Inversión" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-4">
+                                        <div class="form-group">
                                             <label class="form-label">Hora de inicio</label>
                                             <input type="time" class="form-control" placeholder="Hora de inicio">
                                         </div>
@@ -335,13 +347,7 @@
                                             <label class="form-label">Hora de Finalización</label>
                                             <input type="time" class="form-control" placeholder="Hora de Finalización">
                                         </div>
-                                    </div>
-                                 
-                                    <!-- <div class="col-sm-3 col-md-3">
-                                        <div class="form-group text-right">
-                                           <button type="submit" class="btn btn-primary">Dar inicio al ciclo</button>
-                                        </div>
-                                    </div>                                     -->
+                                    </div>                                   -->
                                 </div>
                             </div>
                             <div class="card-footer text-right">
@@ -353,23 +359,24 @@
                 </div>
                 <!-- Tabla -->
                <div class="row clearfix">
-                    <div class="col-lg-12 mt-5">
-                        <div class="table-responsive mb-4">
+                    <div class="col-12">
+                        <div class="table-responsive">
                             <div class="card">
                                 <div class="card-body">
-                                    <table class="table table-hover js-basic-example dataTable table_custom spacing5">
+                                    <table class="table table-hover js-basic-example dataTable table_custom">
                                         <thead>
                                             <tr>
-                                                <th>Ciclo</th>
-                                                <th>% de rendimiento</th>
-                                                <th>Fecha de inicio</th>
-                                                <th>Hora de inicio</th>
-                                                <th>Fecha de finalización</th>
-                                                <th>Hora de finaliazación</th>
-                                                <th>Fecha de pago</th>
-                                                <th>Estado</th>
-                                                <th># de ciclos inactivos</th>
-                                                <th>Opciones</th>
+                                                <th>Num.</th>
+                                                <th>% Rend.</th>
+                                                <th>Val. Min. Inversión</th>
+                                                <th>Val. Máx. Inversión</th>
+                                                <th>D/F. Inicio</th>
+                                                <th>Hor. Inicio</th>
+                                                <th>D/F Finalización</th>
+                                                <th>Hor. Finaliazación</th>
+                                                <th>D/F Pago</th>
+                                                <th>Est.</th>                                                
+                                                <th>Opc.</th>
                                             </tr>
                                         </thead>                             
                                         <tbody>
@@ -377,13 +384,14 @@
         
                                                 <td>1</td>
                                                 <td>150</td>
+                                                <td>$ 50.000</td>
+                                                <td>$ 100.000</td>
                                                 <td>123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td>US-0123456</td>
                                                 <td>Lider Ejemplo 1</td>
                                                 <td>1/1/21</td>
                                                 <td><span class="tag tag-lime">Activo</span></td>
-                                                <td>0</td>
                                                 <td>
                                                     <button type="button" class="btn btn-dark" data-toggle="tooltip" data-original-title="Finalizar ciclo de manera anticipada">
                                                         <i class="fa fa-times"></i>
@@ -393,13 +401,14 @@
                                             <tr>
                                                 <td>2</td>
                                                 <td>100</td>
+                                                <td>$ 50.000</td>
+                                                <td>$ 100.000</td>
                                                 <td>123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td>US-0123456</td>
                                                 <td>Lider Ejemplo 2</td>
                                                 <td>1/1/21</td>
                                                 <td><span class="tag tag-red">Finalizado</span></td>
-                                                <td>0</td>
                                                 <td>
                                                     <button type="button" class="btn btn-dark" data-toggle="tooltip" data-original-title="Finalizar ciclo de manera anticipada">
                                                         <i class="fa fa-times"></i>
@@ -409,13 +418,14 @@
                                             <tr>
                                                 <td>3</td>
                                                 <td>70</td>
+                                                <td>$ 50.000</td>
+                                                <td>$ 100.000</td>
                                                 <td>123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td>US-0123456</td>
                                                 <td>Lider Ejemplo 3</td>
                                                 <td>1/1/21</td>
                                                 <td><span class="tag tag-yellow">Finalizado Anticipado</span></td>
-                                                <td>0</td>
                                                 <td>
                                                     <button type="button" class="btn btn-dark" data-toggle="tooltip" data-original-title="Finalizar ciclo de manera anticipada">
                                                         <i class="fa fa-times"></i>
@@ -425,13 +435,14 @@
                                             <tr>
                                                 <td>3</td>
                                                 <td>70</td>
+                                                <td>$ 50.000</td>
+                                                <td>$ 100.000</td>
                                                 <td>123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td>US-0123456</td>
                                                 <td>Lider Ejemplo 3</td>
                                                 <td>1/1/21</td>
                                                 <td><span class="tag tag-pink">Pagado</span></td>
-                                                <td>0</td>
                                                 <td>
                                                     <button type="button" class="btn btn-dark" data-toggle="tooltip" data-original-title="Finalizar ciclo de manera anticipada">
                                                         <i class="fa fa-times"></i>
