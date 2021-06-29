@@ -258,13 +258,13 @@
             <div class="tab-pane fade active show" id="all-tab">
                 <nav class="sidebar-nav">
                     <ul class="metismenu ci-effect-1">
-                        <li class="active"><a href="comprobantes.html"><i class="fa fa-play"></i><span data-hover="Inversión">Todos</span></a></li>
-                        <li><a href="comprobantes.html"><i class="fa fa-play"></i><span data-hover="Activo Plataforma">Activo por la plataforma</span></a></li>
-                        <li><a href="comprobantes.html"><i class="fa fa-play"></i><span data-hover="Rechazado Plataforma">Rechazado por la plataforma</span></a></li>
-                        <li><a href="comprobantes.html"><i class="fa fa-play"></i><span data-hover="Activado Administrador">Activado Administrador</span></a></li>
-                        <li><a href="comprobantes.html"><i class="fa fa-play"></i><span data-hover="Rechazado Administrador">Rechazado Administrador</span></a></li>
-                        <li><a href="comprobantes.html"><i class="fa fa-play"></i><span data-hover="Fuera Horario">Fuera de horario</span></a></li>
-                        <li><a href="comprobantes.html"><i class="fa fa-play"></i><span data-hover="Sin procesar">Sin procesar</span></a></li>
+                        <li class="active"><a href="comprobantes.html"><span data-hover="Inversión">Todos</span></a></li>
+                        <li><a href="comprobantes.html"><span data-hover="Activo Plataforma">Activo por la plataforma</span></a></li>
+                        <li><a href="comprobantes.html"><span data-hover="Rechazado Plataforma">Rechazado por la plataforma</span></a></li>
+                        <li><a href="comprobantes.html"><span data-hover="Activado Administrador">Activado Administrador</span></a></li>
+                        <li><a href="comprobantes.html"><span data-hover="Rechazado Administrador">Rechazado Administrador</span></a></li>
+                        <li><a href="comprobantes.html"><span data-hover="Fuera Horario">Fuera de horario</span></a></li>
+                        <li><a href="comprobantes.html"><span data-hover="Sin procesar">Sin procesar</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -330,7 +330,7 @@
                                                 <td>9</td>
                                                 <td>$ 100.000</td>
                                                 <td>$ 100.000</td>
-                                                <td class="text-green">Activo por la plataforma</td>
+                                                <td><span class="tag tag-lime">Activo por la plataforma</span></td>
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
@@ -349,6 +349,15 @@
                                                         <i class="fa fa-cut"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Rechazar Comprobante"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-eye"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Comprobante"></i>
                                                     </button>
                                                 </td>
                                             </tr>                                         
@@ -360,7 +369,7 @@
                                                 <td>8</td>
                                                 <td>$ 100.000</td>
                                                 <td>Rechazado</td>                                               
-                                                <td class="text-red">Rechazado por la plataforma</td>  
+                                                <td><span class="tag tag-red">Rechazado por la plataforma</span></td>  
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
@@ -379,6 +388,15 @@
                                                         <i class="fa fa-cut"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Rechazar Comprobante"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-eye"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Comprobante"></i>
                                                     </button>
                                                 </td>                                                     
                                             </tr>                                         
@@ -390,7 +408,7 @@
                                                 <td>7</td>
                                                 <td>$ 100.000</td>
                                                 <td>Rechazado</td>                                               
-                                                <td class="text-yellow">Activado Administrador</td>
+                                                <td><span class="tag tag-yellow">Activado Administrador</span></td>
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
@@ -409,6 +427,15 @@
                                                         <i class="fa fa-cut"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Rechazar Comprobante"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-eye"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Comprobante"></i>
                                                     </button>
                                                 </td>                                                       
                                             </tr>                                             
@@ -420,7 +447,7 @@
                                                 <td>7</td>
                                                 <td>$ 100.000</td>
                                                 <td>Rechazado</td>                                               
-                                                <td class="text-blue">Rechazado Administrador</td>   
+                                                <td><span class="tag tag-blue">Rechazado Administrador</span></td>   
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
@@ -439,6 +466,15 @@
                                                         <i class="fa fa-cut"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Rechazar Comprobante"></i>
+                                                    </button>
+                                                     <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-eye"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Comprobante"></i>
                                                     </button>
                                                 </td>                                                    
                                             </tr>                                             
@@ -450,7 +486,7 @@
                                                 <td>7</td>
                                                 <td>$ 100.000</td>
                                                 <td>Rechazado</td>                                               
-                                                <td class="text-purple">Fuera de horario</td> 
+                                                <td><span class="tag tag-purple">Fuera de horario</span></td> 
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
@@ -469,6 +505,15 @@
                                                         <i class="fa fa-cut"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Rechazar Comprobante"></i>
+                                                    </button>
+                                                     <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-eye"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Comprobante"></i>
                                                     </button>
                                                 </td>                                                      
                                             </tr>                                             
@@ -480,7 +525,7 @@
                                                 <td>7</td>
                                                 <td>$ 100.000</td>
                                                 <td>Rechazado</td>                                               
-                                                <td class="text-green">Sin procesar</td>
+                                                <td><span class="tag tag-lime">Sin procesar</span></td>
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
@@ -499,6 +544,15 @@
                                                         <i class="fa fa-cut"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Rechazar Comprobante"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-eye"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Comprobante"></i>
                                                     </button>
                                                 </td>                                                       
                                             </tr>                                             
@@ -512,7 +566,27 @@
             </div>
         </div>
        
-     
+        <div id="exampleModalLive2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel2" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Usuarios - Detalles</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="./assets/docs/Comprobante.pdf" frameborder="0" width="100%" height="400px">
+                        <div class="wor">
+                            <div class="col 12 text-right">
+                                <a href="#" class="btn text-white bg-green">Validar</a>
+                                <a href="#" class="btn text-white bg-red">Rechazar</a>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
 
         <!-- Start page footer -->
         <!-- <div class="section-body">

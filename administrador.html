@@ -269,10 +269,10 @@
                                 <li><a href="app-social.html"><span data-hover="Campaigns">Campaigns</span></a></li>
                             </ul>
                         </li> -->                        
-                        <li class="active"><a href="administrador.html"><i class="fa fa-play"></i><span data-hover="Crear Usuarios">Crear Usuarios</span></a></li>
-                        <li><a href="administrador_list_admin.html"><i class="fa fa-play"></i><span data-hover="List. Administradores">Listado Administradores</span></a></li>
-                        <li><a href="administrador_carg_inversion.html"><i class="fa fa-play"></i><span data-hover="CargarInversión">Cargar Inversión</span></a></li>
-                        <li><a href="administrador_verif_num_sorteo.html"><i class="fa fa-play"></i><span data-hover="Verificar Núm. Sorteo">Verificar Números Sorteo</span></a></li>
+                        <li class="active"><a href="administrador.html"><span data-hover="Crear Usuarios">Crear Usuarios</span></a></li>
+                        <li><a href="administrador_list_admin.html"><span data-hover="List. Administradores">Listado Administradores</span></a></li>
+                        <li><a href="administrador_carg_inversion.html"><span data-hover="CargarInversión">Cargar Inversión</span></a></li>
+                        <li><a href="administrador_verif_num_sorteo.html"><span data-hover="Verificar Núm. Sorteo">Verificar Números Sorteo</span></a></li>
                        
                         
                     </ul>
@@ -311,22 +311,21 @@
                             <div class="card">                               
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <ul class="nav justify-content-end">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" aria-current="page" href="#" id="general-btn">Datos Generales</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#" id="pago-btn">Canal de Pago</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#" id="cuenta-btn">Cuenta Bancaria</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#" id="billetera-btn">Billetera Virtual</a>
-                                                </li>
-                                            </ul>
+                            <div class="col-12">                                
+                                <div class="btn-group float-right" role="group" aria-label="Button group with nested dropdown">
+                                    <button type="button" class="btn btn-primary" id="general-btn">Datos Generales</button>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Canal de Pago
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                            <a class="dropdown-item" id="pago-btn" >Efecty</a>
+                                            <a class="dropdown-item" id="cuenta-btn">Cuenta Bancaria</a>
+                                            <a class="dropdown-item" id="billetera-btn">Billetera Virtual</a>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
                                     </div>
                                     <form action="" class="row" id="general">
                                         <div class="col-sm-12 col-md-12">
@@ -335,19 +334,19 @@
                                         <div class="col-sm-3 col-md-4">
                                             <div class="form-group">
                                                 <label class="form-label">Documento</label>
-                                                <input type="text" class="form-control" placeholder="Documento" value="" maxlength="10">
+                                                <input type="text" class="form-control" placeholder="Documento" maxlength="10">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group">
                                                 <label class="form-label">Nombre</label>
-                                                <input type="text" class="form-control" placeholder="Nombre">
+                                                <input type="text" class="form-control" placeholder="Nombre" >
                                             </div>
                                         </div>
                                         <div class="col-sm-3 col-md-4">
                                             <div class="form-group">
                                                 <label class="form-label">Código Líder</label>
-                                                <input type="text" class="form-control" placeholder="Código Líder">
+                                                <input type="text" class="form-control" placeholder="Código Líder" >
                                             </div>
                                         </div>
                                         <div class="col-sm-3 col-md-3">
@@ -359,21 +358,21 @@
                                         <div class="col-sm-3 col-md-3">
                                             <div class="form-group">
                                                 <label class="form-label">Email</label>
-                                                <input type="email" class="form-control" placeholder="Email">
+                                                <input type="email" class="form-control" placeholder="Email" >
                                             </div>
                                         </div>
                                         <div class="col-sm-3 col-md-3">
                                             <div class="form-group">
                                                 <label class="form-label">Teléfono</label>
-                                                <input type="tel" class="form-control" placeholder="Teléfono">
+                                                <input type="tel" class="form-control" placeholder="Teléfono" >
                                             </div>
                                         </div>
                                         <div class="col-sm-3 col-md-3">
                                             <div class="form-group">
                                                 <label class="form-label">Ciudad</label>
                                                 <select class="form-control custom-select">
-                                                    <option value="" selected>Seleccione</option>
-                                                    <option value="1">Germany</option>
+                                                    <option value="">Seleccione</option>
+                                                    <option value="1" selected>Germany</option>
                                                     <option value="1">USA</option>
                                                     <option value="1">Canada</option>
                                                 </select>                                    
@@ -382,7 +381,7 @@
                                         <div class="col-sm-3 col-md-3">
                                             <div class="form-group">
                                                 <label class="form-label">Clave</label>
-                                                <input type="text" class="form-control" placeholder="Clave">
+                                                <input type="text" class="form-control" placeholder="Clave" >
                                             </div>
                                         </div>
                                         <hr>
@@ -392,66 +391,76 @@
                                         </div>
                                     </form> 
                                     <form action="" class="row" style="display: none;" id="pago">                            
-                                        <div class="col-sm-12 col-md-12">
-                                            <h5>Canal de Pago</h5>                                        
+                                        <div class="col-sm-12 col-md-12 mb-2">
+                                            <h5>Efecty</h5>                                        
                                         </div>
-                                        <div class="col-sm-3 col-md-3">
-                                            <div class="form-group">
-                                                <label class="form-label">Efecty</label>
-                                                <input type="number" class="form-control" placeholder="Efecty">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3 col-md-3">
+                                        <div class="col-sm-12 col-md-4">
                                             <div class="form-group">
                                                 <label class="form-label">Nombre</label>
-                                                <input type="text" class="form-control" placeholder="Nombre">
+                                                <input type="text" class="form-control" placeholder="Nombre" >
                                             </div>
                                         </div>
-                                        <div class="col-sm-3 col-md-3">
+                                        <div class="col-sm-12 col-md-4">
                                             <div class="form-group">
                                                 <label class="form-label">Documento</label>
-                                                <input type="text" class="form-control" placeholder="Documento">
+                                                <select class="form-control custom-select">
+                                                    <option value="">Seleccione</option>
+                                                    <option value="1" selected>Identidad</option>
+                                                    <option value="1">Pasaporte</option>
+                                                    <option value="1">Visa</option>
+                                                </select>                                    
                                             </div>
                                         </div>
-                                        <div class="col-sm-3 col-md-3">
+                                        <div class="col-sm-12 col-md-4">
                                             <div class="form-group">
                                                 <label class="form-label">Telefono</label>
-                                                <input type="text" class="form-control" placeholder="Telefono">
+                                                <input type="tel" class="form-control" placeholder="Telefono" >
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                        <div class="form-group">
+                                                <label class="form-label">Ciudad</label>
+                                                <select class="form-control custom-select">
+                                                    <option value="">Seleccione</option>
+                                                    <option value="1" selected>Germany</option>
+                                                    <option value="1">USA</option>
+                                                    <option value="1">Canada</option>
+                                                </select>                                    
                                             </div>
                                         </div>
                                         <div class="col-12 text-right">
-                                            <button type="submit" class="btn btn-primary">Editar</button>
+                                            <button type="submit" class="btn btn-primary">Guardar</button>
                                         </div>
                                     </form>
                                     <form action="" class="row" id="cuenta" style="display: none;">
                                         <div class="col-sm-12 col-md-12">
                                             <h5>Cuenta Bancaria</h5>                                        
-                                        </div>                            
-                                        <div class="col-sm-3 col-md-3">
-                                            <div class="form-group">
-                                                <label class="form-label">Efecty</label>
-                                                <input type="number" class="form-control" placeholder="Efecty">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3 col-md-3">
+                                        </div> 
+                                        <div class="col-sm-12 col-md-3">
                                             <div class="form-group">
                                                 <label class="form-label">Entidad Bancaria</label>
                                                 <input type="text" class="form-control" placeholder="Entidad Bancaria">
                                             </div>
                                         </div>
-                                        <div class="col-sm-3 col-md-3">
+                                        <div class="col-sm-12 col-md-3">
                                             <div class="form-group">
                                                 <label class="form-label">Tipo de cuenta</label>
-                                                <input type="text" class="form-control" placeholder="Tipo de cuenta">
+                                                <select class="form-control custom-select">
+                                                    <option value="">Seleccione</option>
+                                                    <option value="1" selected>Germany</option>
+                                                    <option value="1">USA</option>
+                                                    <option value="1">Canada</option>
+                                                </select>                                    
                                             </div>
+                                        
                                         </div>
-                                        <div class="col-sm-3 col-md-3">
+                                        <div class="col-sm-12 col-md-3">
                                             <div class="form-group">
                                                 <label class="form-label">Numero</label>
                                                 <input type="text" class="form-control" placeholder="Numero">
                                             </div>
                                         </div>
-                                        <div class="col-sm-3 col-md-3">
+                                        <div class="col-sm-12 col-md-3">
                                             <div class="form-group">
                                                 <label class="form-label">Nombre</label>
                                                 <input type="text" class="form-control" placeholder="Nombre">
@@ -464,14 +473,8 @@
                                     <form action="" class="row" id="billetera" style="display: none;">
                                         <div class="col-sm-12 col-md-12">
                                             <h5>Billetera Virtual</h5>                                        
-                                        </div>                              
-                                        <div class="col-sm-3 col-md-3">
-                                            <div class="form-group">
-                                                <label class="form-label">Efecty</label>
-                                                <input type="number" class="form-control" placeholder="Efecty">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3 col-md-3">
+                                        </div>      
+                                        <div class="col-sm-12 col-md-12">
                                             <div class="form-group">
                                                 <label class="form-label">Numero Biletera</label>
                                                 <input type="text" class="form-control" placeholder="Numero Biletera">
@@ -480,7 +483,7 @@
                                         <div class="col-12 text-right">
                                             <button type="submit" class="btn btn-primary">Editar</button>
                                         </div>
-                                    </form>    
+                                    </form>   
                                 </div>
                             </div>
                         </div>                        
