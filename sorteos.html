@@ -258,20 +258,31 @@
             <div class="tab-pane fade active show" id="all-tab">
                 <nav class="sidebar-nav">
                     <ul class="metismenu ci-effect-1">
-                        <li class="active"><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="IncentivoInversión">Incentivo de inversión</span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Champion 50">Incentivo de rango champion 50</span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Champion 100">Incentivo de rango champion 100</span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Champion 200">Incentivo de rango champion 200</span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Champion 300">Incentivo de rango champion 300</span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Champion 400">Incentivo de rango champion 400</span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Champion 500">Incentivo de rango champion 500</span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Referidos (2)"">Incentivo por referidos (2) </span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Referidos (5)"">Incentivo por referidos (5) </span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Referidos (10)"">Incentivo por referidos (10) </span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Pago $2000"">Sorteo Pago $2000</span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Pago $5000"">Sorteo Pago $5000</span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Pago $10.000"">Sorteo Pago $10.000</span></a></li>
-                        <li><a href="sorteos.html"><i class="fa fa-play"></i><span data-hover="Pago $20.000"">Sorteo Pago $20.000</span></a></li>
+                        <li>
+                            <a href="javascript:void(0)" class="has-arrow arrow-b"><span data-hover="Incentivo">Incentivo</span></a>
+                            <ul>
+                                <li><a href="usuarios.html"><span data-hover="Inversión">Por Inversión</span></a></li>
+                                <li><a href="usuarios.html"><span data-hover="Referidos">Por Referidos</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Champion 50">Rango champion 50</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Champion 100">Rango champion 100</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Champion 200">Rango champion 200</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Champion 300">Rango champion 300</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Champion 400">Rango champion 400</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Champion 500">Rango champion 500</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Referidos (2)"">Referidos (2) </span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Referidos (5)"">Referidos (5) </span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Referidos (10)"">Referidos (10) </span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="has-arrow arrow-b"><span data-hover="SorteoPago">Sorteo Pago</span></a>
+                            <ul>
+                                <li><a href="sorteos.html"><span data-hover="$2000"">$2000</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="$5000"">$5000</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="$10.000"">$10.000</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="$20.000"">$20.000</span></a></li>                                
+                            </ul>
+                        </li>
                         
                     </ul>
                 </nav>
@@ -372,6 +383,7 @@
                                                 <th>Nombre Usuario Ganador</th>
                                                 <th>Estado</th>
                                                 <th>Opciones</th>
+                                               
                                             </tr>
                                         </thead>                             
                                         <tbody>
@@ -383,7 +395,7 @@
                                                 <td>Dorado tarde </td>
                                                 <td>- - -</td>
                                                 <td>- - -</td>
-                                                <td class="text-green">Por realizar</td>
+                                                <td><span class="tag tag-lime">Por realizar</span></td>
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
@@ -404,7 +416,7 @@
                                                 <td>US-0123456</td>
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
-                                                <td class="text-red">Realizado</td>
+                                                 <td><span class="tag tag-lime">Por realizar</span></td>
                                                 <td>
                                                      <button type="button" 
                                                         class="btn" 
@@ -425,7 +437,7 @@
                                                 <td>US-0123456</td>
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
-                                                <td class="text-yellow">Pago</td>
+                                                <td><span class="tag tag-yellow">Pago</span></td>
                                                  <td>
                                                     <button type="button" 
                                                         class="btn" 
@@ -446,7 +458,7 @@
                                                 <td>US-0123456</td>
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
-                                                <td class="text-green">Por realizar</td>
+                                                <td><span class="tag tag-lime">Por realizar</span></td>
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
@@ -467,7 +479,7 @@
                                                 <td>US-0123456</td>
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
-                                                <td class="text-red">Realizado</td>
+                                               <td><span class="tag tag-red">Realizado</span></td>
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
@@ -488,7 +500,7 @@
                                                 <td>US-0123456</td>
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
-                                                <td class="text-yellow">Pago</td>
+                                                <td><span class="tag tag-yellow">Pago</span></td>
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
@@ -509,7 +521,7 @@
                                                 <td>US-0123456</td>
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
-                                                <td class="text-yellow">Pago</td>
+                                                <td><span class="tag tag-yellow">Pago</span></td>
                                                 <td>
                                                      <button type="button" 
                                                         class="btn" 
@@ -530,7 +542,7 @@
                                                 <td>Dorado tarde </td>
                                                 <td>- - -</td>
                                                 <td>- - - </td>
-                                                <td class="text-green">Por realizar </td>
+                                                <td><span class="tag tag-lime">Por realizar</span></td>
                                                 <td>
                                                     <button type="button" 
                                                         class="btn" 
@@ -551,7 +563,7 @@
                                                 <td>US-0123456</td>
                                                 <td>US-123456</td>
                                                 <td>Usuario ejemplo</td>
-                                                <td class="text-red">Realizado</td>
+                                                <td><span class="tag tag-red">Realizado</span></td>
                                                 <td>
                                                      <button type="button" 
                                                         class="btn" 
@@ -572,7 +584,7 @@
                                                 <td>US-0123456</td>
                                                 <td>Pago</td>
                                                 <td>1/1/21</td>
-                                                <td class="text-yellow">Pago</td>
+                                                <td><span class="tag tag-yellow">Pago</span></td>
                                                  <td>
                                                      <button type="button" 
                                                         class="btn" 
@@ -593,7 +605,7 @@
                                                 <td>Dorado tarde</td>
                                                 <td>- - - -</td>
                                                 <td>- - - </td>
-                                                <td class="text-green">Por realizar</td>
+                                                <td><span class="tag tag-lime">Por realizar</span></td>
                                                  <td>
                                                      <button type="button" 
                                                         class="btn" 
@@ -634,25 +646,25 @@
                             <div class="col-4">
                                 <div class="form-group">
                                     <label class="form-label">Sorteo</label>
-                                    <input type="text" class="form-control" placeholder="Documento" value="Incentivo de inversión" maxlength="10">
+                                    <input type="text" class="form-control" placeholder="Documento" value="Incentivo de inversión" maxlength="10" disabled>
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="form-group">
                                     <label class="form-label">Fecha del Sorteo</label>
-                                    <input type="date" class="form-control" placeholder="Fecha del Sorteo" value="1/1/21">
+                                    <input type="date" id="fechas" class="form-control" placeholder="Fecha del Sorteo" value="2021-06-28">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="form-group">
                                     <label class="form-label">Numeros ganadores</label>
-                                    <input type="number" class="form-control" placeholder="Numeros ganadores">
+                                    <input type="number" class="form-control" placeholder="Numeros ganadores" value="123456">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="form-group">
                                     <label class="form-label">Serie</label>
-                                    <input type="text" class="form-control" placeholder="Serie">
+                                    <input type="text" class="form-control" placeholder="Serie" value="Dorado tarde">
                                 </div>
                             </div>
                             <div class="col-4">
@@ -664,20 +676,20 @@
                             <div class="col-4">
                                 <div class="form-group">
                                     <label class="form-label">Código Usuario Ganador</label>
-                                    <input type="tel" class="form-control" placeholder="Código Usuario Ganador">
+                                    <input type="tel" class="form-control" placeholder="Código Usuario Ganador"  value="-----" disabled>
                                 </div>
                             </div>
                             
                             <div class="col-4">
                                 <div class="form-group">
                                     <label class="form-label">Nombre Usuario Ganador</label>
-                                    <input type="text" class="form-control" placeholder="Nombre Usuario Ganador">
+                                    <input type="text" class="form-control" placeholder="Nombre Usuario Ganador" value="-----" disabled>
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="form-group">
                                     <label class="form-label">Estado</label>
-                                    <input type="text" class="form-control" placeholder="Estado" value="Por realizar">
+                                    <input type="text" class="form-control" placeholder="Estado" value="Por realizar" disabled>
                                 </div>
                             </div>
                             <hr>
