@@ -258,14 +258,19 @@
             <div class="tab-pane fade active show" id="all-tab">
                 <nav class="sidebar-nav">
                     <ul class="metismenu ci-effect-1">                        
-                        <li class="active"><a href="usuarios.html"><i class="fa fa-play"></i><span data-hover="Usuarios">Usuarios</span></a></li>
-                        <li><a href="usuarios.html"><i class="fa fa-play"></i><span data-hover="Todos">Todos</span></a></li>
-                        <li><a href="usuarios.html"><i class="fa fa-play"></i><span data-hover="Nuevos">Nuevos</span></a></li>
-                        <li><a href="usuarios.html"><i class="fa fa-play"></i><span data-hover="Activos">Activos</span></a></li>
-                        <li><a href="usuarios.html"><i class="fa fa-play"></i><span data-hover="InactivosInversión">Inactivos por Inversión</span></a></li>
-                        <li><a href="usuarios.html"><i class="fa fa-play"></i><span data-hover="InactivosReferidos">Inactivos por Referidos</span></a></li>
-                        <li><a href="usuarios.html"><i class="fa fa-play"></i><span data-hover="DobleInactivo">Doble Inactivo</span></a></li>
-                        <li><a href="usuarios.html"><i class="fa fa-play"></i><span data-hover="InactivoPermanente">Inactivo Permanente</span></a></li>
+                        <!-- <li class="active"><a href="usuarios.html"><i class="fa fa-play"></i><span data-hover="Usuarios">Usuarios</span></a></li> -->
+                        <li><a href="usuarios.html"><span data-hover="Todos">Todos</span></a></li>
+                        <li><a href="usuarios.html"><span data-hover="Nuevos">Nuevos</span></a></li>
+                        <li><a href="usuarios.html"><span data-hover="Activos">Activos</span></a></li>
+                        <li>
+                            <a href="javascript:void(0)" class="has-arrow arrow-b"><span data-hover="Inactivos">Inactivos</span></a>
+                            <ul>
+                                <li><a href="usuarios.html"><span data-hover="Inversión">Por Inversión</span></a></li>
+                                <li><a href="usuarios.html"><span data-hover="Referidos">Por Referidos</span></a></li>                              
+                            </ul>
+                        </li>
+                        <li><a href="usuarios.html"><span data-hover="DobleInactivo">Doble Inactivo</span></a></li>
+                        <li><a href="usuarios.html"><span data-hover="InactivoPermanente">Inactivo Permanente</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -310,16 +315,16 @@
                                     <table class="table table-hover js-basic-example dataTable table_custom spacing5">
                                         <thead>
                                             <tr>
-                                                <th>Código del usuario</th>
-                                                <th>Num- del documento</th>
+                                                <th>Cód. Usuario</th>
+                                                <th>Num. Doc.</th>
                                                 <th>Nombre</th>
-                                                <th>Codigo del lider</th>
-                                                <th>Nombre del lider</th>
-                                                <th>Fecha Ultima Inversión</th>
-                                                <th># de referidos inactivos</th>
-                                                <th># de ciclos inactivos</th>
-                                                <th>Estado</th>
-                                                <th>Opciones</th>
+                                                <th>Cód. Lider</th>
+                                                <th>Nom. Lider</th>
+                                                <th>D/F Ult. Inver.</th>
+                                                <th>Núm. Ref. Inac.</th>
+                                                <th>Nún. Ciclos Inac.</th>
+                                                <th>Est.</th>
+                                                <th>Opc.</th>
                                             </tr>
                                         </thead>                             
                                         <tbody>
@@ -341,7 +346,7 @@
                                                        >
                                                         <i class="fa fa-user"  data-toggle="tooltip"
                                                         title
-                                                        data-original-title="Ver-Editar Perfil"></i>
+                                                        data-original-title="Ver Perfil"></i>
                                                     </button>      
                                                     <button type="button" 
                                                         class="btn" 
@@ -369,7 +374,16 @@
                                                         <i class="fa fa-sitemap"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Referidos"></i>
-                                                    </button>     
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar Perfil"></i>
+                                                    </button>    
                                                 </td>
                                             </tr>
                                             <tr>
@@ -419,6 +433,15 @@
                                                         title
                                                         data-original-title="Referidos"></i>
                                                     </button> 
+                                                     <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar Perfil"></i>
+                                                    </button>   
                                                 </td>
                                                 
                                             </tr>
@@ -468,7 +491,16 @@
                                                         <i class="fa fa-sitemap"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Referidos"></i>
-                                                    </button>    
+                                                    </button>
+                                                     <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar Perfil"></i>
+                                                    </button>       
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -492,21 +524,20 @@
                     </div>
                     <div class="modal-body">
                         <div class="row">
-                            <div class="col-12">
-                                <ul class="nav justify-content-end">
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#" id="general-btn">Datos Generales</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#" id="pago-btn">Canal de Pago</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#" id="cuenta-btn">Cuenta Bancaria</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#" id="billetera-btn">Billetera Virtual</a>
-                                    </li>
-                                </ul>
+                            <div class="col-12">                                
+                                <div class="btn-group float-right" role="group" aria-label="Button group with nested dropdown">
+                                    <button type="button" class="btn btn-primary" id="general-btn">Datos Generales</button>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Canal de Pago
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                            <a class="dropdown-item" id="pago-btn" >Efecty</a>
+                                            <a class="dropdown-item" id="cuenta-btn">Cuenta Bancaria</a>
+                                            <a class="dropdown-item" id="billetera-btn">Billetera Virtual</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <form action="" class="row" id="general">
@@ -516,45 +547,45 @@
                             <div class="col-sm-3 col-md-4">
                                 <div class="form-group">
                                     <label class="form-label">Documento</label>
-                                    <input type="text" class="form-control" placeholder="Documento" value="" maxlength="10">
+                                    <input type="text" class="form-control" placeholder="Documento" value="US-123456" maxlength="10">
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-4">
                                 <div class="form-group">
                                     <label class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" placeholder="Nombre">
+                                    <input type="text" class="form-control" placeholder="Nombre" value="Usuario Ejemplo">
                                 </div>
                             </div>
                             <div class="col-sm-3 col-md-4">
                                 <div class="form-group">
                                     <label class="form-label">Código Líder</label>
-                                    <input type="text" class="form-control" placeholder="Código Líder">
+                                    <input type="text" class="form-control" placeholder="Código Líder" value="US-0123456">
                                 </div>
                             </div>
                             <div class="col-sm-3 col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Nombre Líder</label>
-                                    <input type="text" class="form-control" placeholder="Nombre Líder">
+                                    <input type="text" class="form-control" placeholder="Nombre Líder" value="Lider Ejemplo 1">
                                 </div>
                             </div>
                             <div class="col-sm-3 col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Email</label>
-                                    <input type="email" class="form-control" placeholder="Email">
+                                    <input type="email" class="form-control" placeholder="Email" value="user@testdemo.com">
                                 </div>
                             </div>
                             <div class="col-sm-3 col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" placeholder="Teléfono">
+                                    <input type="tel" class="form-control" placeholder="Teléfono" value="3131123123">
                                 </div>
                             </div>
                             <div class="col-sm-3 col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Ciudad</label>
                                     <select class="form-control custom-select">
-                                        <option value="" selected>Seleccione</option>
-                                        <option value="1">Germany</option>
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Germany</option>
                                         <option value="1">USA</option>
                                         <option value="1">Canada</option>
                                     </select>                                    
@@ -563,7 +594,7 @@
                             <div class="col-sm-3 col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Clave</label>
-                                    <input type="text" class="form-control" placeholder="Clave">
+                                    <input type="text" class="form-control" placeholder="Clave" value="2313313">
                                 </div>
                             </div>
                             <hr>
@@ -573,66 +604,76 @@
                             </div>
                         </form> 
                         <form action="" class="row" style="display: none;" id="pago">                            
-                            <div class="col-sm-12 col-md-12">
-                                <h5>Canal de Pago</h5>                                        
+                            <div class="col-sm-12 col-md-12 mb-2">
+                                <h5>Efecty</h5>                                        
                             </div>
-                            <div class="col-sm-3 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">Efecty</label>
-                                    <input type="number" class="form-control" placeholder="Efecty">
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
+                            <div class="col-sm-12 col-md-4">
                                 <div class="form-group">
                                     <label class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" placeholder="Nombre">
+                                    <input type="text" class="form-control" placeholder="Nombre" value="Usuario Ejemplo">
                                 </div>
                             </div>
-                            <div class="col-sm-3 col-md-3">
+                            <div class="col-sm-12 col-md-4">
                                 <div class="form-group">
                                     <label class="form-label">Documento</label>
-                                    <input type="text" class="form-control" placeholder="Documento">
+                                    <select class="form-control custom-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Identidad</option>
+                                        <option value="1">Pasaporte</option>
+                                        <option value="1">Visa</option>
+                                    </select>                                    
                                 </div>
                             </div>
-                            <div class="col-sm-3 col-md-3">
+                            <div class="col-sm-12 col-md-4">
                                 <div class="form-group">
                                     <label class="form-label">Telefono</label>
-                                    <input type="text" class="form-control" placeholder="Telefono">
+                                    <input type="tel" class="form-control" placeholder="Telefono" value="123123123">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                              <div class="form-group">
+                                    <label class="form-label">Ciudad</label>
+                                    <select class="form-control custom-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Germany</option>
+                                        <option value="1">USA</option>
+                                        <option value="1">Canada</option>
+                                    </select>                                    
                                 </div>
                             </div>
                             <div class="col-12 text-right">
-                                <button type="submit" class="btn btn-primary">Editar</button>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
                             </div>
                         </form>
                         <form action="" class="row" id="cuenta" style="display: none;">
                             <div class="col-sm-12 col-md-12">
                                 <h5>Cuenta Bancaria</h5>                                        
-                            </div>                            
-                            <div class="col-sm-3 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">Efecty</label>
-                                    <input type="number" class="form-control" placeholder="Efecty">
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
+                            </div> 
+                            <div class="col-sm-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Entidad Bancaria</label>
                                     <input type="text" class="form-control" placeholder="Entidad Bancaria">
                                 </div>
                             </div>
-                            <div class="col-sm-3 col-md-3">
+                            <div class="col-sm-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Tipo de cuenta</label>
-                                    <input type="text" class="form-control" placeholder="Tipo de cuenta">
+                                    <select class="form-control custom-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Germany</option>
+                                        <option value="1">USA</option>
+                                        <option value="1">Canada</option>
+                                    </select>                                    
                                 </div>
+                              
                             </div>
-                            <div class="col-sm-3 col-md-3">
+                            <div class="col-sm-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Numero</label>
                                     <input type="text" class="form-control" placeholder="Numero">
                                 </div>
                             </div>
-                            <div class="col-sm-3 col-md-3">
+                            <div class="col-sm-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-label">Nombre</label>
                                     <input type="text" class="form-control" placeholder="Nombre">
@@ -645,14 +686,8 @@
                         <form action="" class="row" id="billetera" style="display: none;">
                               <div class="col-sm-12 col-md-12">
                                 <h5>Billetera Virtual</h5>                                        
-                            </div>                              
-                            <div class="col-sm-3 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">Efecty</label>
-                                    <input type="number" class="form-control" placeholder="Efecty">
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
+                            </div>      
+                            <div class="col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <label class="form-label">Numero Biletera</label>
                                     <input type="text" class="form-control" placeholder="Numero Biletera">
@@ -731,7 +766,7 @@
                                     <td>12:00 AM</td>
                                     <td>$ 100</td>
                                     <td>$ 100</td>
-                                    <td class="text-blue">Activo por la plataforma</td>
+                                    <td> <span class="tag tag-lime">Activo por la plataforma</span></td>
                                     <td><button type="button" 
                                             class="btn" 
                                             >
@@ -747,7 +782,7 @@
                                     <td>12:00 AM</td>
                                     <td>$ 100</td>
                                     <td>$ 100</td>
-                                    <td class="text-teal">Rechazado por la plataforma</td>
+                                    <td><span class="tag tag-teal">Rechazado por la plataforma</span></td>
                                     <td>
                                         <button type="button" 
                                             class="btn" 
@@ -764,7 +799,7 @@
                                     <td>12:00 AM</td>
                                     <td>$ 100</td>
                                     <td>$ 100</td>
-                                    <td class="text-green">Activo por administrador</td>
+                                    <td><span class="tag tag-lime">Activo por administrador</span></td>
                                     <td>
                                         <button type="button" 
                                             class="btn" 
@@ -781,7 +816,7 @@
                                     <td>12:00 AM</td>
                                     <td>$ 100</td>
                                     <td>$ 100</td>
-                                    <td class="text-yellow">Rechazado por administrador</td>
+                                    <td><span class="tag tag-yellow">Rechazado por administrador</span></td>
                                     <td>
                                         <button type="button" 
                                             class="btn"                                           
@@ -798,7 +833,7 @@
                                     <td>12:00 AM</td>
                                     <td>$ 100</td>
                                     <td>$ 100</td>
-                                    <td class="text-red">Fuera de horario</td>
+                                    <td><span class="tag tag-red">Fuera de horario</span></td>
                                      <td>
                                         <button type="button" 
                                             class="btn" 
@@ -815,7 +850,7 @@
                                     <td>12:00 AM</td>
                                     <td>$ 100</td>
                                     <td>$ 100</td>
-                                    <td class="text-indigo">Sin procesar</td>
+                                    <td><span class="tag tag-purple">Sin procesar</span></td>
                                      <td>
                                         <button type="button" 
                                             class="btn"                                             
@@ -865,7 +900,7 @@
                                     <td>$ 100</td>
                                     <td>$ 100</td>
                                     <td>0</td>
-                                    <td class="text-green">Nuevo</td>                                           
+                                    <td><span class="tag tag-azure">Nuevo</span></td>                                           
                                 </tr>                                
                                 <tr>
                                     <td>5</td>
@@ -875,7 +910,7 @@
                                     <td>$ 100</td>
                                     <td>$ 100</td>
                                     <td>0</td>
-                                    <td class="text-red">Activo</td>                                           
+                                    <td><span class="tag tag-red">Activo</span></td>                                           
                                 </tr>                                
                                 <tr>
                                     <td>5</td>
@@ -885,7 +920,7 @@
                                     <td>$ 100</td>
                                     <td>$ 100</td>
                                     <td>0</td>
-                                    <td class="text-yellow">Inactivo por Inversion</td>                                           
+                                    <td><span class="tag tag-yellow">Inactivo por Inversion</span></td>                                           
                                 </tr>                                
                                 <tr>
                                     <td>5</td>
@@ -895,7 +930,7 @@
                                     <td>$ 100</td>
                                     <td>$ 100</td>
                                     <td>0</td>
-                                    <td class="text-blue">Inactivo por referido</td>                                           
+                                    <td><span class="tag tag-blue">Inactivo por referido</span></td>                                           
                                 </tr>                                
                                 <tr>
                                     <td>5</td>
@@ -905,7 +940,7 @@
                                     <td>$ 100</td>
                                     <td>$ 100</td>
                                     <td>0</td>
-                                    <td class="text-purple">Doble Inactivo</td>                                           
+                                    <td><span class="tag tag-purple">Doble Inactivo</span></td>                                           
                                 </tr>                                
                                                             
                             </tbody>
