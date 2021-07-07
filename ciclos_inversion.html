@@ -20,6 +20,7 @@
 <!-- Core css -->
 <link rel="stylesheet" href="./assets/css/main.css"/>
 <link rel="stylesheet" href="./assets/css/theme4.css" id="stylesheet"/>
+
 </head>
 
 <body class="font-opensans">
@@ -300,54 +301,73 @@
                             <div class="card-body">
                                 <h3 class="card-title">Ingrese los parametro para dar inicio a un ciclo</h3>
                                 <div class="row">
-                                    <div class="col-sm-3 col-md-4">
+                                    <div class="col-sm-4 col-md-4">
                                         <div class="form-group">  
-                                            <label class="form-label">Ingrese % derendimiento</label>                                          
-                                            <input type="number" class="form-control" placeholder="Ingrese % derendimiento" value="">
+                                            <label class="form-label">Inversion Minima</label>                                          
+                                            <input type="number" class="form-control" placeholder="Inversion Minima" value="">
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 col-md-4">
+                                    <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Fecha de inicio</label>
-                                            <input type="date" class="form-control" placeholder="Fecha de inicio" value="">
+                                            <input type="date" class="form-control" id="Fini" placeholder="Fecha de inicio" value="">
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 col-md-4">
-                                        <div class="form-group">
-                                            <label class="form-label">Valor Minimo de Inversión</label>
-                                            <input type="number" class="form-control" placeholder="Valor Minimo de Inversión" value="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-md-4">
-                                        <div class="form-group">
-                                            <label class="form-label">Valor Máximo de Inversión</label>
-                                            <input type="number" class="form-control" placeholder="Valor Máximo de Inversión" value="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-md-4">
+                                    <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Hora de inicio</label>
-                                            <input type="time" class="form-control" placeholder="Hora de inicio">
+                                            <input type="time" class="form-control" id='rest_example_1' placeholder="Hora de inicio">
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 col-md-4">
-                                        <div class="form-group">
-                                            <label class="form-label">Fecha de pago</label>
-                                            <input type="date" class="form-control" placeholder="Fecha de pago">
+                                    <div class="col-sm-4 col-md-4">
+                                        <div class="form-group">  
+                                            <label class="form-label">Inversion Máxima</label>                                          
+                                            <input type="number" class="form-control" placeholder="Inversion Máxima" value="">
                                         </div>
-                                    </div> 
-                                    <div class="col-sm-3 col-md-4">
+                                    </div>
+                                    <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Fecha de Finalización</label>
-                                            <input type="date" class="form-control" placeholder="Fecha de Finalización">
+                                            <input type="date" class="form-control" id="Ffin" placeholder="Fecha de Finalización">
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 col-md-4">
+                                    <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Hora de Finalización</label>
                                             <input type="time" class="form-control" placeholder="Hora de Finalización">
                                         </div>
-                                    </div>                                   -->
+                                    </div>                                   
+                                    <div class="col-sm-4 col-md-4">
+                                        <div class="form-group">  
+                                            <label class="form-label">Porcentaje %</label>                                          
+                                            <input type="number" class="form-control" placeholder="Porcentaje %" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Fecha de pago</label>
+                                            <input type="date" class="form-control" id="Fpago"placeholder="Fecha de pago">
+                                        </div>
+                                    </div> 
+                                    <!-- old -->
+                                    <!-- <div class="col-sm-3 col-md-4">
+                                        <div class="form-group">  
+                                            <label class="form-label">Ingrese % derendimiento</label>                                          
+                                            <input type="number" class="form-control" placeholder="Ingrese % derendimiento" value="">
+                                        </div>
+                                    </div> -->
+                                    <!-- <div class="col-sm-3 col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Valor Minimo de Inversión</label>
+                                            <input type="number" class="form-control" placeholder="Valor Minimo de Inversión" value="">
+                                        </div>
+                                    </div> -->
+                                    <!-- <div class="col-sm-3 col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Valor Máximo de Inversión</label>
+                                            <input type="number" class="form-control" placeholder="Valor Máximo de Inversión" value="">
+                                        </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="card-footer text-right">
@@ -506,6 +526,31 @@ function setStyleSheet(url){
     var stylesheet = document.getElementById("stylesheet");
     stylesheet.setAttribute('href', url);
 }
+</script>
+
+<!-- Validacion de navegador incompatible -->
+<script type="text/javascript">
+    var datefield=document.createElement("input")
+    datefield.setAttribute("type", "date")
+    if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+        document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
+        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
+        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n') 
+    }
+</script>
+ 
+<script>
+if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
+    jQuery(function($){ //on document.ready
+        $('#Fini').datepicker();
+        $('#Fpago').datepicker();
+        $('#Ffin').datepicker();        
+    })
+}
+$('#rest_example_1').timepicker({
+	hourMin: 8,
+	hourMax: 16
+});
 </script>
 </body>
 </html>
