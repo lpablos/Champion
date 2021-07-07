@@ -152,8 +152,8 @@ $(function() {
                 },
                 names: {
                     // name of each serie
-                    'data1': 'Income',
-                    'data2': 'Expense'
+                    'data1': 'Usuario Totales',
+                    'data2': 'Usuarios Activos'
                 }
             },
             axis: {
