@@ -258,19 +258,25 @@
             <div class="tab-pane fade active show" id="all-tab">
                 <nav class="sidebar-nav">
                     <ul class="metismenu ci-effect-1">
+                        <li class="active"><a href="comprobantes.html"><span data-hover="Inversión">Incentivo de inversión</span></a></li>
                         <li>
-                            <a href="javascript:void(0)" class="has-arrow arrow-b"><span data-hover="Incentivo">Incentivo</span></a>
+                            <a href="javascript:void(0)" class="has-arrow arrow-b"><span data-hover="Incentivo de Rango">Incentivo de Rango</span></a>
                             <ul>
-                                <li><a href="usuarios.html"><span data-hover="Inversión">Por Inversión</span></a></li>
-                                <li><a href="usuarios.html"><span data-hover="Referidos">Por Referidos</span></a></li>
-                                <li><a href="sorteos.html"><span data-hover="Champion 50">Rango champion 50</span></a></li>
-                                <li><a href="sorteos.html"><span data-hover="Champion 100">Rango champion 100</span></a></li>
-                                <li><a href="sorteos.html"><span data-hover="Champion 200">Rango champion 200</span></a></li>
-                                <li><a href="sorteos.html"><span data-hover="Champion 300">Rango champion 300</span></a></li>
-                                <li><a href="sorteos.html"><span data-hover="Champion 400">Rango champion 400</span></a></li>
-                                <li><a href="sorteos.html"><span data-hover="Champion 500">Rango champion 500</span></a></li>
+                              
+                                <li><a href="sorteos.html"><span data-hover="Champion 50">Champion 50</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Champion 100">Champion 100</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Champion 200">Champion 200</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Champion 300">Champion 300</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Champion 400">Champion 400</span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Champion 500">Champion 500</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="has-arrow arrow-b"><span data-hover="Incentivo Referidos">Incentivo Referidos</span></a>
+                            <ul>
                                 <li><a href="sorteos.html"><span data-hover="Referidos (2)"">Referidos (2) </span></a></li>
                                 <li><a href="sorteos.html"><span data-hover="Referidos (5)"">Referidos (5) </span></a></li>
+                                <li><a href="sorteos.html"><span data-hover="Referidos (5)"">Referidos (7) </span></a></li>
                                 <li><a href="sorteos.html"><span data-hover="Referidos (10)"">Referidos (10) </span></a></li>
                             </ul>
                         </li>
@@ -322,32 +328,70 @@
                                 <div class="row">
                                     <div class="col-sm-3 col-md-4">
                                         <div class="form-group">  
-                                            <label class="form-label">Ingresar Numeros Ganadores</label>                                          
-                                            <input type="number" class="form-control" placeholder="Ingresar Numeros Ganadores" value="">
+                                            <label class="form-label">SORTEO</label>                                          
+                                            <select name="sorteo" class="form-control custom-select">                                                
+                                                <option value='Incentivo de inversión'>Incentivo de inversión</option>
+                                                <option value='champion 50'>Inventivo de rango champion 50</option>
+                                                <option value='champion 100'>Inventivo de rango champion 100</option>
+                                                <option value='champion 200'>Inventivo de rango champion 200</option>
+                                                <option value='champion 300'>Inventivo de rango champion 300</option>
+                                                <option value='champion 400'>Inventivo de rango champion 400</option>
+                                                <option value='champion 500'>Inventivo de rango champion 500</option>
+                                                <option value='2 Referidos'>Incentivo Referidos 2 Referidos</option>
+                                                <option value='5 Referidos'>Incentivo Referidos 5 Referidos</option>
+                                                <option value='7 Referidos'>Incentivo Referidos 7 Referidos</option>
+                                                <option value='10 Referidos'>Incentivo Referidos 10 Referidos</option>
+                                                <option value='2000'>Sorteo Pago 2000</option>
+                                                <option value='5000'>Sorteo Pago 5000</option>
+                                                <option value='10000'>Sorteo Pago 10000</option>
+                                                <option value='20000'>Sorteo Pago 20000</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-sm-3 col-md-4">
                                         <div class="form-group">
-                                            <label class="form-label">Edita números Ganadores</label>
-                                            <input type="number" class="form-control" placeholder="Fecha de inicio" value="">
+                                            <label class="form-label">FECHA</label>
+                                            <input type="date" class="form-control" placeholder="FECHA">
                                         </div>
                                     </div>
                                     <div class="col-sm-3 col-md-4">
                                         <div class="form-group">
-                                            <label class="form-label">Cambiar Fecha Sorteo por jugar</label>
-                                            <input type="number" class="form-control" placeholder="Cambiar Fecha Sorteo por Jugar">
+                                            <label class="form-label">LOTERIA</label>
+                                            <select name="loteria" class="form-control custom-select">                                                
+                                                <option value='Cundinamarca'>Cundinamarca</option>
+                                                <option value='Cruz Roja'>Cruz Roja</option>
+                                                <option value='Valle'>Valle</option>
+                                                <option value='Bogotá'>Bogotá</option>
+                                                <option value='Medellin'>Medellin</option>
+                                                <option value='Boyaca'>Boyaca</option>
+                                                <option value='Tolima'>Tolima</option>
+                                                <option value='Huila'>Huila</option>
+                                                <option value='Meta'>Meta</option>
+                                                <option value='Manizales'>Manizales</option>
+                                                <option value='Quindio'>Quindio</option>
+                                                <option value='Santander'>Santander</option>
+                                                <option value='Risaralda'>Risaralda</option>
+                                                <option value='Cauca'>Cauca</option>
+                                                <option value='Dorado Mañana'>Dorado Mañana</option>
+                                                <option value='Dorado Tarde'>Dorado Tarde</option>
+                                                <option value='Dorado Noche'>Dorado Noche</option>
+                                                <option value='Chontico Dia'>Chontico Dia</option>
+                                                <option value='Chontico Noche'>Chontico Noche</option>
+                                                <option value='Astro Sol'>Astro Sol</option>
+                                                <option value='Astro Luna'>Astro Luna</option>
+                                                <option value='Paisita Dia'>Paisita Dia</option>
+                                                <option value='Paisita Noche'>Paisita Noche</option>
+                                                <option value='Sinuano Dia'>Sinuano Dia</option>
+                                                <option value='Sinuano Noche'>Sinuano Noche</option>
+                                                <option value='Cafeterito Tarde'>Cafeterito Tarde</option>
+                                                <option value='Cafeterito Noche'>Cafeterito Noche</option>
+                                            </select>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-3 col-md-4">
-                                        <div class="form-group">
-                                            <label class="form-label">Cambiar Loteria Sorteo por Jugar</label>
-                                            <input type="number" class="form-control" placeholder="Cambiar Loteria Sorteo por Jugar">
-                                        </div>
-                                    </div>                                  
+                                    </div>                               
                                 </div>
                             </div>
                             <div class="card-footer text-right">
-                                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                                <button type="submit" class="btn btn-primary">Crear Sorteo</button>
                             </div>
                         </form>
                                               
@@ -375,12 +419,12 @@
                                         <thead>
                                             <tr>
                                                 <th>Sorteo</th>
-                                                <th>Fecha del Sorteo</th>
+                                                <th>Fecha</th>
                                                 <th>Numeros gandores</th>
                                                 <th>Serie</th>
                                                 <th>Loteria</th>
-                                                <th>Código Usuario Ganador</th>
-                                                <th>Nombre Usuario Ganador</th>
+                                                <th>Usuario</th>
+                                                <th>Nombre</th>
                                                 <th>Estado</th>
                                                 <th>Opciones</th>
                                                
@@ -406,6 +450,13 @@
                                                         title
                                                         data-original-title="Editar"></i>
                                                     </button>                                                  
+                                                    <button type="button" 
+                                                        class="btn"                                                        
+                                                       >
+                                                        <i class="fa fa-remove"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Cancelar"></i>
+                                                    </button>                                                  
                                                 </td>
                                             </tr>                                         
                                             <tr>
@@ -426,6 +477,13 @@
                                                         <i class="fa fa-envira"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Editar"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn"                                                        
+                                                       >
+                                                        <i class="fa fa-remove"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Cancelar"></i>
                                                     </button>  
                                                 </td>
                                             </tr>                                         
@@ -447,6 +505,13 @@
                                                         <i class="fa fa-envira"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Editar"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn"                                                        
+                                                       >
+                                                        <i class="fa fa-remove"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Cancelar"></i>
                                                     </button>  
                                                 </td>
                                             </tr>                                         
@@ -468,6 +533,13 @@
                                                         <i class="fa fa-envira"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Editar"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn"                                                        
+                                                       >
+                                                        <i class="fa fa-remove"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Cancelar"></i>
                                                     </button>  
                                                 </td>
                                             </tr>                                         
@@ -489,6 +561,13 @@
                                                         <i class="fa fa-envira"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Editar"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn"                                                        
+                                                       >
+                                                        <i class="fa fa-remove"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Cancelar"></i>
                                                     </button>  
                                                 </td>
                                             </tr>                                         
@@ -510,6 +589,13 @@
                                                         <i class="fa fa-envira"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Editar"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn"                                                        
+                                                       >
+                                                        <i class="fa fa-remove"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Cancelar"></i>
                                                     </button>  
                                                 </td>
                                             </tr>                                         
@@ -531,6 +617,13 @@
                                                         <i class="fa fa-envira"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Editar"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn"                                                        
+                                                       >
+                                                        <i class="fa fa-remove"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Cancelar"></i>
                                                     </button>  
                                                 </td>
                                             </tr> 
@@ -552,6 +645,13 @@
                                                         <i class="fa fa-envira"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Editar"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn"                                                        
+                                                       >
+                                                        <i class="fa fa-remove"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Cancelar"></i>
                                                     </button>  
                                                 </td>
                                             </tr>
@@ -573,6 +673,13 @@
                                                         <i class="fa fa-envira"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Editar"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn"                                                        
+                                                       >
+                                                        <i class="fa fa-remove"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Cancelar"></i>
                                                     </button>  
                                                 </td>
                                             </tr> 
@@ -594,6 +701,13 @@
                                                         <i class="fa fa-envira"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Editar"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn"                                                        
+                                                       >
+                                                        <i class="fa fa-remove"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Cancelar"></i>
                                                     </button>  
                                                 </td>
                                             </tr>
@@ -615,6 +729,13 @@
                                                         <i class="fa fa-envira"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Editar"></i>
+                                                    </button>
+                                                    <button type="button" 
+                                                        class="btn"                                                        
+                                                       >
+                                                        <i class="fa fa-remove"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Cancelar"></i>
                                                     </button>  
                                                 </td>
                                             </tr>
@@ -658,19 +779,19 @@
                             <div class="col-4">
                                 <div class="form-group">
                                     <label class="form-label">Numeros ganadores</label>
-                                    <input type="number" class="form-control" placeholder="Numeros ganadores" value="123456">
+                                    <input type="number" class="form-control" placeholder="Numeros ganadores" value="" min="1" max="9999" onKeyDown="if (this.value.length===4) return this.value =0 ;">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="form-group">
                                     <label class="form-label">Serie</label>
-                                    <input type="text" class="form-control" placeholder="Serie" value="Dorado tarde">
+                                    <input type="number" class="form-control" placeholder="Serie" value="4321" min="1" max="9999" onKeyDown="if (this.value.length===4) return this.value =0 ;">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="form-group">
                                     <label class="form-label">Loteria</label>
-                                    <input type="email" class="form-control" placeholder="Loteria" value="Dorado tarde">
+                                    <input type="email" class="form-control" placeholder="Loteria" value="Dorado tarde" disabled>
                                 </div>
                             </div>
                             <div class="col-4">
