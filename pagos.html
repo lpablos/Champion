@@ -280,6 +280,17 @@
                                         <a class="dropdown-item" href="#">Reclamo</a>
                                     </div>
                                 </div>
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" id="opcionesSelecion">
+                                        Opc. Selección
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Pagar Seleccióndos</a>
+                                        <a class="dropdown-item" href="#">Reversar pago Seleccionados</a>                                        
+                                    </div>
+                                </div>
+                                
+
                             </div>
                             <div class="">
                                 <div class="input-group">
@@ -338,18 +349,25 @@
                                     <table class="table table-hover js-basic-example dataTable table_custom spacing5">
                                         <thead >
                                             <tr>
-                                                <th>Tip.Pago</th>
+                                                <th>
+                                                    Seleccionar
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox2" value="option1" id="todos" onclick="chekearAll()">
+                                                        <span class="custom-control-label">Todos</span>
+                                                    </label>
+                                                </th>
+                                                <th>Tipo</th>
                                                 <th>D/F Programada Pago</th>
                                                 <th>D/F Pago</th>
-                                                <th>Cód. Usuario</th>
+                                                <th>Usuario</th>
                                                 <th>Nombre</th>
                                                 <th>Doc.</th>
                                                 <th>Teléfono</th>
                                                 <th>Canal Pago</th>
-                                                <th>Ent. Bancaria</th>
+                                                <!-- <th>Ent. Bancaria</th>
                                                 <th>Tip. Cuenta </th>
                                                 <th>Num. Cuenta </th>
-                                                <th>Monedero Virt.</th>
+                                                <th>Monedero Virt.</th> -->
                                                 <th>Valor</th>
                                                 <th>Est.</th>
                                                 <th>Opc.</th>
@@ -357,6 +375,12 @@
                                         </thead>                             
                                         <tbody>
                                             <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
                                                 <td>Inversión</td>
                                                 <td>1/1/21 </td>
                                                 <td>- - - - </td>
@@ -365,10 +389,10 @@
                                                 <td>1234567890 </td>
                                                 <td>+571 300 123 4567 </td>
                                                 <td>Efecty </td>
+                                                <!-- <td>NO </td>
                                                 <td>NO </td>
                                                 <td>NO </td>
-                                                <td>NO </td>
-                                                <td>NO </td>
+                                                <td>NO </td> -->
                                                 <td>$ 100.000</td>
                                                 <td><span class="tag tag-lime">Por realizar</span></span></td>                                                
                                                 <td>
@@ -390,9 +414,24 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
                                                 </td>
                                             </tr>                                          
                                             <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
                                                 <td>Bono de Bienvenida</td>
                                                 <td>1/1/21 </td>
                                                 <td>- - - - </td>
@@ -401,10 +440,10 @@
                                                 <td>1234567890 </td>
                                                 <td>+571 300 123 4567 </td>
                                                 <td>Banco </td>
-                                                <td>Bancolombia </td>
+                                                <!-- <td>Bancolombia </td>
                                                 <td>Ahorros </td>
                                                 <td>1234567890 </td>
-                                                <td>NO </td>
+                                                <td>NO </td> -->
                                                 <td>$ 100.000</td>
                                                 <td><span class="tag tag-red">Pagado</span></span></td>                                                
                                                 <td>
@@ -426,9 +465,24 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
                                                 </td>
                                             </tr>                                          
                                             <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
                                                 <td>Reembolsos</td>
                                                 <td>1/1/21 </td>
                                                 <td>- - - - </td>
@@ -436,10 +490,10 @@
                                                 <td>Usuario Ejemplo </td>
                                                 <td>1234567890 </td>
                                                 <td>+571 300 123 4567 </td>
-                                                <td>Billetera Virtua </td>
+                                                <!-- <td>Billetera Virtua </td>
                                                 <td>NO </td>
                                                 <td>NO </td>
-                                                <td>NO </td>
+                                                <td>NO </td> -->
                                                 <td>abc123cde456</td>
                                                 <td>$ 100.000</td>
                                                 <td><span class="tag tag-red">Pagado</span></span></td>                                                
@@ -462,9 +516,24 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
                                                 </td>
                                             </tr>                                          
                                             <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
                                                 <td>Reembolsos</td>
                                                 <td>1/1/21 </td>
                                                 <td>- - - - </td>
@@ -473,10 +542,10 @@
                                                 <td>1234567890 </td>
                                                 <td>+571 300 123 4567 </td>
                                                 <td>Efecty </td>
+                                                <!-- <td>NO </td>
                                                 <td>NO </td>
                                                 <td>NO </td>
-                                                <td>NO </td>
-                                                <td>NO </td>
+                                                <td>NO </td> -->
                                                 <td>$ 100.000</td>
                                                 <td><span class="tag tag-lime">Por realizar</span></span></td>                                                
                                                 <td>
@@ -498,9 +567,24 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
                                                 </td>
                                             </tr>                                          
                                             <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
                                                 <td>Bono Rango Champion 50</td>
                                                 <td>1/1/21 </td>
                                                 <td>- - - - </td>
@@ -509,10 +593,10 @@
                                                 <td>1234567890 </td>
                                                 <td>+571 300 123 4567 </td>
                                                 <td>Banco </td>
-                                                <td>Bancolombia </td>
+                                                <!-- <td>Bancolombia </td>
                                                 <td>Ahorros </td>
                                                 <td>1234567890 </td>
-                                                <td>NO </td>
+                                                <td>NO </td> -->
                                                 <td>$ 100.000</td>
                                                 <td><span class="tag tag-red">Pagado</span></span></td>                                                
                                                 <td>
@@ -534,9 +618,24 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
                                                 </td>
                                             </tr>                                          
                                             <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
                                                 <td>Bono Rango Champion 100</td>
                                                 <td>1/1/21 </td>
                                                 <td>- - - - </td>
@@ -544,10 +643,10 @@
                                                 <td>Usuario Ejemplo </td>
                                                 <td>1234567890 </td>
                                                 <td>+571 300 123 4567 </td>
-                                                <td>Billetera Virtua </td>
+                                                <!-- <td>Billetera Virtua </td>
                                                 <td>NO </td>
                                                 <td>NO </td>
-                                                <td>NO </td>
+                                                <td>NO </td> -->
                                                 <td>abc123cde456</td>
                                                 <td>$ 100.000</td>
                                                 <td><span class="tag tag-red">Pagado</span></span></td>                                                
@@ -570,9 +669,24 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
                                                 </td>
                                             </tr>                                          
                                             <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
                                                 <td>Bono Rango Champion 200</td>
                                                 <td>1/1/21 </td>
                                                 <td>- - - - </td>
@@ -581,10 +695,10 @@
                                                 <td>1234567890 </td>
                                                 <td>+571 300 123 4567 </td>
                                                 <td>Efecty </td>
+                                                <!-- <td>NO </td>
                                                 <td>NO </td>
                                                 <td>NO </td>
-                                                <td>NO </td>
-                                                <td>NO </td>
+                                                <td>NO </td> -->
                                                 <td>$ 100.000</td>
                                                 <td><span class="tag tag-lime">Por realizar</span></span></td>                                                
                                                 <td>
@@ -606,9 +720,24 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
                                                 </td>
                                             </tr>                                          
                                             <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
                                                 <td>Bono Rango Champion 300</td>
                                                 <td>1/1/21 </td>
                                                 <td>- - - - </td>
@@ -617,10 +746,10 @@
                                                 <td>1234567890 </td>
                                                 <td>+571 300 123 4567 </td>
                                                 <td>Banco </td>
-                                                <td>Bancolombia </td>
+                                                <!-- <td>Bancolombia </td>
                                                 <td>Ahorros </td>
                                                 <td>1234567890 </td>
-                                                <td>NO </td>
+                                                <td>NO </td> -->
                                                 <td>$ 100.000</td>
                                                 <td><span class="tag tag-red">Pagado</span></span></td>                                                
                                                 <td>
@@ -642,9 +771,24 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
                                                 </td>
                                             </tr>                                          
                                             <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
                                                 <td>Bono Meta Team Goals 100</td>
                                                 <td>1/1/21 </td>
                                                 <td>- - - - </td>
@@ -653,10 +797,10 @@
                                                 <td>1234567890 </td>
                                                 <td>+571 300 123 4567 </td>
                                                 <td>Billetera Virtua </td>
+                                                <!-- <td>NO </td>
                                                 <td>NO </td>
                                                 <td>NO </td>
-                                                <td>NO </td>
-                                                <td>abc123cde456</td>
+                                                <td>abc123cde456</td> -->
                                                 <td>$ 100.000</td>
                                                 <td><span class="tag tag-yellow">Pagado</span></span></td>                                                
                                                 <td>
@@ -678,9 +822,24 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
                                                 </td>
                                             </tr>                                          
                                             <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
                                                 <td>Bono Rango Champion 400</td>
                                                 <td>1/1/21 </td>
                                                 <td>- - - - </td>
@@ -689,10 +848,10 @@
                                                 <td>1234567890 </td>
                                                 <td>+571 300 123 4567 </td>
                                                 <td>Billetera Virtua </td>
+                                                <!-- <td>NO </td>
                                                 <td>NO </td>
                                                 <td>NO </td>
-                                                <td>NO </td>
-                                                <td>abc123cde456</td>
+                                                <td>abc123cde456</td> -->
                                                 <td>$ 100.000</td>
                                                 <td><span class="tag tag-yellow">Reclamo</span></span></td>                                                
                                                 <td>
@@ -714,9 +873,24 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
                                                 </td>
                                             </tr>                                          
                                             <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
                                                 <td>Bono Meta Team Goals 50</td>
                                                 <td>1/1/21 </td>
                                                 <td>- - - - </td>
@@ -725,10 +899,10 @@
                                                 <td>1234567890 </td>
                                                 <td>+571 300 123 4567 </td>
                                                 <td>Billetera Virtua </td>
+                                                <!-- <td>NO </td>
                                                 <td>NO </td>
                                                 <td>NO </td>
-                                                <td>NO </td>
-                                                <td>abc123cde456</td>
+                                                <td>abc123cde456</td> -->
                                                 <td>$ 100.000</td>
                                                 <td><span class="tag tag-yellow">Reclamo</span></span></td>                                                
                                                 <td>
@@ -750,9 +924,24 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
                                                 </td>
                                             </tr>                                          
                                             <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
                                                 <td>Bono Rango Champion 500</td>
                                                 <td>1/1/21 </td>
                                                 <td>- - - - </td>
@@ -761,10 +950,10 @@
                                                 <td>1234567890 </td>
                                                 <td>+571 300 123 4567 </td>
                                                 <td>Billetera Virtua </td>
+                                                <!-- <td>NO </td>
                                                 <td>NO </td>
                                                 <td>NO </td>
-                                                <td>NO </td>
-                                                <td>abc123cde456</td>
+                                                <td>abc123cde456</td> -->
                                                 <td>$ 100.000</td>
                                                 <td><span class="tag tag-yellow">Reclamo</span></span></td>                                                
                                                 <td>
@@ -785,6 +974,15 @@
                                                         <i class="fa fa-rotate-left"  data-toggle="tooltip"
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
                                                     </button>  
                                                 </td>
                                             </tr>                                          
@@ -801,6 +999,83 @@
     </div>
 </div>
 
+  <div id="exampleModalLive22" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel2" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLiveLabel">Usuario - Detalles</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="row" id="general">
+                    <div class="col-sm-12 col-md-12">
+                        <h5>Datos Generales</h5>                                        
+                    </div>
+                    <div class="col-sm-3 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Documento</label>
+                            <input type="text" class="form-control" placeholder="Documento" value="US-123456" maxlength="10">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Nombre" value="Usuario Ejemplo">
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Código Líder</label>
+                            <input type="text" class="form-control" placeholder="Código Líder" value="US-0123456">
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="form-group">
+                            <label class="form-label">Nombre Líder</label>
+                            <input type="text" class="form-control" placeholder="Nombre Líder" value="Lider Ejemplo 1">
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Email" value="user@testdemo.com">
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="form-group">
+                            <label class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" placeholder="Teléfono" value="3131123123">
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="form-group">
+                            <label class="form-label">Ciudad</label>
+                            <select class="form-control custom-select">
+                                <option value="">Seleccione</option>
+                                <option value="1" selected>Germany</option>
+                                <option value="1">USA</option>
+                                <option value="1">Canada</option>
+                            </select>                                    
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <div class="form-group">
+                            <label class="form-label">Clave</label>
+                            <input type="text" class="form-control" placeholder="Clave" value="2313313">
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <div class="col-12 text-right">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </form> 
+            </div>                   
+        </div>
+    </div>
+</div>
 
 <!-- jQuery and bootstrtap js -->
 <script src="./assets/bundles/lib.vendor.bundle.js"></script>
@@ -823,6 +1098,14 @@
 function setStyleSheet(url){
     var stylesheet = document.getElementById("stylesheet");
     stylesheet.setAttribute('href', url);
+}
+
+function chekearAll(){
+    if($("#todos").is(':checked')) {  
+        $(".custom-control-input").attr('checked', true);  
+    } else {  
+        $(".custom-control-input").attr('checked', false);  
+    }  
 }
 </script>
 </body>
