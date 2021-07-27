@@ -6,20 +6,29 @@
 <meta name="description" content="Crush it Able The most popular Admin Dashboard template and ui kit">
 <meta name="author" content="PuffinTheme the theme designer">
 
-<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<!-- <link rel="icon" href="favicon.ico" type="image/x-icon"/> -->
 
 <title>:: Crush it :: Home</title>
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="./assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" />
+<link rel="stylesheet" href="./assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css"/>
+<link rel="stylesheet" href="./assets/plugins/multi-select/css/multi-select.css">
+<link rel="stylesheet" href="./assets/plugins/dropify/css/dropify.min.css">
 
 <!-- Plugins css -->
-<link rel="stylesheet" href="./assets/plugins/charts-c3/c3.min.css"/>
-<link rel="stylesheet" href="./assets/plugins/jvectormap/jvectormap-2.0.3.css" />
+<!-- <link rel="stylesheet" href="./assets/plugins/charts-c3/c3.min.css"/>
+<link rel="stylesheet" href="./assets/plugins/jvectormap/jvectormap-2.0.3.css" /> -->
 
 <!-- Core css -->
 <link rel="stylesheet" href="./assets/css/main.css"/>
 <link rel="stylesheet" href="./assets/css/theme4.css" id="stylesheet"/>
-
+<style>
+    
+    .dtpick {
+        background-color: white !important;
+    }
+</style>
 </head>
 
 <body class="font-opensans">
@@ -297,7 +306,7 @@
                 <div class="row clearfix">
                     <div class="col-lg-12">
                          <form class="card">
-                            <div class="card-body">
+                            <div class="card-body demo-masked-input">
                                 <h3 class="card-title">Ingrese los parametro para dar inicio a un ciclo</h3>
                                 <div class="row">
                                     <div class="col-sm-4 col-md-4">
@@ -309,13 +318,13 @@
                                     <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Fecha de inicio</label>
-                                            <input type="date" class="form-control" id="Fini" placeholder="Fecha de inicio" value="">
+                                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control dtpick" id="Fini" placeholder="Fecha de inicio" readonly>
                                         </div>
                                     </div>
                                     <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
-                                            <label class="form-label">Hora de inicio</label>
-                                            <input type="time" class="form-control" id='rest_example_1' placeholder="Hora de inicio">
+                                            <label class="form-label">Hora de inicio</label>                                            
+                                            <input type="text" class="form-control time12" id='rest_example_1' placeholder="Ex: 11:59 pm">
                                         </div>
                                     </div>
                                     <div class="col-sm-4 col-md-4">
@@ -327,13 +336,13 @@
                                     <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Fecha de Finalización</label>
-                                            <input type="date" class="form-control" id="Ffin" placeholder="Fecha de Finalización">
+                                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control dtpick" id="Ffin" placeholder="Fecha de Finalización" readonly>
                                         </div>
                                     </div>
                                     <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Hora de Finalización</label>
-                                            <input type="time" class="form-control" placeholder="Hora de Finalización">
+                                            <input type="text" class="form-control time12" placeholder="Ex: 11:59 pm">
                                         </div>
                                     </div>                                   
                                     <div class="col-sm-4 col-md-4">
@@ -345,7 +354,7 @@
                                     <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Fecha de pago</label>
-                                            <input type="date" class="form-control" id="Fpago"placeholder="Fecha de pago">
+                                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control" id="Fpago"placeholder="Fecha de pago">
                                         </div>
                                     </div> 
                                     <!-- old -->
@@ -576,7 +585,7 @@
                     </div>
                     <div class="modal-body">                        
                         <form class="card">
-                            <div class="card-body">
+                            <div class="card-body demo-masked-input">
                                 <!-- <h3 class="card-title">Ingrese los parametro para dar inicio a un ciclo</h3> -->
                                 <div class="row">
                                     <div class="col-sm-4 col-md-4">
@@ -588,13 +597,13 @@
                                     <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Fecha de inicio</label>
-                                            <input type="date" class="form-control" id="Fini2" placeholder="Fecha de inicio" value="2021-07-15">
+                                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control dtpick" id="Fini2" placeholder="Fecha de inicio" value="2021-07-15" readonly>
                                         </div>
                                     </div>
                                     <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Hora de inicio</label>
-                                            <input type="time" class="form-control" id='rest_example_1' placeholder="Hora de inicio" value="12:00">
+                                            <input type="text" class="form-control time12" id='rest_example_1' placeholder="Hora de inicio" value="12:00 pm">
                                         </div>
                                     </div>
                                     <div class="col-sm-4 col-md-4">
@@ -606,13 +615,13 @@
                                     <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Fecha de Finalización</label>
-                                            <input type="date" class="form-control" id="Ffin" placeholder="Fecha de Finalización" value="2021-07-15">
+                                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control dtpick" id="Ffin" placeholder="Fecha de Finalización" value="2021-07-15" readonly>
                                         </div>
                                     </div>
                                     <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Hora de Finalización</label>
-                                            <input type="time" class="form-control" placeholder="Hora de Finalización"  value="12:00">
+                                            <input type="text" class="form-control time12" placeholder="Hora de Finalización"  value="12:00 pm">
                                         </div>
                                     </div>                                   
                                     <div class="col-sm-4 col-md-4">
@@ -624,7 +633,7 @@
                                     <div class="col-sm-4 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">Fecha de pago</label>
-                                            <input type="date" class="form-control" id="Fpago"placeholder="Fecha de pago" value="2021-07-15">
+                                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control dtpick" id="Fpago"placeholder="Fecha de pago" value="2021-07-15" readonly>
                                         </div>
                                     </div> 
                                 </div>
@@ -640,20 +649,30 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 <!-- jQuery and bootstrtap js -->
-<script src="./assets/bundles/lib.vendor.bundle.js"></script>{}
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+<script src="./assets/bundles/lib.vendor.bundle.js"></script>
 
 <!-- start plugin js file  -->
-<!-- <script src="./assets/bundles/apexcharts.bundle.js"></script> -->
-<!-- <script src="./assets/bundles/counterup.bundle.js"></script>
+<script src="./assets/bundles/apexcharts.bundle.js"></script>
+<script src="./assets/bundles/counterup.bundle.js"></script>
 <script src="./assets/bundles/knobjs.bundle.js"></script>
 <script src="./assets/bundles/c3.bundle.js"></script>
 <script src="./assets/bundles/flot.bundle.js"></script>
-<script src="./assets/bundles/jvectormap1.bundle.js"></script> -->
+<script src="./assets/bundles/jvectormap1.bundle.js"></script>
 <!-- start plugin js file  -->
 <script src="./assets/bundles/dataTables.bundle.js"></script>
+<!-- start plugin js file  -->
+<script src="./assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+<script src="./assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="./assets/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+<script src="./assets/plugins/multi-select/js/jquery.multi-select.js"></script>
+<script src="./assets/plugins/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+<script src="./assets/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+<script src="./assets/plugins/dropify/js/dropify.min.js"></script>
+
+<script src="assets/js/form/form-advanced.js"></script>
 
 <!-- Start core js and page js -->
 <script src="./assets/js/core.js"></script>
