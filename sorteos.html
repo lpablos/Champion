@@ -12,6 +12,8 @@
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="./assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" />
+<link rel="stylesheet" href="./assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css"/>
 
 <!-- Plugins css -->
 <link rel="stylesheet" href="./assets/plugins/charts-c3/c3.min.css"/>
@@ -20,6 +22,11 @@
 <!-- Core css -->
 <link rel="stylesheet" href="./assets/css/main.css"/>
 <link rel="stylesheet" href="./assets/css/theme4.css" id="stylesheet"/>
+<style>    
+    .dtpick {
+        background-color: white !important;
+    }
+</style>
 </head>
 
 <body class="font-opensans">
@@ -351,7 +358,7 @@
                                     <div class="col-sm-3 col-md-4">
                                         <div class="form-group">
                                             <label class="form-label">FECHA</label>
-                                            <input type="date" class="form-control" placeholder="FECHA">
+                                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control dtpick" placeholder="FECHA">
                                         </div>
                                     </div>
                                     <div class="col-sm-3 col-md-4">
@@ -785,7 +792,7 @@
                             <div class="col-4">
                                 <div class="form-group">
                                     <label class="form-label">Fecha del Sorteo</label>
-                                    <input type="date" id="fechas" class="form-control" placeholder="Fecha del Sorteo" value="2021-06-28">
+                                    <input data-date-autoclose="true" data-provide="datepicker" type="string" id="fechas" class="form-control dtpick" placeholder="Fecha del Sorteo" value="2021-06-28">
                                 </div>
                             </div>
                             <div class="col-4">
@@ -872,6 +879,16 @@
 <script src="./assets/bundles/jvectormap1.bundle.js"></script>
 <!-- start plugin js file  -->
 <script src="./assets/bundles/dataTables.bundle.js"></script>
+<!-- start plugin js file  -->
+<script src="./assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+<script src="./assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="./assets/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+<script src="./assets/plugins/multi-select/js/jquery.multi-select.js"></script>
+<script src="./assets/plugins/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+<script src="./assets/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+<script src="./assets/plugins/dropify/js/dropify.min.js"></script>
+
+<script src="assets/js/form/form-advanced.js"></script>
 
 <!-- Start core js and page js -->
 <script src="./assets/js/core.js"></script>
