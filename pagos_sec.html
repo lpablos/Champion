@@ -1,0 +1,911 @@
+ <style type="text/css">
+    .table .thead-light th {
+        color: #0a0a0a !important;
+        background-color: #e9ecef !important;
+        border-color: #dee2e6 !important;
+    }
+</style>
+ <!-- start Main menu -->
+    <div id="left-sidebar" class="sidebar" style="background-color: rgb(213 220 228);">
+        <div class="d-flex justify-content-between brand_name">
+            <h5 class="brand-name">Champion Sport</h5>          
+        </div>
+        <div class="input-icon">
+            <span class="input-icon-addon">
+                <i class="fe fe-search"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Busqueda...">
+        </div>
+        
+        <div class="tab-content">
+            <div class="tab-pane fade active show" id="all-tab">
+                <nav class="sidebar-nav">
+                    <ul class="metismenu ci-effect-1">
+                       
+                        <li class="active"><a href="pagos.html"><span data-hover="Inversión">Por inversión</span></a></li>
+                        <li>
+                            <a href="javascript:void(0)" class="has-arrow arrow-b"><span data-hover="Bono">Bono</span></a>
+                            <ul>                                
+                                <li><a href="pagos.html"><span data-hover="Bono Bienvenida">Bienvenida</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Champion 50">Rango Champion 50</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Champion 100">Rango Champion 100</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Champion 200">Rango Champion 200</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Champion 300">Rango Champion 300</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Champion 400">Rango Champion 400</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Champion 500">Rango Champion 500</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Bono Team Goals 50"">Meta Team Goals 50</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Team Goals 100"">Meta Team Goals 100</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Team Goals 200"">Meta Team Goals 200</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Team Goals 300"">Meta Team Goals 300</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Team Goals 400"">Meta Team Goals 400</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Team Goals 500"">Meta Team Goals 500</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pagos.html"><span data-hover="Compesación Referidos">Compesación por referidos</span></a></li>
+                        <li><a href="pagos.html"><span data-hover="Reembolsos">Reembolsos</span></a></li>
+                        <li>
+                            <a href="javascript:void(0)" class="has-arrow arrow-b"><span data-hover="Sorteo">Sorteo</span></a>
+                            <ul>                                
+                                <li><a href="pagos.html"><span data-hover="Sorteo Incentivo Inversión"">Incentivo de inversión</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Champion 50"">Incentivo Rango Champion 50</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Champion 100"">Incentivo Rango Champion 100</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Champion 200"">Incentivo Rango Champion 200</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Champion 300"">Incentivo Rango Champion 300</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Champion 400"">Incentivo Rango Champion 400</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Champion 500"">Incentivo Rango Champion 500</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="referidos (2)"">Incentivo por referidos (2)</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="referidos (5)"">Incentivo por referidos (5)</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="referidos (10)"">Incentivo por referidos (10)</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Pago $2000"">Pago $2000</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Pago $5000"">Pago $5000</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Pago $10.000"">Pago $10.000</span></a></li>
+                                <li><a href="pagos.html"><span data-hover="Pago $20.000"">Pago $20.000</span></a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+           
+            
+        </div>
+    </div>
+
+    <!-- start main body part-->
+    <div class="page">
+        <!-- start body header -->
+        <div id="page_top" class="section-body">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="left">
+                        <h1 class="page-title">Pagos</h1>
+                    </div>
+                    <div class="right">
+                        <div class="notification d-flex">                           
+                            <button type="button" class="btn btn-facebook"><i class="fa fa-power-off mr-2"></i>Cerrar Sesión</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="container-fluid">
+                <!-- Formulario -->
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="d-flex justify-content-between">
+                            <div class="">
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+                                        Filtros
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Por pagar</a>
+                                        <a class="dropdown-item" href="#">Pagado</a>
+                                        <a class="dropdown-item" href="#">Reclamo</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" id="opcionesSelecion">
+                                        Opc. Selección
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Pagar Seleccióndos</a>
+                                        <a class="dropdown-item" href="#">Reversar pago Seleccionados</a>                                        
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                            <div class="">
+                                <div class="input-group">
+                                    <div class="input-group-prepend bg-gray">
+                                        <span class="input-group-text text-white">Generar Excel</span>
+                                    </div>                       
+                                    <div class="input-group-append">
+                                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipo de Pago</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Bono de Bienvenida</a>
+                                            <a class="dropdown-item" href="#">Compesación por referidos</a>
+                                            <a class="dropdown-item" href="#">Reembolso</a>
+                                            <a class="dropdown-item" href="#">Bono Rango Champion 50</a>
+                                            <a class="dropdown-item" href="#">Bono Rango Champion 100</a>
+                                            <a class="dropdown-item" href="#">Bono Rango Champion 200</a>
+                                            <a class="dropdown-item" href="#">Bono Rango Champion 300</a>
+                                            <a class="dropdown-item" href="#">Bono Rango Champion 400</a>
+                                            <a class="dropdown-item" href="#">Bono Rango Champion 500</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo de inversión</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 50</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 100</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 200</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 300</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 400</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 500</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo por referidos (2)</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo por referidos (5)</a>
+                                            <a class="dropdown-item" href="#">Sorteo Incentivo por referidos (10)</a>
+                                            <a class="dropdown-item" href="#">Sorteo Pago $2000</a>
+                                            <a class="dropdown-item" href="#">Sorteo Pago $5000</a>
+                                            <a class="dropdown-item" href="#">Sorteo Pago $10.000</a>
+                                            <a class="dropdown-item" href="#">Sorteo Pago $20.000</a>
+                                        </div>
+                                    </div>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Estado</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">POr pagar</a>
+                                            <a class="dropdown-item" href="#">Pagado</a>
+                                            <a class="dropdown-item" href="#">Reclamo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <!-- Tabla -->
+               <div class="row clearfix">
+                    <div class="col-lg-12 mt-2">
+                        <div class="table-responsive mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <table class="table table-hover js-basic-example dataTable table_custom spacing5">
+                                        <thead >
+                                            <tr>
+                                                <th>
+                                                    Seleccionar
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox2" value="option1" id="todos" onclick="chekearAll()">
+                                                        <span class="custom-control-label">Todos</span>
+                                                    </label>
+                                                </th>
+                                                <th>Tipo</th>
+                                                <th>D/F Programada Pago</th>
+                                                <th>D/F Pago</th>
+                                                <th>Usuario</th>
+                                                <th>Nombre</th>
+                                                <th>Doc.</th>
+                                                <th>Teléfono</th>
+                                                <th>Canal Pago</th>
+                                                <!-- <th>Ent. Bancaria</th>
+                                                <th>Tip. Cuenta </th>
+                                                <th>Num. Cuenta </th>
+                                                <th>Monedero Virt.</th> -->
+                                                <th>Valor</th>
+                                                <th>Est.</th>
+                                                <th>Opc.</th>
+                                            </tr>
+                                        </thead>                             
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Inversión</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <td>Efecty </td>
+                                                <!-- <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td> -->
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-lime">Por realizar</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
+                                                </td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Bono de Bienvenida</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <td>Banco </td>
+                                                <!-- <td>Bancolombia </td>
+                                                <td>Ahorros </td>
+                                                <td>1234567890 </td>
+                                                <td>NO </td> -->
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-red">Pagado</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
+                                                </td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Reembolsos</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <!-- <td>Billetera Virtua </td>
+                                                <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td> -->
+                                                <td>abc123cde456</td>
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-red">Pagado</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
+                                                </td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Reembolsos</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <td>Efecty </td>
+                                                <!-- <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td> -->
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-lime">Por realizar</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
+                                                </td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Bono Rango Champion 50</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <td>Banco </td>
+                                                <!-- <td>Bancolombia </td>
+                                                <td>Ahorros </td>
+                                                <td>1234567890 </td>
+                                                <td>NO </td> -->
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-red">Pagado</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
+                                                </td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Bono Rango Champion 100</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <!-- <td>Billetera Virtua </td>
+                                                <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td> -->
+                                                <td>abc123cde456</td>
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-red">Pagado</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
+                                                </td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Bono Rango Champion 200</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <td>Efecty </td>
+                                                <!-- <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td> -->
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-lime">Por realizar</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
+                                                </td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Bono Rango Champion 300</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <td>Banco </td>
+                                                <!-- <td>Bancolombia </td>
+                                                <td>Ahorros </td>
+                                                <td>1234567890 </td>
+                                                <td>NO </td> -->
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-red">Pagado</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
+                                                </td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Bono Meta Team Goals 100</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <td>Billetera Virtua </td>
+                                                <!-- <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td>
+                                                <td>abc123cde456</td> -->
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-yellow">Pagado</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
+                                                </td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Bono Rango Champion 400</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <td>Billetera Virtua </td>
+                                                <!-- <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td>
+                                                <td>abc123cde456</td> -->
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-yellow">Reclamo</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
+                                                </td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Bono Meta Team Goals 50</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <td>Billetera Virtua </td>
+                                                <!-- <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td>
+                                                <td>abc123cde456</td> -->
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-yellow">Reclamo</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
+                                                </td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Bono Rango Champion 500</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <td>Billetera Virtua </td>
+                                                <!-- <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td>
+                                                <td>abc123cde456</td> -->
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-yellow">Reclamo</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive22"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Usuario"></i>
+                                                    </button>  
+                                                </td>
+                                            </tr>                                          
+                                                                                    
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="exampleModalLive22" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel2" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLiveLabel">Usuario - Detalles</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="row" id="general">
+                        <div class="col-sm-12 col-md-12">
+                            <h5>Datos Generales</h5>                                        
+                        </div>
+                        <div class="col-sm-3 col-md-4">
+                            <div class="form-group">
+                                <label class="form-label">Documento</label>
+                                <input type="text" class="form-control" placeholder="Documento" value="US-123456" maxlength="10">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <label class="form-label">Nombre</label>
+                                <input type="text" class="form-control" placeholder="Nombre" value="Usuario Ejemplo">
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-4">
+                            <div class="form-group">
+                                <label class="form-label">Código Líder</label>
+                                <input type="text" class="form-control" placeholder="Código Líder" value="US-0123456">
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Nombre Líder</label>
+                                <input type="text" class="form-control" placeholder="Nombre Líder" value="Lider Ejemplo 1">
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Email" value="user@testdemo.com">
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" placeholder="Teléfono" value="3131123123">
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Ciudad</label>
+                                <select class="form-control custom-select">
+                                    <option value="">Seleccione</option>
+                                    <option value="1" selected>Germany</option>
+                                    <option value="1">USA</option>
+                                    <option value="1">Canada</option>
+                                </select>                                    
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Clave</label>
+                                <input type="text" class="form-control" placeholder="Clave" value="2313313">
+                            </div>
+                        </div>
+                        <hr>
+                        
+                        <div class="col-12 text-right">
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </form> 
+                </div>                   
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function chekearAll(){
+            if($("#todos").is(':checked')) {  
+                $(".custom-control-input").attr('checked', true);  
+            } else {  
+                $(".custom-control-input").attr('checked', false);  
+            }  
+        }
+    </script>
