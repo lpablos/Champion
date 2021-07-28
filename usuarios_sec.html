@@ -1,0 +1,836 @@
+ <!-- start Main menu -->
+<div id="left-sidebar" class="sidebar" style="background-color: rgb(213 220 228);">
+        <div class="d-flex justify-content-between brand_name">
+            <h5 class="brand-name">Champion Sport</h5>
+            <!-- <div class="theme_btn">
+                <a class="theme1" data-toggle="tooltip" title="Theme Radical" href="#" onclick="setStyleSheet('./assets/css/theme1.css', 0);"></a>
+                <a class="theme2" data-toggle="tooltip" title="Theme Turmeric" href="#" onclick="setStyleSheet('. /assets/css/theme2.css', 0);"></a>
+                <a class="theme3" data-toggle="tooltip" title="Theme Caribbean" href="#" onclick="setStyleSheet('./assets/css/theme3.css', 0);"></a>
+                <a class="theme4" data-toggle="tooltip" title="Theme Cascade" href="#" onclick="setStyleSheet('./assets/css/theme4.css', 0);"></a>
+            </div> -->
+        </div>
+        <div class="input-icon">
+            <span class="input-icon-addon">
+                <i class="fe fe-search"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Busqueda...">
+        </div>
+        
+        <div class="tab-content">
+            <div class="tab-pane fade active show" id="all-tab">
+                <nav class="sidebar-nav">
+                    <ul class="metismenu ci-effect-1">                        
+                        <!-- <li class="active"><a href="usuarios.html"><i class="fa fa-play"></i><span data-hover="Usuarios">Usuarios</span></a></li> -->
+                        <li><a href="usuarios.html"><span data-hover="Todos">Todos</span></a></li>
+                        <li><a href="usuarios.html"><span data-hover="Inscrito">Inscrito</span></a></li>
+                        <li><a href="usuarios.html"><span data-hover="Nuevos">Nuevos</span></a></li>
+                        <li><a href="usuarios.html"><span data-hover="Activos">Activos</span></a></li>
+                        <li>
+                            <a href="javascript:void(0)" class="has-arrow arrow-b"><span data-hover="Inactivos">Inactivos</span></a>
+                            <ul>
+                                <li><a href="usuarios.html"><span data-hover="Inversión">Por Inversión</span></a></li>
+                                <li><a href="usuarios.html"><span data-hover="Referidos">Por Referidos</span></a></li>                              
+                            </ul>
+                        </li>
+                        <li><a href="usuarios.html"><span data-hover="DobleInactivo">Doble Inactivo</span></a></li>
+                        <li><a href="usuarios.html"><span data-hover="InactivoPermanente">Inactivo Permanente</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+           
+            
+        </div>
+    </div>
+
+    <!-- start main body part-->
+    <div class="page">
+        <!-- start body header -->
+        <div id="page_top" class="section-body">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="left">
+                        <h1 class="page-title">Usuarios</h1>
+                    </div>
+                    <div class="right">
+                        <div class="notification d-flex">
+                            <!-- <button type="button" class="btn btn-facebook"><i class="fa fa-info-circle mr-2"></i>Need Help</button>
+                            <button type="button" class="btn btn-facebook"><i class="fa fa-file-text mr-2"></i>Data export</button> -->
+                            <button type="button" class="btn btn-facebook"><i class="fa fa-power-off mr-2"></i>Cerrar Sesión</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="container-fluid">
+                <!-- Formulario -->
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <!-- For future options -->
+                    </div>
+                </div>
+                <!-- Tabla -->
+               <div class="row clearfix">
+                    <div class="col-lg-12 mt-5">
+                        <div class="table-responsive mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <table class="table table-hover js-basic-example dataTable table_custom spacing5">
+                                        <thead>
+                                            <tr>
+                                                <th>Usuario</th>
+                                                <th>Documento</th>
+                                                <th>Nombre</th>
+                                                <!-- <th>Cód. Lider</th>
+                                                <th>Nom. Lider</th> -->
+                                                <!-- <th>D/F Ult. Inver.</th> -->
+                                                <th>Ref. Inac.</th>
+                                                <th>Ciclos Inac.</th>
+                                                <th>Est.</th>
+                                                <th>Opc.</th>
+                                            </tr>
+                                        </thead>                             
+                                        <tbody>
+                                            <tr>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <!-- <td>US-0123456</td> -->
+                                                <!-- <td>Lider Ejemplo 1</td> -->
+                                                <!-- <td>1/1/21</td> -->
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td><span class="tag tag-lime">Activo</span></td>
+                                                <td>
+                                                    <button 
+                                                        type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Perfil"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-search"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Detalles"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn close-show-comprobante" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive3"
+                                                       >
+                                                        <i class="fa fa-files-o"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Comprobantes"></i>
+                                                    </button>     
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive4"
+                                                       >
+                                                        <i class="fa fa-sitemap"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Referidos"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-cog"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar Perfil"></i>
+                                                    </button>    
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <!-- <td>US-0123456</td>
+                                                <td>Lider Ejemplo 1</td>
+                                                <td>1/1/21</td> -->
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td><span class="tag tag-red">Finalizado</span></td>
+                                                 <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-user mr-2"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Perfil"></i>
+                                                    </button> 
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-search"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Detalles"></i>
+                                                    </button>    
+                                                    <button type="button" 
+                                                        class="btn close-show-comprobante" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive3"
+                                                       >
+                                                        <i class="fa fa-files-o"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Comprobantes"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive4"
+                                                       >
+                                                        <i class="fa fa-sitemap"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Referidos"></i>
+                                                    </button> 
+                                                     <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                       <i class="fa fa-cog"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar Perfil"></i>
+                                                    </button>   
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>US-123456</td>
+                                                <td>123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <!-- <td>US-0123456</td>
+                                                <td>Lider Ejemplo 1</td>
+                                                <td>1/1/21</td> -->
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td><span class="tag tag-yellow">Finalizado Anticipado</span></td>
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-user mr-2"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Perfil"></i>
+                                                    </button> 
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-search"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Detalles"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn close-show-comprobante" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive3"
+                                                       >
+                                                        <i class="fa fa-files-o"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Comprobantes"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive4"
+                                                       >
+                                                        <i class="fa fa-sitemap"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Referidos"></i>
+                                                    </button>
+                                                     <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-cog"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar Perfil"></i>
+                                                    </button>       
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+       
+        <div id="exampleModalLive" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Ver Perfil</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">                                
+                                <div class="btn-group float-right" role="group" aria-label="Button group with nested dropdown">
+                                    <button type="button" class="btn btn-primary" id="general-btn">Datos Generales</button>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Canal de Pago
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                            <a class="dropdown-item" id="pago-btn" >Efecty</a>
+                                            <a class="dropdown-item" id="cuenta-btn">Cuenta Bancaria</a>
+                                            <a class="dropdown-item" id="billetera-btn">Billetera Virtual</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" class="row" id="general">
+                            <div class="col-sm-12 col-md-12">
+                                <h5>Datos Generales</h5>                                        
+                            </div>
+                            <div class="col-sm-3 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Documento</label>
+                                    <input type="text" class="form-control" placeholder="Documento" value="US-123456" maxlength="10">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre" value="Usuario Ejemplo">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Código Líder</label>
+                                    <input type="text" class="form-control" placeholder="Código Líder" value="US-0123456">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Nombre Líder</label>
+                                    <input type="text" class="form-control" placeholder="Nombre Líder" value="Lider Ejemplo 1">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="Email" value="user@testdemo.com">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" placeholder="Teléfono" value="3131123123">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Ciudad</label>
+                                    <select class="form-control custom-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Germany</option>
+                                        <option value="1">USA</option>
+                                        <option value="1">Canada</option>
+                                    </select>                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Clave</label>
+                                    <input type="text" class="form-control" placeholder="Clave" value="2313313">
+                                </div>
+                            </div>
+                            <hr>
+                            
+                            <div class="col-12 text-right">
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </form> 
+                        <form action="" class="row" style="display: none;" id="pago">                            
+                            <div class="col-sm-12 col-md-12 mb-2">
+                                <h5>Efecty</h5>                                        
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre" value="Usuario Ejemplo">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Documento</label>
+                                    <select class="form-control custom-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Identidad</option>
+                                        <option value="1">Pasaporte</option>
+                                        <option value="1">Visa</option>
+                                    </select>                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Telefono</label>
+                                    <input type="tel" class="form-control" placeholder="Telefono" value="123123123">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                              <div class="form-group">
+                                    <label class="form-label">Ciudad</label>
+                                    <select class="form-control custom-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Germany</option>
+                                        <option value="1">USA</option>
+                                        <option value="1">Canada</option>
+                                    </select>                                    
+                                </div>
+                            </div>
+                            <div class="col-12 text-right">
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </form>
+                        <form action="" class="row" id="cuenta" style="display: none;">
+                            <div class="col-sm-12 col-md-12">
+                                <h5>Cuenta Bancaria</h5>                                        
+                            </div> 
+                            <div class="col-sm-12 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Entidad Bancaria</label>
+                                    <select class="form-control custom-select">
+                                        <option value='BBVA '>BBVA </option>
+                                        <option value='Bancamia'>Bancamia</option>
+                                        <option value='Banco AV Villas'>Banco AV Villas</option>
+                                        <option value='Banco Agrario'>Banco Agrario</option>
+                                        <option value='Banco Caja Social'>Banco Caja Social</option>
+                                        <option value='Banco Coperativo Copcentral'>Banco Coperativo Copcentral</option>
+                                        <option value='Banco Credifinaciera'>Banco Credifinaciera</option>
+                                        <option value='Banco Davivienda'>Banco Davivienda</option>
+                                        <option value='Banco Falabella'>Banco Falabella</option>
+                                        <option value='Banco GNB Sudameris'>Banco GNB Sudameris</option>
+                                        <option value='Banco Pichicha'>Banco Pichicha</option>
+                                        <option value='Banco Popular'>Banco Popular</option>
+                                        <option value='Banco Procredit'>Banco Procredit</option>
+                                        <option value='Banco Santander'>Banco Santander</option>
+                                        <option value='Banco Serfinanza'>Banco Serfinanza</option>
+                                        <option value='Banco W S.A.'>Banco W S.A.</option>
+                                        <option value='Banco de Bogotá'>Banco de Bogotá</option>
+                                        <option value='Banco de Occidente'>Banco de Occidente</option>
+                                        <option value='Bancoldex'>Bancoldex</option>
+                                        <option value='Bancolombia'>Bancolombia</option>
+                                        <option value='Bancomeva'>Bancomeva</option>
+                                        <option value='Coltefinanciera'>Coltefinanciera</option>
+                                        <option value='Confiar Cooperativa Financiera'>Confiar Cooperativa Financiera</option>
+                                        <option value='Daviplata'>Daviplata</option>
+                                        <option value='Giros y Finanzas CF'>Giros y Finanzas CF</option>
+                                        <option value='IRIS'>IRIS</option>
+                                        <option value='Itau'>Itau</option>
+                                        <option value='J.P. Morgan'>J.P. Morgan</option>
+                                        <option value='Nequi'>Nequi</option>
+                                        <option value='Rappipay'>Rappipay</option>
+                                        <option value='Scotianbank Colpartria'>Scotianbank Colpartria</option>
+                                    </select>   
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Tipo de cuenta</label>
+                                    <select class="form-control custom-select">
+                                        <option value='Ahorro'>Ahorro</option>
+                                        <option value='Corriente'>Corriente</option>
+                                    </select>                                    
+                                </div>
+                              
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Numero</label>
+                                    <input type="text" class="form-control" placeholder="Numero">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="col-12 text-right">
+                                <button type="submit" class="btn btn-primary">Editar</button>
+                            </div>
+                        </form>
+                        <form action="" class="row" id="billetera" style="display: none;">
+                              <div class="col-sm-12 col-md-12">
+                                <h5>Billetera Virtual</h5>                                        
+                            </div>      
+                            <div class="col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Numero Biletera</label>
+                                    <input type="text" class="form-control" placeholder="Numero Biletera">
+                                </div>
+                            </div>
+                            <div class="col-12 text-right">
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </form>     
+                    </div>                   
+                </div>
+            </div>
+        </div>
+        <div id="exampleModalLive2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel2" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Usuarios - Detalles</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                         <table class="table table-hover js-basic-example dataTable table_custom spacing5">
+                            <thead>
+                                <tr>
+                                    <th>Estado</th>
+                                    <th>Cód. Lider</th>
+                                    <th>Nom. Lider</th>                                    
+                                    <th>Fecha Ultima Inversión</th>
+                                    <th>Fecha Ultimo Pago</th>
+                                    <th>Total referidos</th>
+                                    <th>Referidos Activos</th>
+                                    <th>Cantidad de Ciclos Inactivos</th>                                   
+                                </tr>
+                            </thead>                             
+                            <tbody>
+                                <tr>
+                                    <td><span class="tag tag-lime">Activo</span></td>      
+                                    <td>US-0123456</td>
+                                    <td>Lider Ejemplo 1</td>                                    
+                                    <td>1/1/21</td>
+                                    <td>1/1/21</td>
+                                    <td>99999</td>
+                                    <td>99999</td>
+                                    <td>99999</td>
+                                </tr>                                
+                            </tbody>
+                        </table>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+        <div id="exampleModalLive3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel3" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Usuarios - Comprobantes</h5>
+                        <button type="button" class="close close-show-comprobante" data-dismiss="modal" aria-label="Close" id="">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                         <!-- Formulario -->
+                        <div id="listado-comprobantes">
+                            <div class="row clearfix">
+                                <div class="col-lg-12">
+                                    <form class="card">
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <label class="form-label">Comprobantes</label>
+                                                <div class="row gutters-xs">
+                                                    <div class="col">
+                                                        <input type="text" class="form-control" placeholder="Ingrese el comprobante">
+                                                    </div>
+                                                    <span class="col-auto"><button class="btn btn-secondary" type="button"><i class="fe fe-search"></i></button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                                        
+                                </div>
+                            </div>
+                             <table class="table table-hover js-basic-example dataTable table_custom spacing5">
+                                <thead>
+                                    <tr>
+                                        <th>Ciclo</th>
+                                        <th>Fecha de Carga</th>
+                                        <th>Hora de Carga</th>
+                                        <th>Valor Declarado</th>
+                                        <th>Valor Registrado</th>
+                                        <th>Estado</th>                                   
+                                        <th>Opcion</th>                                   
+                                    </tr>
+                                </thead>                             
+                                <tbody>
+                                    <tr>
+                                        <td>9</td>                                    
+                                        <td class="text-green">1/1/21</td>
+                                        <td>12:00 AM</td>
+                                        <td>$ 100</td>
+                                        <td>$ 100</td>
+                                        <td> <span class="tag tag-lime">Activo por la plataforma</span></td>
+                                        <td><button type="button" 
+                                                class="btn show-comprobante" 
+                                                >
+                                                <i class="fa fa-eye"  data-toggle="tooltip"
+                                                title
+                                                data-original-title="Ver comprobante"></i>
+                                            </button> 
+                                        </td>
+                                    </tr>                                
+                                    <tr>
+                                        <td>9</td>                                    
+                                        <td class="text-green">1/1/21</td>
+                                        <td>12:00 AM</td>
+                                        <td>$ 100</td>
+                                        <td>$ 100</td>
+                                        <td><span class="tag tag-teal">Rechazado por la plataforma</span></td>
+                                        <td>
+                                            <button type="button" 
+                                                class="btn show-comprobante" 
+                                                >
+                                                <i class="fa fa-eye"  data-toggle="tooltip"
+                                                title
+                                                data-original-title="Ver comprobante"></i>
+                                            </button> 
+                                        </td>
+                                    </tr>                                
+                                    <tr>
+                                        <td>9</td>                                    
+                                        <td class="text-green">1/1/21</td>
+                                        <td>12:00 AM</td>
+                                        <td>$ 100</td>
+                                        <td>$ 100</td>
+                                        <td><span class="tag tag-lime">Activo por administrador</span></td>
+                                        <td>
+                                            <button type="button" 
+                                                class="btn show-comprobante" 
+                                                >
+                                                <i class="fa fa-eye"  data-toggle="tooltip"
+                                                title
+                                                data-original-title="Ver comprobante"></i>
+                                            </button> 
+                                        </td>
+                                    </tr>                                
+                                    <tr>
+                                        <td>9</td>                                    
+                                        <td class="text-green">1/1/21</td>
+                                        <td>12:00 AM</td>
+                                        <td>$ 100</td>
+                                        <td>$ 100</td>
+                                        <td><span class="tag tag-yellow">Rechazado por administrador</span></td>
+                                        <td>
+                                            <button type="button" 
+                                                class="btn show-comprobante"                                           
+                                                >
+                                                <i class="fa fa-eye"  data-toggle="tooltip"
+                                                title
+                                                data-original-title="Ver comprobante"></i>
+                                            </button> 
+                                        </td>
+                                    </tr>                                
+                                    <tr>
+                                        <td>9</td>                                    
+                                        <td class="text-green">1/1/21</td>
+                                        <td>12:00 AM</td>
+                                        <td>$ 100</td>
+                                        <td>$ 100</td>
+                                        <td><span class="tag tag-red">Fuera de horario</span></td>
+                                         <td>
+                                            <button type="button" 
+                                                class="btn show-comprobante" 
+                                                >
+                                                <i class="fa fa-eye"  data-toggle="tooltip"
+                                                title
+                                                data-original-title="Ver comprobante "></i>
+                                            </button> 
+                                        </td>
+                                    </tr>                                
+                                    <tr>
+                                        <td>9</td>                                    
+                                        <td class="text-green">1/1/21</td>
+                                        <td>12:00 AM</td>
+                                        <td>$ 100</td>
+                                        <td>$ 100</td>
+                                        <td><span class="tag tag-purple">Sin procesar</span></td>
+                                         <td>
+                                            <button type="button" 
+                                                class="btn show-comprobante"                                             
+                                                >
+                                                <i class="fa fa-eye"  data-toggle="tooltip"
+                                                title
+                                                data-original-title="Ver comprobante"></i>
+                                            </button> 
+                                        </td>
+                                    </tr>                                
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="visual-comprobante" style="display: none;">
+                            <embed src="./assets/docs/Comprobante.pdf" frameborder="0" width="100%" height="400px">
+                            <div class="row mt-5">
+                                <div class="col-12 ">
+                                    <form class="form-inline justify-content-center">
+                                        <div class="form-group mb-2">
+                                            <label for="staticEmail2" class="sr-only">Ingresar Valor</label>
+                                            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Ingresar Valor">
+                                        </div>
+                                        <div class="form-group mx-sm-3 mb-2">
+                                            <label for="moneda" class="sr-only">Valor en moneda</label>
+                                            <input type="number" class="form-control" id="moneda" placeholder="Valor en moneda">
+                                        </div>
+                                        
+                                        <a href="#" class="btn text-white bg-green mr-1">Validar</a>
+                                        <a href="#" class="btn text-white bg-red mr-1">Rechazar</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+        <div id="exampleModalLive4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel3" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Referidos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                         <table class="table table-hover js-basic-example dataTable table_custom spacing5">
+                            <thead>
+                                <tr>
+                                    <th>Nivel</th>
+                                    <th>Fecha de Ingreso</th>
+                                    <th>Nombre</th>
+                                    <th>Codigo</th>
+                                    <th>Ultima Inversión</th>
+                                    <th>Total Inversiones</th>                                   
+                                    <th>Ciclos</th> 
+                                    <th>Inactivo Estado</th>
+                                                                          
+                                </tr>
+                            </thead>                             
+                            <tbody>
+                                <tr>
+                                    <td>5</td>
+                                    <td>1/1/21</td>
+                                    <td>Usuario 1</td>
+                                    <td>US-123456</td>
+                                    <td>$ 100</td>
+                                    <td>$ 100</td>
+                                    <td>0</td>
+                                    <td><span class="tag tag-azure">Nuevo</span></td>                                           
+                                </tr>                                
+                                <tr>
+                                    <td>5</td>
+                                    <td>1/1/21</td>
+                                    <td>Usuario 1</td>
+                                    <td>US-123456</td>
+                                    <td>$ 100</td>
+                                    <td>$ 100</td>
+                                    <td>0</td>
+                                    <td><span class="tag tag-red">Activo</span></td>                                           
+                                </tr>                                
+                                <tr>
+                                    <td>5</td>
+                                    <td>1/1/21</td>
+                                    <td>Usuario 1</td>
+                                    <td>US-123456</td>
+                                    <td>$ 100</td>
+                                    <td>$ 100</td>
+                                    <td>0</td>
+                                    <td><span class="tag tag-yellow">Inactivo por Inversion</span></td>                                           
+                                </tr>                                
+                                <tr>
+                                    <td>5</td>
+                                    <td>1/1/21</td>
+                                    <td>Usuario 1</td>
+                                    <td>US-123456</td>
+                                    <td>$ 100</td>
+                                    <td>$ 100</td>
+                                    <td>0</td>
+                                    <td><span class="tag tag-blue">Inactivo por referido</span></td>                                           
+                                </tr>                                
+                                <tr>
+                                    <td>5</td>
+                                    <td>1/1/21</td>
+                                    <td>Usuario 1</td>
+                                    <td>US-123456</td>
+                                    <td>$ 100</td>
+                                    <td>$ 100</td>
+                                    <td>0</td>
+                                    <td><span class="tag tag-purple">Doble Inactivo</span></td>                                           
+                                </tr>                                
+                                                            
+                            </tbody>
+                        </table>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $("#general-btn").click(function(){    
+            $('#cuenta').hide('slow')
+            $('#billetera').hide('slow')
+            $('#pago').hide();
+            $('#general').show('slow');
+        });
+        $("#pago-btn").click(function(){  
+            
+            $('#cuenta').hide('slow')
+            $('#billetera').hide('slow')
+            $('#general').hide('slow');
+            $('#pago').show();
+        });
+        $("#cuenta-btn").click(function(){    
+            $('#billetera').hide('slow')
+            $('#general').hide('slow');
+            $('#pago').hide();
+            $('#cuenta').show('slow')
+        });
+        $("#billetera-btn").click(function(){    
+            $('#cuenta').hide('slow')
+            $('#general').hide('slow');
+            $('#pago').hide();
+            $('#billetera').show('slow')
+        });
+        $(".show-comprobante").click(function(){    
+            $('#listado-comprobantes').hide('slow')    
+            $("#visual-comprobante").show('slow')
+
+        });
+        $(".close-show-comprobante").click(function(){    
+            $('#listado-comprobantes').show('slow')    
+            $("#visual-comprobante").hide('slow')
+
+        });
+    </script>
+
+
+    
