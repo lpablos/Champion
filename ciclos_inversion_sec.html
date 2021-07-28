@@ -1,0 +1,402 @@
+<!-- start Main menu -->
+<div id="left-sidebar" class="sidebar" style="background-color: rgb(213 220 228);">
+<div class="d-flex justify-content-between brand_name">
+<h5 class="brand-name">Champion Sport</h5>
+<!-- <div class="theme_btn">
+<a class="theme1" data-toggle="tooltip" title="Theme Radical" href="#" onclick="setStyleSheet('./assets/css/theme1.css', 0);"></a>
+<a class="theme2" data-toggle="tooltip" title="Theme Turmeric" href="#" onclick="setStyleSheet('. /assets/css/theme2.css', 0);"></a>
+<a class="theme3" data-toggle="tooltip" title="Theme Caribbean" href="#" onclick="setStyleSheet('./assets/css/theme3.css', 0);"></a>
+<a class="theme4" data-toggle="tooltip" title="Theme Cascade" href="#" onclick="setStyleSheet('./assets/css/theme4.css', 0);"></a>
+</div> -->
+</div>
+<div class="input-icon">
+<span class="input-icon-addon">
+<i class="fe fe-search"></i>
+</span>
+<input type="text" class="form-control" placeholder="Busqueda...">
+</div>
+
+<div class="tab-content">
+<div class="tab-pane fade active show" id="all-tab">
+<nav class="sidebar-nav">
+    <ul class="metismenu ci-effect-1">
+        <!-- <li class="active"><a href="ciclos_inversion.html"><i class="fa fa-play"></i><span data-hover="Ciclos Inversión">Ciclos Inversión</span></a></li> -->
+        <li><a href="ciclos_inversion.html"><span data-hover="Activo">Activo</span></a></li>
+        <li><a href="ciclos_inversion.html"><span data-hover="Finalizado">Finalizado</span></a></li>
+        <li><a href="ciclos_inversion.html"><span data-hover="FinalizadoAnticipado">Finalizado Anticipado</span></a></li>
+        <li><a href="ciclos_inversion.html"><span data-hover="Pagado">Pagado</span></a></li>
+        
+    </ul>
+</nav>
+</div>
+
+
+</div>
+</div>
+
+<!-- start main body part-->
+<div class="page">
+<!-- start body header -->
+<div id="page_top" class="section-body">
+<div class="container-fluid">
+<div class="page-header">
+    <div class="left">
+        <h1 class="page-title">Ciclos de Inversión</h1>
+    </div>
+    <div class="right">
+        <div class="notification d-flex">
+            <!-- <button type="button" class="btn btn-facebook"><i class="fa fa-info-circle mr-2"></i>Need Help</button>
+            <button type="button" class="btn btn-facebook"><i class="fa fa-file-text mr-2"></i>Data export</button> -->
+            <button type="button" class="btn btn-facebook"><i class="fa fa-power-off mr-2"></i>Cerrar Sesión</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="section-body">
+<div class="container-fluid">
+<!-- Formulario -->
+<div class="row clearfix">
+    <div class="col-lg-12">
+            <form class="card">
+            <div class="card-body demo-masked-input">
+                <h3 class="card-title">Ingrese los parametro para dar inicio a un ciclo</h3>
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">  
+                            <label class="form-label">Inversion Minima</label>                                          
+                            <input type="number" class="form-control" placeholder="Inversion Minima" value="">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Fecha de inicio</label>
+                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control dtpick" id="Fini" placeholder="Fecha de inicio" readonly>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Hora de inicio</label>                                            
+                            <input type="text" class="form-control time12" id='rest_example_1' placeholder="Ex: 11:59 pm">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">  
+                            <label class="form-label">Inversion Máxima</label>                                          
+                            <input type="number" class="form-control" placeholder="Inversion Máxima" value="">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Fecha de Finalización</label>
+                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control dtpick" id="Ffin" placeholder="Fecha de Finalización" readonly>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Hora de Finalización</label>
+                            <input type="text" class="form-control time12" placeholder="Ex: 11:59 pm">
+                        </div>
+                    </div>                                   
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">  
+                            <label class="form-label">Porcentaje %</label>                                          
+                            <input type="number" class="form-control" placeholder="Porcentaje %" value="">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Fecha de pago</label>
+                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control" id="Fpago"placeholder="Fecha de pago">
+                        </div>
+                    </div> 
+                    <!-- old -->
+                    <!-- <div class="col-sm-3 col-md-4">
+                        <div class="form-group">  
+                            <label class="form-label">Ingrese % derendimiento</label>                                          
+                            <input type="number" class="form-control" placeholder="Ingrese % derendimiento" value="">
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-sm-3 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Valor Minimo de Inversión</label>
+                            <input type="number" class="form-control" placeholder="Valor Minimo de Inversión" value="">
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-sm-3 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Valor Máximo de Inversión</label>
+                            <input type="number" class="form-control" placeholder="Valor Máximo de Inversión" value="">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="card-footer text-right">
+                <button type="submit" class="btn btn-primary">Dar inicio al ciclo</button>
+            </div>
+        </form>
+                                
+    </div>
+</div>
+<!-- Tabla -->
+<div class="row clearfix">
+    <div class="col-12">
+        <div class="table-responsive">
+            <div class="card">
+                <div class="card-body">
+                    <table class="table table-hover js-basic-example dataTable table_custom">
+                        <thead>
+                            <tr>
+                                <th>Ciclo</th>
+                                <th>%</th>
+                                <th>Inversión Min.</th>
+                                <th>Inversión Máx.</th>
+                                <th>D/F. Inicio</th>
+                                <th>Hor. Inicio</th>
+                                <th>D/F Fin</th>
+                                <th>Hor. Fin</th>
+                                <th>D/F Pago</th>
+                                <th>Est.</th>                                                
+                                <th>Opc.</th>
+                            </tr>
+                        </thead>                             
+                        <tbody>
+                            <tr>        
+                                <td>9</td>
+                                <td>150</td>
+                                <td>$ 50.000</td>
+                                <td>$ 100.000</td>
+                                <td>1/1/21</td>
+                                <td>12:00</td>
+                                <td>1/1/21</td>
+                                <td>12:00</td>
+                                <td>1/1/21</td>
+                                <td><span class="tag tag-lime">Activo</span></td>
+                                <td>
+                                    <button 
+                                        type="button" 
+                                        class="btn btn-dark" 
+                                        data-toggle="tooltip" 
+                                        data-original-title="Finalizar ciclo de manera anticipada">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                    <button 
+                                        type="button" 
+                                        class="btn btn-dark" 
+                                        data-toggle="modal" 
+                                        data-target="#exampleModalLive"                                                       
+                                        >
+                                        <i class="fa fa-pencil"  
+                                            data-toggle="tooltip" 
+                                            data-original-title="Editar Ciclo de Inversión" ></i>
+                                    </button>                                                   
+                                </td>
+                            </tr>                                         
+                            <tr>        
+                                <td>9</td>
+                                <td>150</td>
+                                <td>$ 50.000</td>
+                                <td>$ 100.000</td>
+                                <td>1/1/21</td>
+                                <td>12:00</td>
+                                <td>1/1/21</td>
+                                <td>12:00</td>
+                                <td>1/1/21</td>
+                                <td><span class="tag tag-lime">Activo</span></td>
+                                <td>
+                                    <button 
+                                        type="button" 
+                                        class="btn btn-dark" 
+                                        data-toggle="tooltip" 
+                                        data-original-title="Finalizar ciclo de manera anticipada">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                    <button 
+                                        type="button" 
+                                        class="btn btn-dark" 
+                                        data-toggle="modal" 
+                                        data-target="#exampleModalLive"                                                       
+                                        >
+                                        <i class="fa fa-pencil"  
+                                            data-toggle="tooltip" 
+                                            data-original-title="Editar Ciclo de Inversión" ></i>
+                                    </button>                                                   
+                                </td>
+                            </tr>                                         
+                            <tr>        
+                                <td>9</td>
+                                <td>150</td>
+                                <td>$ 50.000</td>
+                                <td>$ 100.000</td>
+                                <td>1/1/21</td>
+                                <td>12:00</td>
+                                <td>1/1/21</td>
+                                <td>12:00</td>
+                                <td>1/1/21</td>
+                                <td><span class="tag tag-red">Finalizado</span></td>
+                                <td>
+                                    <button 
+                                        type="button" 
+                                        class="btn btn-dark" 
+                                        data-toggle="tooltip" 
+                                        data-original-title="Finalizar ciclo de manera anticipada">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                    <button 
+                                        type="button" 
+                                        class="btn btn-dark" 
+                                        data-toggle="modal" 
+                                        data-target="#exampleModalLive"                                                       
+                                        >
+                                        <i class="fa fa-pencil"  
+                                            data-toggle="tooltip" 
+                                            data-original-title="Editar Ciclo de Inversión" ></i>
+                                    </button>                                                   
+                                </td>
+                            </tr>                                         
+                            <tr>        
+                                <td>9</td>
+                                <td>150</td>
+                                <td>$ 50.000</td>
+                                <td>$ 100.000</td>
+                                <td>1/1/21</td>
+                                <td>12:00</td>
+                                <td>1/1/21</td>
+                                <td>12:00</td>
+                                <td>1/1/21</td>
+                                <td><span class="tag tag-yellow">Finalizado Anticipado</span></td>
+                                <td>
+                                    <button 
+                                        type="button" 
+                                        class="btn btn-dark" 
+                                        data-toggle="tooltip" 
+                                        data-original-title="Finalizar ciclo de manera anticipada">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                    <button 
+                                        type="button" 
+                                        class="btn btn-dark" 
+                                        data-toggle="modal" 
+                                        data-target="#exampleModalLive"                                                       
+                                        >
+                                        <i class="fa fa-pencil"  
+                                            data-toggle="tooltip" 
+                                            data-original-title="Editar Ciclo de Inversión" ></i>
+                                    </button>                                                   
+                                </td>
+                            </tr>                                         
+                            <tr>        
+                                <td>9</td>
+                                <td>150</td>
+                                <td>$ 50.000</td>
+                                <td>$ 100.000</td>
+                                <td>1/1/21</td>
+                                <td>12:00</td>
+                                <td>1/1/21</td>
+                                <td>12:00</td>
+                                <td>1/1/21</td>
+                                <td><span class="tag tag-pink">Pagado</span></td>
+                                <td>
+                                    <button 
+                                        type="button" 
+                                        class="btn btn-dark" 
+                                        data-toggle="tooltip" 
+                                        data-original-title="Finalizar ciclo de manera anticipada">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                    <button 
+                                        type="button" 
+                                        class="btn btn-dark" 
+                                        data-toggle="modal" 
+                                        data-target="#exampleModalLive"                                                       
+                                        >
+                                        <i class="fa fa-pencil"  
+                                            data-toggle="tooltip" 
+                                            data-original-title="Editar Ciclo de Inversión" ></i>
+                                    </button>                                                   
+                                </td>
+                            </tr>                                         
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+</div>
+</div>
+
+
+<div id="exampleModalLive" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="display: none;" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLiveLabel">Ciclos de Inversión - Detalles / Editar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div class="modal-body">                        
+        <form class="card">
+            <div class="card-body demo-masked-input">
+                <!-- <h3 class="card-title">Ingrese los parametro para dar inicio a un ciclo</h3> -->
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">  
+                            <label class="form-label">Inversion Minima</label>                                          
+                            <input type="number" class="form-control" placeholder="Inversion Minima" value="50.000">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Fecha de inicio</label>
+                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control dtpick" id="Fini2" placeholder="Fecha de inicio" value="2021-07-15" readonly>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Hora de inicio</label>
+                            <input type="text" class="form-control time12" id='rest_example_1' placeholder="Hora de inicio" value="12:00 pm">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">  
+                            <label class="form-label">Inversion Máxima</label>                                          
+                            <input type="number" class="form-control" placeholder="Inversion Máxima" value="50.000">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Fecha de Finalización</label>
+                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control dtpick" id="Ffin" placeholder="Fecha de Finalización" value="2021-07-15" readonly>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Hora de Finalización</label>
+                            <input type="text" class="form-control time12" placeholder="Hora de Finalización"  value="12:00 pm">
+                        </div>
+                    </div>                                   
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">  
+                            <label class="form-label">Porcentaje %</label>                                          
+                            <input type="number" class="form-control" placeholder="Porcentaje %" value="14">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Fecha de pago</label>
+                            <input data-date-autoclose="true" data-provide="datepicker" type="string" class="form-control dtpick" id="Fpago"placeholder="Fecha de pago" value="2021-07-15" readonly>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="card-footer text-right">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>                   
+</div>
+</div>
+</div>
+</div>
