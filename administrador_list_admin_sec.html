@@ -1,0 +1,208 @@
+<!-- start Main menu -->
+    <div id="left-sidebar" class="sidebar" style="background-color: rgb(213 220 228);">
+        <div class="d-flex justify-content-between brand_name">
+            <h5 class="brand-name">Champion Sport</h5>
+            <!-- <div class="theme_btn">
+                <a class="theme1" data-toggle="tooltip" title="Theme Radical" href="#" onclick="setStyleSheet('./assets/css/theme1.css', 0);"></a>
+                <a class="theme2" data-toggle="tooltip" title="Theme Turmeric" href="#" onclick="setStyleSheet('. /assets/css/theme2.css', 0);"></a>
+                <a class="theme3" data-toggle="tooltip" title="Theme Caribbean" href="#" onclick="setStyleSheet('./assets/css/theme3.css', 0);"></a>
+                <a class="theme4" data-toggle="tooltip" title="Theme Cascade" href="#" onclick="setStyleSheet('./assets/css/theme4.css', 0);"></a>
+            </div> -->
+        </div>
+        <div class="input-icon">
+            <span class="input-icon-addon">
+                <i class="fe fe-search"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Busqueda...">
+        </div>
+        
+        <div class="tab-content">
+            <div class="tab-pane fade active show" id="all-tab">
+                <nav class="sidebar-nav">
+                    <ul class="metismenu ci-effect-1">
+                        <!-- <li class="g_heading">Directories</li> -->
+                        <!-- <li class="active">
+                            <a href="javascript:void(0)" class="has-arrow arrow-b"><i class="icon-home"></i><span data-hover="Dashboard">Dashboard</span></a>
+                            <ul>
+                                <li class="active"><a href="index.html"><span data-hover="Web Analytics">Web Analytics</span></a></li>
+                                <li><a href="index2.html"><span data-hover="Cryptocurrency">Cryptocurrency</span></a></li>
+                                <li><a href="index3.html"><span data-hover="Sales Monitoring">Sales Monitoring</span></a></li>
+                                <li><a href="index4.html"><span data-hover="eCommerce Analytics">eCommerce Analytics</span></a></li>
+                                <li><a href="app-social.html"><span data-hover="Campaigns">Campaigns</span></a></li>
+                            </ul>
+                        </li> -->                        
+                        <li><a href="administrador.html"><span data-hover="Crear Usuarios">Crear Usuarios</span></a></li>
+                        <li class="active"><a href="administrador_list_admin.html"><span data-hover="List. Administradores">Listado Administradores</span></a></li>
+                        <li><a href="administrador_carg_inversion.html"><span data-hover="CargarInversión">Cargar Inversión</span></a></li>
+                        <li><a href="administrador_verif_num_sorteo.html"><span data-hover="Verificar Núm. Sorteo">Verificar Números Sorteo</span></a></li>
+                       
+                        
+                    </ul>
+                </nav>
+            </div>
+           
+            
+        </div>
+    </div>
+
+    <!-- start main body part-->
+    <div class="page">
+
+        <!-- start body header -->
+        <div id="page_top" class="section-body">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="left">
+                        <h1 class="page-title">Listado de Administrador</h1>
+                    </div>
+                    <div class="right">
+                        <div class="notification d-flex">
+                            <!-- <button type="button" class="btn btn-facebook"><i class="fa fa-info-circle mr-2"></i>Need Help</button>
+                            <button type="button" class="btn btn-facebook"><i class="fa fa-file-text mr-2"></i>Data export</button> -->
+                            <button type="button" class="btn btn-facebook"><i class="fa fa-power-off mr-2"></i>Cerrar Sesión</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="container-fluid">
+                 <div class="row clearfix">
+                    <div class="col-lg-12 mb-4">                      
+                        <button class="btn btn-dark"  data-toggle="modal" data-target="#exampleModalLive">
+                            Crear Administrador
+                        </button>
+                    </div>
+                </div>
+                <div class="row clearfix mt-2">
+                    <div class="col-lg-12">                        
+                        <div class="card">                               
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover js-basic-example dataTable table_custom spacing5">
+                                        <thead>
+                                            <tr>
+                                                <th>N.°</th>
+                                                <th>N. Administrador</th>
+                                                <th>Contraseña</th>
+                                                <th>d/f de Creación</th>
+                                                <th>Ultimo Acceso</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>                             
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Admin Ejemplo 1</td>
+                                                <td>+++++</td>
+                                                <td>1/1/21</td>
+                                                <td>1/1/21 12:00AM</td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-user"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Ver-Editar Perfil">
+                                                        </i>
+                                                    </button>
+                                                </td>   
+                                            </tr>                                           
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Admin Ejemplo 2</td>
+                                                <td>+++++</td>
+                                                <td>1/1/21</td>
+                                                <td>1/1/21 12:00AM</td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-user"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Ver-Editar Perfil">
+                                                        </i>
+                                                    </button>
+                                                </td>   
+                                            </tr>                                           
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Admin Ejemplo 3</td>
+                                                <td>+++++</td>
+                                                <td>1/1/21</td>
+                                                <td>1/1/21 12:00AM</td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                        >
+                                                        <i class="fa fa-user"  
+                                                            data-toggle="tooltip"
+                                                            title
+                                                            data-original-title="Ver-Editar Perfil">
+                                                        </i>
+                                                    </button>
+                                                </td>   
+                                            </tr>                                           
+                                                                                    
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>                 
+                    </div>
+                </div>             
+            </div>
+        </div>
+       
+        <!-- Modal section -->
+        <div id="exampleModalLive" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Crear-Editar Administrador</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">                       
+                        <form action="" class="row" id="general">
+                            <div class="col-sm-12 col-md-12">
+                                <h5>Datos Generales</h5>                                        
+                            </div>
+                            <div class="col-sm-3 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Nombre de Administrador </label>
+                                    <input type="text" class="form-control" placeholder="Nombre de Administrador " value="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" placeholder="Contraseña">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Verificar Contraseña</label>
+                                    <input type="password" class="form-control" placeholder="Verificar Contraseña">
+                                </div>
+                            </div>
+                            <div class="col-12 text-right">
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </form> 
+                    </div>                   
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
