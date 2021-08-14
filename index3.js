@@ -138,7 +138,7 @@ $(function() {
     // Revenue Growth
     $(document).ready(function(){
         var chart = c3.generate({
-            bindto: '#chart-area-spline', // id of chart wrapper
+            bindto: '#<h5 class="brand-name">Innovacion Financiera</h5>', // id of chart wrapper
             data: {
                 columns: [
                     // each columns data
