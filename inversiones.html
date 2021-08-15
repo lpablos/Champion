@@ -256,16 +256,11 @@
         <div class="tab-content">
             <div class="tab-pane fade active show" id="all-tab">
                 <nav class="sidebar-nav">
-                    <ul class="metismenu ci-effect-1">                        
-                        <!-- <li class="active"><a href="usuarios.html"><i class="fa fa-play"></i><span data-hover="Usuarios">Usuarios</span></a></li> -->
+                    <ul class="metismenu ci-effect-1">                       
+                        <li><a href="usuarios.html"><span data-hover="Inversiones">Inversiones</span></a></li>
                         <li><a href="usuarios.html"><span data-hover="Todos">Todos</span></a></li>
-                        <li><a href="usuarios.html"><span data-hover="Inscrito">Inscrito</span></a></li>
-                        <!--<li><a href="usuarios.html"><span data-hover="Nuevos">Nuevos</span></a></li>-->
-                        <li><a href="usuarios.html"><span data-hover="Activos">Activos</span></a></li>
-                        <li>
-                            <a href="usuarios.html"><span data-hover="Inac Referidos">Inactivos por referidos</span></a>                            
-                        </li>
-                        <li><a href="usuarios.html"><span data-hover="Inac Permanen">Inactivo Permanente</span></a></li>
+                        <li><a href="usuarios.html"><span data-hover="Acreditados">Acreditados</span></a></li>
+                        <li><a href="usuarios.html"><span data-hover="PorVerificar">Por Verificar</span></a></li>                       
                     </ul>
                 </nav>
             </div>
@@ -303,7 +298,7 @@
                 </div>
                 <!-- Tabla -->
                <div class="row clearfix">
-                    <div class="col-lg-12 mt-5">
+                    <div class="col-lg-12 mt-2">
                         <div class="table-responsive mb-4">
                             <div class="card">
                                 <div class="card-body">
@@ -311,202 +306,144 @@
                                         <thead>
                                             <tr>
                                                 <th>Estado</th>
-                                                <th>Usuario</th>
+                                                <th>Numero</th>
+                                                <th>Dir. Pago</th>
+                                                <th>Contrato</th>
                                                 <th>Nombre</th>
                                                 <th>Documento</th>
-                                                <!-- <th>Cód. Lider</th>
-                                                <th>Nom. Lider</th> -->
-                                                <!-- <th>D/F Ult. Inver.</th> -->
-                                                <th>C. Plata</th>
-                                                <th>C. Oro</th>
-                                                <th>C. Platino</th>
-                                                <th>C. Diamante</th>
+                                                <th>Fec. Inversion</th>
+                                                <th>Rango</th>
+                                                <th>Valor</th>
                                                 <th>Opc.</th>
                                             </tr>
                                         </thead>                             
                                         <tbody>
                                             <tr>
-                                                <td><span class="tag tag-lime">Activo</span></td>
-                                                <td>US-123456</td>
-                                                <td>Usuario Ejemplo</td>
+                                                <td><span class="tag tag-red">Acreditada</span></td>
                                                 <td>123456</td>
-                                                <!-- <td>US-0123456</td> -->
-                                                <!-- <td>Lider Ejemplo 1</td> -->
-                                                <!-- <td>1/1/21</td> -->
-                                                <td>3</td>
-                                                <td>0</td>
-                                                <td>0</td>
-                                                <td>2</td>                                                
-                                                <td>
-                                                    <button 
-                                                        type="button" 
+                                                <td>asdasd123456</td>
+                                                <td>US-123456</td>
+                                                <td>Usuario Ejemplo1</td>
+                                                <td>123456789</td>
+                                                <td>1/1/21</td>                                               
+                                                <td>Plata</td>
+                                                <td>$45</td>
+                                                <td>                                                   
+                                                    <button type="button" 
                                                         class="btn" 
                                                         data-toggle="modal" 
                                                         data-target="#exampleModalLive"
                                                        >
-                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        <i class="fa fa-check-square-o"  data-toggle="tooltip"
                                                         title
-                                                        data-original-title="Ver Perfil"></i>
-                                                    </button>      
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive2"
-                                                       >
-                                                        <i class="fa fa-search"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Detalles"></i>
+                                                        data-original-title="Acreditar"></i>
                                                     </button>  
                                                     <button type="button" 
                                                         class="btn close-show-comprobante" 
                                                         data-toggle="modal" 
-                                                        data-target="#exampleModalLive3"
+                                                        data-target="#exampleModalLive2"
                                                        >
-                                                        <i class="fa fa-files-o"  data-toggle="tooltip"
+                                                        <i class="fa fa-history"  data-toggle="tooltip"
                                                         title
-                                                        data-original-title="Comprobantes"></i>
-                                                    </button>     
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive4"
-                                                       >
-                                                        <i class="fa fa-sitemap"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Referidos"></i>
-                                                    </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive"
-                                                       >
-                                                        <i class="fa fa-cog"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Editar Perfil"></i>
-                                                    </button>    
+                                                        data-original-title="Reversa"></i>
+                                                    </button> 
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><span class="tag tag-red">Finalizado</span></td>
-                                                <td>US-123456</td>
-                                                <td>Usuario Ejemplo</td>
+                                                <td><span class="tag tag-yellow">Por Verificar</span></td>
                                                 <td>123456</td>
-                                                <!-- <td>US-0123456</td>
-                                                <td>Lider Ejemplo 1</td>
-                                                <td>1/1/21</td> -->
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>3</td>                                                
-                                                 <td>
+                                                <td>asdasd123456</td>
+                                                <td>US-123456</td>
+                                                <td>Usuario Ejemplo1</td>
+                                                <td>123456789</td>
+                                                <td>1/1/21</td>                                               
+                                                <td>Plata</td>
+                                                <td>$45</td>
+                                                <td>                                                   
                                                     <button type="button" 
                                                         class="btn" 
                                                         data-toggle="modal" 
                                                         data-target="#exampleModalLive"
                                                        >
-                                                        <i class="fa fa-user mr-2"  data-toggle="tooltip"
+                                                        <i class="fa fa-check-square-o"  data-toggle="tooltip"
                                                         title
-                                                        data-original-title="Ver Perfil"></i>
-                                                    </button> 
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive2"
-                                                       >
-                                                        <i class="fa fa-search"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Detalles"></i>
-                                                    </button>    
+                                                        data-original-title="Acreditar"></i>
+                                                    </button>  
                                                     <button type="button" 
                                                         class="btn close-show-comprobante" 
                                                         data-toggle="modal" 
-                                                        data-target="#exampleModalLive3"
+                                                        data-target="#exampleModalLive2"
                                                        >
-                                                        <i class="fa fa-files-o"  data-toggle="tooltip"
+                                                        <i class="fa fa-history"  data-toggle="tooltip"
                                                         title
-                                                        data-original-title="Comprobantes"></i>
-                                                    </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive4"
-                                                       >
-                                                        <i class="fa fa-sitemap"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Referidos"></i>
+                                                        data-original-title="Reversa"></i>
                                                     </button> 
-                                                     <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive"
-                                                       >
-                                                       <i class="fa fa-cog"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Editar Perfil"></i>
-                                                    </button>   
                                                 </td>
-                                                
                                             </tr>
                                             <tr>
-                                                <td><span class="tag tag-yellow">Finalizado Anticipado</span></td>
-                                                <td>US-123456</td>
-                                                <td>Usuario Ejemplo</td>
+                                                <td><span class="tag tag-red">Acreditada</span></td>
                                                 <td>123456</td>
-                                                <!-- <td>US-0123456</td>
-                                                <td>Lider Ejemplo 1</td>
-                                                <td>1/1/21</td> -->
-                                                <td>0</td>
-                                                <td>0</td>
-                                                <td>3</td>
-                                                <td>4</td>                                                
-                                                <td>
+                                                <td>asdasd123456</td>
+                                                <td>US-123456</td>
+                                                <td>Usuario Ejemplo1</td>
+                                                <td>123456789</td>
+                                                <td>1/1/21</td>                                               
+                                                <td>Plata</td>
+                                                <td>$45</td>
+                                                <td>                                                   
                                                     <button type="button" 
                                                         class="btn" 
                                                         data-toggle="modal" 
                                                         data-target="#exampleModalLive"
                                                        >
-                                                        <i class="fa fa-user mr-2"  data-toggle="tooltip"
+                                                        <i class="fa fa-check-square-o"  data-toggle="tooltip"
                                                         title
-                                                        data-original-title="Ver Perfil"></i>
-                                                    </button> 
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive2"
-                                                       >
-                                                        <i class="fa fa-search"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Detalles"></i>
-                                                    </button>      
+                                                        data-original-title="Acreditar"></i>
+                                                    </button>  
                                                     <button type="button" 
                                                         class="btn close-show-comprobante" 
                                                         data-toggle="modal" 
-                                                        data-target="#exampleModalLive3"
+                                                        data-target="#exampleModalLive2"
                                                        >
-                                                        <i class="fa fa-files-o"  data-toggle="tooltip"
+                                                        <i class="fa fa-history"  data-toggle="tooltip"
                                                         title
-                                                        data-original-title="Comprobantes"></i>
-                                                    </button>  
+                                                        data-original-title="Reversa"></i>
+                                                    </button> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="tag tag-yellow">Por Verificar</span></td>
+                                                <td>123456</td>
+                                                <td>asdasd123456</td>
+                                                <td>US-123456</td>
+                                                <td>Usuario Ejemplo1</td>
+                                                <td>123456789</td>
+                                                <td>1/1/21</td>                                               
+                                                <td>Plata</td>
+                                                <td>$45</td>
+                                                <td>                                                   
                                                     <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive4"
-                                                       >
-                                                        <i class="fa fa-sitemap"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Referidos"></i>
-                                                    </button>
-                                                     <button type="button" 
                                                         class="btn" 
                                                         data-toggle="modal" 
                                                         data-target="#exampleModalLive"
                                                        >
-                                                        <i class="fa fa-cog"  data-toggle="tooltip"
+                                                        <i class="fa fa-check-square-o"  data-toggle="tooltip"
                                                         title
-                                                        data-original-title="Editar Perfil"></i>
-                                                    </button>       
+                                                        data-original-title="Acreditar"></i>
+                                                    </button>  
+                                                    <button type="button" 
+                                                        class="btn close-show-comprobante" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-history"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa"></i>
+                                                    </button> 
                                                 </td>
                                             </tr>
+                                          
+                                         
                                         </tbody>
                                     </table>
                                 </div>
