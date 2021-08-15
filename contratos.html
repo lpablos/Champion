@@ -586,23 +586,6 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <!-- <div class="row">
-                            <div class="col-12">                                
-                                <div class="btn-group float-right" role="group" aria-label="Button group with nested dropdown">
-                                    <button type="button" class="btn btn-primary" id="general-btn">Datos Generales</button>
-                                    <div class="btn-group" role="group">
-                                        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Canal de Pago
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                            <a class="dropdown-item" id="pago-btn" >Efecty</a>
-                                            <a class="dropdown-item" id="cuenta-btn">Cuenta Bancaria</a>
-                                            <a class="dropdown-item" id="billetera-btn">Billetera Virtual</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                         <form action="" class="row" id="general">
                             <div class="col-sm-3 col-md-3">
                                 <div class="form-group">
@@ -697,36 +680,149 @@
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLiveLabel">Usuarios - Detalles</h5>
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Referidos</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                         <table class="table table-hover js-basic-example dataTable table_custom spacing5">
+                        <form action="" class="row" id="general">
+                            <div class="col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Contrato</label>
+                                    <input type="text" class="form-control" placeholder="Contrato" value="US-123456" maxlength="10" value="US-123456">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">                                    
+                                    <input type="text" class="form-control" placeholder="Estado" value="Recurrente" maxlength="10" value="Recurrente">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Rango" value="Rango Plata">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Contrato Lider" value="Nivel 4">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">                                    
+                                    <input type="text" class="form-control" placeholder="Fecha Creación" value="26 Usuarios">
+                                </div>
+                            </div>                                      
+                        </form>
+                        <hr>
+                        <table class="table table-hover js-basic-example dataTable table_custom spacing5">
                             <thead>
                                 <tr>
+                                    <th>Nivel</th>
+                                    <th>Usuario</th>
+                                    <th>Nombre</th>                                    
+                                    <th>Fecha Ingreso</th>
+                                    <th>Inversion</th>
                                     <th>Estado</th>
-                                    <th>Cont. Lider</th>
-                                    <th>Nom. Lider</th>                                    
-                                    <th>Fecha insc.</th>
-                                    <th>Estructuras Nuevas</th>
-                                    <th>Estructuras Recurrentes</th>
-                                    <th>Valor Ultimo Pago</th>                                   
-                                    <th>Fecha Ultimo Pago</th>
                                 </tr>
                             </thead>                             
                             <tbody>
                                 <tr>
-                                    <td><span class="tag tag-lime">Activo</span></td>      
-                                    <td>US-0123456</td>
-                                    <td>Lider Ejemplo 1</td>                                    
+                                    <td>1</td>
+                                    <td>US-1234561</td>
+                                    <td>Usuario Ejemplo1</td>
                                     <td>1/1/21</td>
-                                    <td>3</td>
-                                    <td>4</td>
-                                    <td>$ 100</td>
-                                    <td>999</td>
+                                    <td>$ 100</td>                                    
+                                    <td><span class="tag tag-azure">Inscrito</span></td>
                                 </tr>                                
+                                <tr>
+                                    <td>2</td>
+                                    <td>US-1234561</td>
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>1/1/21</td>
+                                    <td>$ 100</td>                                    
+                                    <td><span class="tag tag-cyan">Activo</span></td>
+                                </tr>                                
+                                <tr>
+                                    <td>3</td>
+                                    <td>US-1234561</td>
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>1/1/21</td>
+                                    <td>$ 100</td>                                    
+                                    <td><span class="tag tag-lime">Inactivo por referidos</span></td>
+                                </tr>                                
+                                <tr>
+                                    <td>4</td>
+                                    <td>US-1234561</td>
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>1/1/21</td>
+                                    <td>$ 100</td>                                    
+                                    <td><span class="tag tag-yellow">Inactivo permanente</span></td>
+                                </tr>                                
+                                <tr>
+                                    <td>1</td>
+                                    <td>US-1234561</td>
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>1/1/21</td>
+                                    <td>$ 100</td>                                    
+                                    <td><span class="tag tag-azure">Inscrito</span></td>
+                                </tr>                                
+                                <tr>
+                                    <td>2</td>
+                                    <td>US-1234561</td>
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>1/1/21</td>
+                                    <td>$ 100</td>                                    
+                                    <td><span class="tag tag-cyan">Activo</span></td>
+                                </tr>                                
+                                <tr>
+                                    <td>3</td>
+                                    <td>US-1234561</td>
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>1/1/21</td>
+                                    <td>$ 100</td>                                    
+                                    <td><span class="tag tag-lime">Inactivo por referidos</span></td>
+                                </tr>                                
+                                <tr>
+                                    <td>4</td>
+                                    <td>US-1234561</td>
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>1/1/21</td>
+                                    <td>$ 100</td>                                    
+                                    <td><span class="tag tag-yellow">Inactivo permanente</span></td>
+                                </tr>  <tr>
+                                    <td>1</td>
+                                    <td>US-1234561</td>
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>1/1/21</td>
+                                    <td>$ 100</td>                                    
+                                    <td><span class="tag tag-azure">Inscrito</span></td>
+                                </tr>                                
+                                <tr>
+                                    <td>2</td>
+                                    <td>US-1234561</td>
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>1/1/21</td>
+                                    <td>$ 100</td>                                    
+                                    <td><span class="tag tag-cyan">Activo</span></td>
+                                </tr>                                
+                                <tr>
+                                    <td>3</td>
+                                    <td>US-1234561</td>
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>1/1/21</td>
+                                    <td>$ 100</td>                                    
+                                    <td><span class="tag tag-lime">Inactivo por referidos</span></td>
+                                </tr>                                
+                                <tr>
+                                    <td>4</td>
+                                    <td>US-1234561</td>
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>1/1/21</td>
+                                    <td>$ 100</td>                                    
+                                    <td><span class="tag tag-yellow">Inactivo permanente</span></td>
+                                </tr>                                
+                                                  
                             </tbody>
                         </table>
                     </div>                   
