@@ -475,238 +475,43 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLiveLabel">Ver Perfil</h5>
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Acreditar</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12">                                
-                                <div class="btn-group float-right" role="group" aria-label="Button group with nested dropdown">
-                                    <button type="button" class="btn btn-primary" id="general-btn">Datos Generales</button>
-                                    <div class="btn-group" role="group">
-                                        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Canal de Pago
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                            <a class="dropdown-item" id="pago-btn" >Efecty</a>
-                                            <a class="dropdown-item" id="cuenta-btn">Cuenta Bancaria</a>
-                                            <a class="dropdown-item" id="billetera-btn">Billetera Virtual</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <form action="" class="row" id="general">
-                            <div class="col-sm-12 col-md-12">
-                                <h5>Datos Generales</h5>                                        
-                            </div>
-                            <div class="col-sm-3 col-md-4">
-                                <div class="form-group">
-                                    <label class="form-label">Documento</label>
-                                    <input type="text" class="form-control" placeholder="Documento" value="US-123456" maxlength="10">
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4">
-                                <div class="form-group">
-                                    <label class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" placeholder="Nombre" value="Usuario Ejemplo">
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">Clave</label>
-                                    <input type="text" class="form-control" placeholder="Clave" value="2313313">
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">Email</label>
-                                    <input type="email" class="form-control" placeholder="Email" value="user@testdemo.com">
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" placeholder="Teléfono" value="3131123123">
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">Ciudad</label>
-                                    <select class="form-control custom-select">
-                                        <option value="">Seleccione</option>
-                                        <option value="1" selected>Nueva York</option>
-                                        <option value="1">Paris</option>
-                                        <option value="1">Tokio</option>
-                                    </select>                                    
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-md-4">
-                                <div class="form-group">
-                                    <label class="form-label">Contrato Líder</label>
-                                    <input type="text" class="form-control" placeholder="Código Líder" value="US-0123456">
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">Nombre Líder</label>
-                                    <input type="text" class="form-control" placeholder="Nombre Líder" value="Lider Ejemplo 1">
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">País</label>
-                                    <select class="form-control custom-select">
-                                        <option value="">Seleccione</option>
-                                        <option value="1" selected>Germany</option>
-                                        <option value="1">USA</option>
-                                        <option value="1">Canada</option>
-                                    </select>                                    
-                                </div>
-                            </div>
-                            <hr>
-                            
-                            <div class="col-12 text-right">
-                                <button type="submit" class="btn btn-primary">Guardar</button>
-                            </div>
-                        </form> 
-                        <form action="" class="row" style="display: none;" id="pago">                            
-                            <div class="col-sm-12 col-md-12 mb-2">
-                                <h5>Efecty</h5>                                        
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="form-group">
-                                    <label class="form-label">Documento</label>
-                                    <select class="form-control custom-select">
-                                        <option value="">Seleccione</option>
-                                        <option value="1" selected>Identidad</option>
-                                        <option value="1">Pasaporte</option>
-                                        <option value="1">Visa</option>
-                                    </select>                                    
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="form-group">
-                                    <label class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" placeholder="Nombre" value="Usuario Ejemplo">
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="form-group">
-                                    <label class="form-label">Telefono</label>
-                                    <input type="tel" class="form-control" placeholder="Telefono" value="123123123">
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                              <div class="form-group">
-                                    <label class="form-label">Ciudad</label>
-                                    <select class="form-control custom-select">
-                                        <option value="">Seleccione</option>
-                                        <option value="1" selected>Germany</option>
-                                        <option value="1">USA</option>
-                                        <option value="1">Canada</option>
-                                    </select>                                    
-                                </div>
-                            </div>
-                            <div class="col-12 text-right">
-                                <button type="submit" class="btn btn-primary">Guardar</button>
-                            </div>
+                        <table class="table table-hover js-basic-example dataTable table_custom spacing5">
+                            <thead>
+                                <tr>
+                                    <th>Estado</th>
+                                    <th>Numero</th>
+                                    <th>Dir. Pago</th>
+                                    <th>Contrato</th>
+                                    <th>Nombre</th>
+                                    <th>Documento</th>
+                                 
+                                    <th>Rango</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>                             
+                            <tbody>
+                                <tr>
+                                    <td><span class="tag tag-yellow">Acreditada</span></td>
+                                    <td>123456</td>
+                                    <td>asdasd123456</td>
+                                    <td>US-123456</td>
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>123456789</td>
+                                                                                
+                                    <td>Plata</td>
+                                    <td>$45</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <form action="">
+                            <button type="button" class="btn bg-green text-white float-right">Acreditar</button>
                         </form>
-                        <form action="" class="row" id="cuenta" style="display: none;">
-                            <div class="col-sm-12 col-md-12">
-                                <h5>Cuenta Bancaria</h5>                                        
-                            </div> 
-                            <div class="col-sm-12 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">Entidad Bancaria</label>
-                                    <select class="form-control custom-select">
-                                        <option value='BBVA '>BBVA </option>
-                                        <option value='Bancamia'>Bancamia</option>
-                                        <option value='Banco AV Villas'>Banco AV Villas</option>
-                                        <option value='Banco Agrario'>Banco Agrario</option>
-                                        <option value='Banco Caja Social'>Banco Caja Social</option>
-                                        <option value='Banco Coperativo Copcentral'>Banco Coperativo Copcentral</option>
-                                        <option value='Banco Credifinaciera'>Banco Credifinaciera</option>
-                                        <option value='Banco Davivienda'>Banco Davivienda</option>
-                                        <option value='Banco Falabella'>Banco Falabella</option>
-                                        <option value='Banco GNB Sudameris'>Banco GNB Sudameris</option>
-                                        <option value='Banco Pichicha'>Banco Pichicha</option>
-                                        <option value='Banco Popular'>Banco Popular</option>
-                                        <option value='Banco Procredit'>Banco Procredit</option>
-                                        <option value='Banco Santander'>Banco Santander</option>
-                                        <option value='Banco Serfinanza'>Banco Serfinanza</option>
-                                        <option value='Banco W S.A.'>Banco W S.A.</option>
-                                        <option value='Banco de Bogotá'>Banco de Bogotá</option>
-                                        <option value='Banco de Occidente'>Banco de Occidente</option>
-                                        <option value='Bancoldex'>Bancoldex</option>
-                                        <option value='Bancolombia'>Bancolombia</option>
-                                        <option value='Bancomeva'>Bancomeva</option>
-                                        <option value='Coltefinanciera'>Coltefinanciera</option>
-                                        <option value='Confiar Cooperativa Financiera'>Confiar Cooperativa Financiera</option>
-                                        <option value='Daviplata'>Daviplata</option>
-                                        <option value='Giros y Finanzas CF'>Giros y Finanzas CF</option>
-                                        <option value='IRIS'>IRIS</option>
-                                        <option value='Itau'>Itau</option>
-                                        <option value='J.P. Morgan'>J.P. Morgan</option>
-                                        <option value='Nequi'>Nequi</option>
-                                        <option value='Rappipay'>Rappipay</option>
-                                        <option value='Scotianbank Colpartria'>Scotianbank Colpartria</option>
-                                    </select>   
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">Tipo de cuenta</label>
-                                    <select class="form-control custom-select">
-                                        <option value='Ahorro'>Ahorro</option>
-                                        <option value='Corriente'>Corriente</option>
-                                    </select>                                    
-                                </div>
-                              
-                            </div>
-                            <div class="col-sm-12 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">Numero</label>
-                                    <input type="text" class="form-control" placeholder="Numero">
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" placeholder="Nombre">
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="form-group">
-                                    <label class="form-label">Documento</label>
-                                    <select class="form-control custom-select">
-                                        <option value="">Seleccione</option>
-                                        <option value="1" selected>Identidad</option>
-                                        <option value="1">Pasaporte</option>
-                                        <option value="1">Visa</option>
-                                    </select>                                    
-                                </div>
-                            </div>
-                            <div class="col-12 text-right">
-                                <button type="submit" class="btn btn-primary">Editar</button>
-                            </div>
-                        </form>
-                        <form action="" class="row" id="billetera" style="display: none;">
-                              <div class="col-sm-12 col-md-12">
-                                <h5>Billetera Virtual</h5>                                        
-                            </div>      
-                            <div class="col-sm-12 col-md-12">
-                                <div class="form-group">
-                                    <label class="form-label">Numero Biletera</label>
-                                    <input type="text" class="form-control" placeholder="Numero Biletera">
-                                </div>
-                            </div>
-                            <div class="col-12 text-right">
-                                <button type="submit" class="btn btn-primary">Guardar</button>
-                            </div>
-                        </form>     
                     </div>                   
                 </div>
             </div>
@@ -715,303 +520,47 @@
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLiveLabel">Usuarios - Detalles</h5>
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Reversa</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                         <table class="table table-hover js-basic-example dataTable table_custom spacing5">
+                        <table class="table table-hover js-basic-example dataTable table_custom spacing5">
                             <thead>
                                 <tr>
                                     <th>Estado</th>
-                                    <th>Cont. Lider</th>
-                                    <th>Nom. Lider</th>                                    
-                                    <th>Fecha insc.</th>
-                                    <th>Estructuras Nuevas</th>
-                                    <th>Estructuras Recurrentes</th>
-                                    <th>Valor Ultimo Pago</th>                                   
-                                    <th>Fecha Ultimo Pago</th>
-                                </tr>
-                            </thead>                             
-                            <tbody>
-                                <tr>
-                                    <td><span class="tag tag-lime">Activo</span></td>      
-                                    <td>US-0123456</td>
-                                    <td>Lider Ejemplo 1</td>                                    
-                                    <td>1/1/21</td>
-                                    <td>3</td>
-                                    <td>4</td>
-                                    <td>$ 100</td>
-                                    <td>999</td>
-                                </tr>                                
-                            </tbody>
-                        </table>
-                    </div>                   
-                </div>
-            </div>
-        </div>
-        <div id="exampleModalLive3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel3" style="display: none;" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLiveLabel">Usuarios - Comprobantes</h5>
-                        <button type="button" class="close close-show-comprobante" data-dismiss="modal" aria-label="Close" id="">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <!-- Formulario -->
-                        <div id="listado-comprobantes">
-                            <div class="row clearfix">
-                                <div class="col-lg-12">
-                                    <form class="card">
-                                        <div class="card-body">
-                                            <div class="form-group">
-                                                <label class="form-label">Comprobantes</label>
-                                                <div class="row gutters-xs">
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" placeholder="Ingrese el comprobante">
-                                                    </div>
-                                                    <span class="col-auto"><button class="btn btn-secondary" type="button"><i class="fe fe-search"></i></button></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                                        
-                                </div>
-                            </div>
-                             <table class="table table-hover js-basic-example dataTable table_custom spacing5">
-                                <thead>
-                                    <tr>
-                                        <th>Ciclo</th>
-                                        <th>Fecha de Carga</th>
-                                        <th>Hora de Carga</th>
-                                        <th>Valor Declarado</th>
-                                        <th>Valor Registrado</th>
-                                        <th>Estado</th>                                   
-                                        <th>Opcion</th>                                   
-                                    </tr>
-                                </thead>                             
-                                <tbody>
-                                    <tr>
-                                        <td>9</td>                                    
-                                        <td class="text-green">1/1/21</td>
-                                        <td>12:00 AM</td>
-                                        <td>$ 100</td>
-                                        <td>$ 100</td>
-                                        <td> <span class="tag tag-lime">Activo por la plataforma</span></td>
-                                        <td><button type="button" 
-                                                class="btn show-comprobante" 
-                                                >
-                                                <i class="fa fa-eye"  data-toggle="tooltip"
-                                                title
-                                                data-original-title="Ver comprobante"></i>
-                                            </button> 
-                                        </td>
-                                    </tr>                                
-                                    <tr>
-                                        <td>9</td>                                    
-                                        <td class="text-green">1/1/21</td>
-                                        <td>12:00 AM</td>
-                                        <td>$ 100</td>
-                                        <td>$ 100</td>
-                                        <td><span class="tag tag-teal">Rechazado por la plataforma</span></td>
-                                        <td>
-                                            <button type="button" 
-                                                class="btn show-comprobante" 
-                                                >
-                                                <i class="fa fa-eye"  data-toggle="tooltip"
-                                                title
-                                                data-original-title="Ver comprobante"></i>
-                                            </button> 
-                                        </td>
-                                    </tr>                                
-                                    <tr>
-                                        <td>9</td>                                    
-                                        <td class="text-green">1/1/21</td>
-                                        <td>12:00 AM</td>
-                                        <td>$ 100</td>
-                                        <td>$ 100</td>
-                                        <td><span class="tag tag-lime">Activo por administrador</span></td>
-                                        <td>
-                                            <button type="button" 
-                                                class="btn show-comprobante" 
-                                                >
-                                                <i class="fa fa-eye"  data-toggle="tooltip"
-                                                title
-                                                data-original-title="Ver comprobante"></i>
-                                            </button> 
-                                        </td>
-                                    </tr>                                
-                                    <tr>
-                                        <td>9</td>                                    
-                                        <td class="text-green">1/1/21</td>
-                                        <td>12:00 AM</td>
-                                        <td>$ 100</td>
-                                        <td>$ 100</td>
-                                        <td><span class="tag tag-yellow">Rechazado por administrador</span></td>
-                                        <td>
-                                            <button type="button" 
-                                                class="btn show-comprobante"                                           
-                                                >
-                                                <i class="fa fa-eye"  data-toggle="tooltip"
-                                                title
-                                                data-original-title="Ver comprobante"></i>
-                                            </button> 
-                                        </td>
-                                    </tr>                                
-                                    <tr>
-                                        <td>9</td>                                    
-                                        <td class="text-green">1/1/21</td>
-                                        <td>12:00 AM</td>
-                                        <td>$ 100</td>
-                                        <td>$ 100</td>
-                                        <td><span class="tag tag-red">Fuera de horario</span></td>
-                                         <td>
-                                            <button type="button" 
-                                                class="btn show-comprobante" 
-                                                >
-                                                <i class="fa fa-eye"  data-toggle="tooltip"
-                                                title
-                                                data-original-title="Ver comprobante "></i>
-                                            </button> 
-                                        </td>
-                                    </tr>                                
-                                    <tr>
-                                        <td>9</td>                                    
-                                        <td class="text-green">1/1/21</td>
-                                        <td>12:00 AM</td>
-                                        <td>$ 100</td>
-                                        <td>$ 100</td>
-                                        <td><span class="tag tag-purple">Sin procesar</span></td>
-                                         <td>
-                                            <button type="button" 
-                                                class="btn show-comprobante"                                             
-                                                >
-                                                <i class="fa fa-eye"  data-toggle="tooltip"
-                                                title
-                                                data-original-title="Ver comprobante"></i>
-                                            </button> 
-                                        </td>
-                                    </tr>                                
-                                </tbody>
-                            </table>
-                        </div>
-                        <div id="visual-comprobante" style="display: none;">
-                            <embed src="./assets/docs/Comprobante.pdf" frameborder="0" width="100%" height="400px">
-                            <div class="row mt-5">
-                                <div class="col-12 ">
-                                    <form class="form-inline justify-content-center">
-                                        <div class="form-group mb-2">
-                                            <label for="staticEmail2" class="sr-only">Ingresar Valor</label>
-                                            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Ingresar Valor">
-                                        </div>
-                                        <div class="form-group mx-sm-3 mb-2">
-                                            <label for="moneda" class="sr-only">Valor en moneda</label>
-                                            <input type="number" class="form-control" id="moneda" placeholder="Valor en moneda">
-                                        </div>
-                                        
-                                        <a href="#" class="btn text-white bg-green mr-1">Validar</a>
-                                        <a href="#" class="btn text-white bg-red mr-1">Rechazar</a>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </div>
-            </div>
-        </div>
-        <div id="exampleModalLive4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel3" style="display: none;" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLiveLabel">Referidos</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                         <table class="table table-hover js-basic-example dataTable table_custom spacing5">
-                            <thead>
-                                <tr>
-                                    <th>Nivel</th>
-                                    <th>Usuario</th>
+                                    <th>Numero</th>
+                                    <th>Dir. Pago</th>
+                                    <th>Contrato</th>
                                     <th>Nombre</th>
-                                    <th>Fecha de Ingreso</th>
-                                    <th>Inversión</th>
-                                    <th>Estado</th>
-                                                                          
+                                    <th>Documento</th>
+                                 
+                                    <th>Rango</th>
+                                    <th>Valor</th>
                                 </tr>
                             </thead>                             
                             <tbody>
                                 <tr>
-                                    <td>5</td>
+                                    <td><span class="tag tag-red">Verificada</span></td>
+                                    <td>123456</td>
+                                    <td>asdasd123456</td>
                                     <td>US-123456</td>
-                                    <td>Usuario 1</td>
-                                    <td>1/1/21</td>
-                                    <td>$ 100</td>
-                                    <td><span class="tag tag-azure">Nuevo</span></td>                                           
-                                </tr>                                
-                                <tr>
-                                    <td>5</td>
-                                    <td>US-123456</td>
-                                    <td>Usuario 1</td>
-                                    <td>1/1/21</td>
-                                    <td>$ 100</td>
-                                    <td><span class="tag tag-red">Activo</span></td>                                           
-                                </tr>                                
-                                <tr>
-                                    <td>5</td>
-                                    <td>US-123456</td>
-                                    <td>Usuario 1</td>
-                                    <td>1/1/21</td>
-                                    <td>$ 100</td>
-                                    <td><span class="tag tag-yellow">Inactivo por Inversion</span></td>                                           
-                                </tr>                                
-                                <tr>
-                                    <td>5</td>
-                                    <td>US-123456</td>
-                                    <td>Usuario 1</td>
-                                    <td>1/1/21</td>
-                                    <td>$ 100</td>
-                                    <td><span class="tag tag-blue">Inactivo por referido</span></td>                                           
-                                </tr>                                
-                                <tr>
-                                    <td>5</td>
-                                    <td>US-123456</td>
-                                    <td>Usuario 1</td>
-                                    <td>1/1/21</td>
-                                    <td>$ 100</td>
-                                    <td><span class="tag tag-purple">Doble Inactivo</span></td>                                           
-                                </tr>                                
-                                                            
+                                    <td>Usuario Ejemplo1</td>
+                                    <td>123456789</td>
+                                                                                
+                                    <td>Plata</td>
+                                    <td>$45</td>
+                                </tr>
                             </tbody>
                         </table>
+                        <form action="">
+                            <button type="button" class="btn bg-green text-white float-right">Reversa</button>
+                        </form>
                     </div>                   
                 </div>
             </div>
-        </div>
-
-        <!-- Start page footer -->
-        <!-- <div class="section-body">
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            Copyright © 2019 <a href="https://themeforest.net/user/puffintheme">PuffinTheme</a>.
-                        </div>
-                        <div class="col-md-6 col-sm-12 text-md-right">
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item"><a href="https://themeforest.net/user/puffintheme/portfolio">Portfolio</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">Buy Now</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div> -->
+        </div>    
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
