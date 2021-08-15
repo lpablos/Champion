@@ -833,170 +833,71 @@
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLiveLabel">Usuarios - Comprobantes</h5>
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Activar</h5>
                         <button type="button" class="close close-show-comprobante" data-dismiss="modal" aria-label="Close" id="">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                         <!-- Formulario -->
-                        <div id="listado-comprobantes">
-                            <div class="row clearfix">
-                                <div class="col-lg-12">
-                                    <form class="card">
-                                        <div class="card-body">
-                                            <div class="form-group">
-                                                <label class="form-label">Comprobantes</label>
-                                                <div class="row gutters-xs">
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" placeholder="Ingrese el comprobante">
-                                                    </div>
-                                                    <span class="col-auto"><button class="btn btn-secondary" type="button"><i class="fe fe-search"></i></button></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                                        
+                        <form action="" class="row" id="general">
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Contrato</label>
+                                    <input type="text" class="form-control" placeholder="Contrato" value="US-123456" maxlength="10" value="US-123456">
                                 </div>
                             </div>
-                             <table class="table table-hover js-basic-example dataTable table_custom spacing5">
-                                <thead>
-                                    <tr>
-                                        <th>Ciclo</th>
-                                        <th>Fecha de Carga</th>
-                                        <th>Hora de Carga</th>
-                                        <th>Valor Declarado</th>
-                                        <th>Valor Registrado</th>
-                                        <th>Estado</th>                                   
-                                        <th>Opcion</th>                                   
-                                    </tr>
-                                </thead>                             
-                                <tbody>
-                                    <tr>
-                                        <td>9</td>                                    
-                                        <td class="text-green">1/1/21</td>
-                                        <td>12:00 AM</td>
-                                        <td>$ 100</td>
-                                        <td>$ 100</td>
-                                        <td> <span class="tag tag-lime">Activo por la plataforma</span></td>
-                                        <td><button type="button" 
-                                                class="btn show-comprobante" 
-                                                >
-                                                <i class="fa fa-eye"  data-toggle="tooltip"
-                                                title
-                                                data-original-title="Ver comprobante"></i>
-                                            </button> 
-                                        </td>
-                                    </tr>                                
-                                    <tr>
-                                        <td>9</td>                                    
-                                        <td class="text-green">1/1/21</td>
-                                        <td>12:00 AM</td>
-                                        <td>$ 100</td>
-                                        <td>$ 100</td>
-                                        <td><span class="tag tag-teal">Rechazado por la plataforma</span></td>
-                                        <td>
-                                            <button type="button" 
-                                                class="btn show-comprobante" 
-                                                >
-                                                <i class="fa fa-eye"  data-toggle="tooltip"
-                                                title
-                                                data-original-title="Ver comprobante"></i>
-                                            </button> 
-                                        </td>
-                                    </tr>                                
-                                    <tr>
-                                        <td>9</td>                                    
-                                        <td class="text-green">1/1/21</td>
-                                        <td>12:00 AM</td>
-                                        <td>$ 100</td>
-                                        <td>$ 100</td>
-                                        <td><span class="tag tag-lime">Activo por administrador</span></td>
-                                        <td>
-                                            <button type="button" 
-                                                class="btn show-comprobante" 
-                                                >
-                                                <i class="fa fa-eye"  data-toggle="tooltip"
-                                                title
-                                                data-original-title="Ver comprobante"></i>
-                                            </button> 
-                                        </td>
-                                    </tr>                                
-                                    <tr>
-                                        <td>9</td>                                    
-                                        <td class="text-green">1/1/21</td>
-                                        <td>12:00 AM</td>
-                                        <td>$ 100</td>
-                                        <td>$ 100</td>
-                                        <td><span class="tag tag-yellow">Rechazado por administrador</span></td>
-                                        <td>
-                                            <button type="button" 
-                                                class="btn show-comprobante"                                           
-                                                >
-                                                <i class="fa fa-eye"  data-toggle="tooltip"
-                                                title
-                                                data-original-title="Ver comprobante"></i>
-                                            </button> 
-                                        </td>
-                                    </tr>                                
-                                    <tr>
-                                        <td>9</td>                                    
-                                        <td class="text-green">1/1/21</td>
-                                        <td>12:00 AM</td>
-                                        <td>$ 100</td>
-                                        <td>$ 100</td>
-                                        <td><span class="tag tag-red">Fuera de horario</span></td>
-                                         <td>
-                                            <button type="button" 
-                                                class="btn show-comprobante" 
-                                                >
-                                                <i class="fa fa-eye"  data-toggle="tooltip"
-                                                title
-                                                data-original-title="Ver comprobante "></i>
-                                            </button> 
-                                        </td>
-                                    </tr>                                
-                                    <tr>
-                                        <td>9</td>                                    
-                                        <td class="text-green">1/1/21</td>
-                                        <td>12:00 AM</td>
-                                        <td>$ 100</td>
-                                        <td>$ 100</td>
-                                        <td><span class="tag tag-purple">Sin procesar</span></td>
-                                         <td>
-                                            <button type="button" 
-                                                class="btn show-comprobante"                                             
-                                                >
-                                                <i class="fa fa-eye"  data-toggle="tooltip"
-                                                title
-                                                data-original-title="Ver comprobante"></i>
-                                            </button> 
-                                        </td>
-                                    </tr>                                
-                                </tbody>
-                            </table>
-                        </div>
-                        <div id="visual-comprobante" style="display: none;">
-                            <embed src="./assets/docs/Comprobante.pdf" frameborder="0" width="100%" height="400px">
-                            <div class="row mt-5">
-                                <div class="col-12 ">
-                                    <form class="form-inline justify-content-center">
-                                        <div class="form-group mb-2">
-                                            <label for="staticEmail2" class="sr-only">Ingresar Valor</label>
-                                            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Ingresar Valor">
-                                        </div>
-                                        <div class="form-group mx-sm-3 mb-2">
-                                            <label for="moneda" class="sr-only">Valor en moneda</label>
-                                            <input type="number" class="form-control" id="moneda" placeholder="Valor en moneda">
-                                        </div>
-                                        
-                                        <a href="#" class="btn text-white bg-green mr-1">Validar</a>
-                                        <a href="#" class="btn text-white bg-red mr-1">Rechazar</a>
-                                    </form>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Estado</label>
+                                    <input type="text" class="form-control" placeholder="Estado" value="Nuevo" maxlength="10" value="Nuevo">
                                 </div>
                             </div>
-                        </div>
-                    </div>                   
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Rango</label>
+                                    <input type="text" class="form-control" placeholder="Rango" value="Usuario Ejemplo" value="Plata">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Contrato Lider</label>
+                                    <input type="text" class="form-control" placeholder="Contrato Lider" value="2313313-ASD">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Fecha Creación</label>
+                                    <input type="text" class="form-control" placeholder="Fecha Creación" value="1/1/2021">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Nivel</label>
+                                    <input type="number" class="form-control" placeholder="Nivel" value="4">
+                                </div>
+                            </div>
+                         
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Usuarios</label>
+                                    <input type="text" class="form-control" placeholder="Usuarios" value="25">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Inversión</label>
+                                    <input type="text" class="form-control" placeholder="Inversión" value="$15">
+                                </div>
+                            </div>       
+                            <div class="col-sm-12 col-md-12">
+                                <div class="form-group text-right">
+                                    <button type="submit" class="btn btn-primary">Activar</button>
+                                </div>
+                            </div>                          
+                        </form>
+                        <hr>
+                      
+                    </div>               
                 </div>
             </div>
         </div>
@@ -1004,69 +905,58 @@
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLiveLabel">Referidos</h5>
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Contrato-Pagar</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                         <table class="table table-hover js-basic-example dataTable table_custom spacing5">
-                            <thead>
-                                <tr>
-                                    <th>Nivel</th>
-                                    <th>Usuario</th>
-                                    <th>Nombre</th>
-                                    <th>Fecha de Ingreso</th>
-                                    <th>Inversión</th>
-                                    <th>Estado</th>
-                                                                          
-                                </tr>
-                            </thead>                             
-                            <tbody>
-                                <tr>
-                                    <td>5</td>
-                                    <td>US-123456</td>
-                                    <td>Usuario 1</td>
-                                    <td>1/1/21</td>
-                                    <td>$ 100</td>
-                                    <td><span class="tag tag-azure">Nuevo</span></td>                                           
-                                </tr>                                
-                                <tr>
-                                    <td>5</td>
-                                    <td>US-123456</td>
-                                    <td>Usuario 1</td>
-                                    <td>1/1/21</td>
-                                    <td>$ 100</td>
-                                    <td><span class="tag tag-red">Activo</span></td>                                           
-                                </tr>                                
-                                <tr>
-                                    <td>5</td>
-                                    <td>US-123456</td>
-                                    <td>Usuario 1</td>
-                                    <td>1/1/21</td>
-                                    <td>$ 100</td>
-                                    <td><span class="tag tag-yellow">Inactivo por Inversion</span></td>                                           
-                                </tr>                                
-                                <tr>
-                                    <td>5</td>
-                                    <td>US-123456</td>
-                                    <td>Usuario 1</td>
-                                    <td>1/1/21</td>
-                                    <td>$ 100</td>
-                                    <td><span class="tag tag-blue">Inactivo por referido</span></td>                                           
-                                </tr>                                
-                                <tr>
-                                    <td>5</td>
-                                    <td>US-123456</td>
-                                    <td>Usuario 1</td>
-                                    <td>1/1/21</td>
-                                    <td>$ 100</td>
-                                    <td><span class="tag tag-purple">Doble Inactivo</span></td>                                           
-                                </tr>                                
-                                                            
-                            </tbody>
-                        </table>
-                    </div>                   
+                        <form action="" class="row" id="general">
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Contrato</label>
+                                    <input type="text" class="form-control" placeholder="Contrato" value="US-123456" maxlength="10" value="US-123456">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Estado</label>
+                                    <input type="text" class="form-control" placeholder="Estado" value="Nuevo" maxlength="10" value="Nuevo">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Rango</label>
+                                    <input type="text" class="form-control" placeholder="Rango" value="Usuario Ejemplo" value="Plata">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Tipo de pago</label>
+                                    <input type="text" class="form-control" placeholder="Tipo de pago" value="Pago 1">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Causado</label>
+                                    <input type="text" class="form-control" placeholder="Causado" value="1/1/2021">
+                                </div>
+                            </div>
+                          
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Valor</label>
+                                    <input type="text" class="form-control" placeholder="Valor" value="$15">
+                                </div>
+                            </div>       
+                            <div class="col-sm-12 col-md-12">
+                                <div class="form-group text-right">
+                                    <button type="submit" class="btn btn-primary">Pagar</button>
+                                </div>
+                            </div>                          
+                        </form>
+                       
+                    </div>               
                 </div>
             </div>
         </div>
