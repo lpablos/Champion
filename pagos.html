@@ -8,7 +8,7 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
-<title>Innovación Financiera</title>
+<title>Innovación Finacnciera</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -182,7 +182,7 @@
     <!-- start Main menu -->
     <div id="left-sidebar" class="sidebar" style="background-color: rgb(213 220 228);">
         <div class="d-flex justify-content-between brand_name">
-            <h5 class="brand-name">Innovación Financiera</h5>          
+            <h5 class="brand-name">Innovacion Financiera</h5>          
         </div>
         <div class="input-icon">
             <span class="input-icon-addon">
@@ -267,7 +267,7 @@
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="#">Por pagar</a>
                                         <a class="dropdown-item" href="#">Pagado</a>
-                                        <a class="dropdown-item" href="#">Reclamo</a>
+                                        <a class="dropdown-item" href="#">Reversado</a>
                                     </div>
                                 </div>
                                 <div class="dropdown">
@@ -283,47 +283,32 @@
 
                             </div>
                             <div class="">
-                                <div class="input-group">
-                                    <div class="input-group-prepend bg-gray">
-                                        <span class="input-group-text text-white">Generar Excel</span>
-                                    </div>                       
-                                    <div class="input-group-append">
-                                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipo de Pago</button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Bono de Bienvenida</a>
-                                            <a class="dropdown-item" href="#">Compesación por referidos</a>
-                                            <a class="dropdown-item" href="#">Reembolso</a>
-                                            <a class="dropdown-item" href="#">Bono Rango Champion 50</a>
-                                            <a class="dropdown-item" href="#">Bono Rango Champion 100</a>
-                                            <a class="dropdown-item" href="#">Bono Rango Champion 200</a>
-                                            <a class="dropdown-item" href="#">Bono Rango Champion 300</a>
-                                            <a class="dropdown-item" href="#">Bono Rango Champion 400</a>
-                                            <a class="dropdown-item" href="#">Bono Rango Champion 500</a>
-                                            <a class="dropdown-item" href="#">Sorteo Incentivo de inversión</a>
-                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 50</a>
-                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 100</a>
-                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 200</a>
-                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 300</a>
-                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 400</a>
-                                            <a class="dropdown-item" href="#">Sorteo Incentivo Rango Champion 500</a>
-                                            <a class="dropdown-item" href="#">Sorteo Incentivo por referidos (2)</a>
-                                            <a class="dropdown-item" href="#">Sorteo Incentivo por referidos (5)</a>
-                                            <a class="dropdown-item" href="#">Sorteo Incentivo por referidos (10)</a>
-                                            <a class="dropdown-item" href="#">Sorteo Pago $2000</a>
-                                            <a class="dropdown-item" href="#">Sorteo Pago $5000</a>
-                                            <a class="dropdown-item" href="#">Sorteo Pago $10.000</a>
-                                            <a class="dropdown-item" href="#">Sorteo Pago $20.000</a>
+                                <form action="">
+                                    <div class="input-group mb-3">                                    
+                                        <div class="input-group-prepend">
+                                          <button class="btn btn-outline-secondary bg-green text-white" type="button">Generar Excel</button>
                                         </div>
+                                        <select class="custom-select" id="inputGroupSelect03">
+                                          <option selected>Seleciona Rango</option>
+                                          <option value="1">Plata</option>
+                                          <option value="2">Oro</option>                                      
+                                          <option value="3">Platino</option>                                      
+                                          <option value="4">Diamante</option>                                      
+                                        </select>
+                                        <select class="custom-select" id="inputGroupSelect03">
+                                          <option selected>Seleciona Pago</option>
+                                          <option value="1">Pago 1</option>
+                                          <option value="2">Pago 2</option>                                      
+                                          <option value="3">Pago 3</option>                                      
+                                        </select>
+                                        <select class="custom-select" id="inputGroupSelect03">
+                                          <option selected>Seleciona Estado</option>
+                                          <option value="1">Pagar</option>
+                                          <option value="2">Pagado</option>                                      
+                                          <option value="3">Reversado</option>                                      
+                                        </select>                                        
                                     </div>
-                                    <div class="input-group-append">
-                                        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Estado</button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">POr pagar</a>
-                                            <a class="dropdown-item" href="#">Pagado</a>
-                                            <a class="dropdown-item" href="#">Reclamo</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                         
@@ -368,9 +353,52 @@
                                                         <span class="custom-control-label">Selección</span>
                                                     </label>
                                                 </td>
-                                                <td><span class="tag tag-green">Por pagar</span></span></td>
-                                                <td>123456-AU</td>
-                                                <td>Usuario Ejemplo 1</td>
+                                                <td>Inversión</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
+                                                <td>123456 </td>
+                                                <td>Usuario Ejemplo </td>
+                                                <td>1234567890 </td>
+                                                <td>+571 300 123 4567 </td>
+                                                <td>Efecty </td>
+                                                <!-- <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td>
+                                                <td>NO </td> -->
+                                                <td>$ 100.000</td>
+                                                <td><span class="tag tag-lime">Por realizar</span></span></td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-money"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagar"></i>
+                                                    </button>      
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Reversa de Pago"></i>
+                                                    </button>  
+                                                   
+                                                </td>
+                                            </tr>                                          
+                                            <tr>
+                                                <td>
+                                                    <label class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
+                                                        <span class="custom-control-label">Selección</span>
+                                                    </label>
+                                                </td>
+                                                <td>Bono de Bienvenida</td>
+                                                <td>1/1/21 </td>
+                                                <td>- - - - </td>
                                                 <td>123456 </td>
                                                 <td>+571 300 123 4567 </td>
                                                 <td>Plata</td>
@@ -398,15 +426,7 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive22"
-                                                       >
-                                                        <i class="fa fa-user"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Ver Usuario"></i>
-                                                    </button>  
+                                                   
                                                 </td>
                                             </tr>                                          
                                             <tr>
@@ -446,15 +466,7 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive22"
-                                                       >
-                                                        <i class="fa fa-user"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Ver Usuario"></i>
-                                                    </button>  
+                                                   
                                                 </td>
                                             </tr>                                          
                                             <tr>
@@ -494,15 +506,7 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive22"
-                                                       >
-                                                        <i class="fa fa-user"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Ver Usuario"></i>
-                                                    </button>  
+                                                   
                                                 </td>
                                             </tr>                                          
                                             <tr>
@@ -542,15 +546,7 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive22"
-                                                       >
-                                                        <i class="fa fa-user"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Ver Usuario"></i>
-                                                    </button>  
+                                                   
                                                 </td>
                                             </tr>                                          
                                             <tr>
@@ -590,15 +586,7 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive22"
-                                                       >
-                                                        <i class="fa fa-user"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Ver Usuario"></i>
-                                                    </button>  
+                                                   
                                                 </td>
                                             </tr>                                          
                                             <tr>
@@ -638,15 +626,7 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive22"
-                                                       >
-                                                        <i class="fa fa-user"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Ver Usuario"></i>
-                                                    </button>  
+                                                   
                                                 </td>
                                             </tr>                                          
                                             <tr>
@@ -686,15 +666,7 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive22"
-                                                       >
-                                                        <i class="fa fa-user"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Ver Usuario"></i>
-                                                    </button>  
+                                                   
                                                 </td>
                                             </tr>                                          
                                             <tr>
@@ -734,15 +706,7 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive22"
-                                                       >
-                                                        <i class="fa fa-user"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Ver Usuario"></i>
-                                                    </button>  
+                                                   
                                                 </td>
                                             </tr>                                          
                                             <tr>
@@ -782,15 +746,7 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive22"
-                                                       >
-                                                        <i class="fa fa-user"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Ver Usuario"></i>
-                                                    </button>  
+                                                   
                                                 </td>
                                             </tr>                                          
                                             <tr>
@@ -830,15 +786,7 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive22"
-                                                       >
-                                                        <i class="fa fa-user"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Ver Usuario"></i>
-                                                    </button>  
+                                                   
                                                 </td>
                                             </tr>                                          
                                             <tr>
@@ -878,15 +826,7 @@
                                                         title
                                                         data-original-title="Reversa de Pago"></i>
                                                     </button>  
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive22"
-                                                       >
-                                                        <i class="fa fa-user"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Ver Usuario"></i>
-                                                    </button>  
+                                                   
                                                 </td>
                                             </tr>                                          
                                                                                     
@@ -902,83 +842,96 @@
     </div>
 </div>
 
-  <div id="exampleModalLive22" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel2" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
+<div id="exampleModalLive" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLiveLabel">Usuario - Detalles</h5>
+                <h5 class="modal-title" id="exampleModalLiveLabel">Acreditar</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form action="" class="row" id="general">
-                    <div class="col-sm-12 col-md-12">
-                        <h5>Datos Generales</h5>                                        
-                    </div>
-                    <div class="col-sm-3 col-md-4">
-                        <div class="form-group">
-                            <label class="form-label">Documento</label>
-                            <input type="text" class="form-control" placeholder="Documento" value="US-123456" maxlength="10">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="form-group">
-                            <label class="form-label">Nombre</label>
-                            <input type="text" class="form-control" placeholder="Nombre" value="Usuario Ejemplo">
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-md-4">
-                        <div class="form-group">
-                            <label class="form-label">Código Líder</label>
-                            <input type="text" class="form-control" placeholder="Código Líder" value="US-0123456">
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                        <div class="form-group">
-                            <label class="form-label">Nombre Líder</label>
-                            <input type="text" class="form-control" placeholder="Nombre Líder" value="Lider Ejemplo 1">
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                        <div class="form-group">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="Email" value="user@testdemo.com">
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                        <div class="form-group">
-                            <label class="form-label">Teléfono</label>
-                            <input type="tel" class="form-control" placeholder="Teléfono" value="3131123123">
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                        <div class="form-group">
-                            <label class="form-label">Ciudad</label>
-                            <select class="form-control custom-select">
-                                <option value="">Seleccione</option>
-                                <option value="1" selected>Germany</option>
-                                <option value="1">USA</option>
-                                <option value="1">Canada</option>
-                            </select>                                    
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                        <div class="form-group">
-                            <label class="form-label">Clave</label>
-                            <input type="text" class="form-control" placeholder="Clave" value="2313313">
-                        </div>
-                    </div>
-                    <hr>
-                    
-                    <div class="col-12 text-right">
-                        <button type="submit" class="btn btn-primary">Guardar</button>
-                    </div>
-                </form> 
+                <table class="table table-hover js-basic-example dataTable table_custom spacing5">
+                    <thead>
+                        <tr>
+                            <th>Estado</th>
+                            <th>Numero</th>
+                            <th>Dir. Pago</th>
+                            <th>Contrato</th>
+                            <th>Nombre</th>
+                            <th>Documento</th>
+                         
+                            <th>Rango</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>                             
+                    <tbody>
+                        <tr>
+                            <td><span class="tag tag-yellow">Acreditada</span></td>
+                            <td>123456</td>
+                            <td>asdasd123456</td>
+                            <td>US-123456</td>
+                            <td>Usuario Ejemplo1</td>
+                            <td>123456789</td>
+                                                                        
+                            <td>Plata</td>
+                            <td>$45</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form action="">
+                    <button type="button" class="btn bg-green text-white float-right">Acreditar</button>
+                </form>
             </div>                   
         </div>
     </div>
 </div>
+<div id="exampleModalLive2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel2" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLiveLabel">Reversa</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-hover js-basic-example dataTable table_custom spacing5">
+                    <thead>
+                        <tr>
+                            <th>Estado</th>
+                            <th>Numero</th>
+                            <th>Dir. Pago</th>
+                            <th>Contrato</th>
+                            <th>Nombre</th>
+                            <th>Documento</th>
+                         
+                            <th>Rango</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>                             
+                    <tbody>
+                        <tr>
+                            <td><span class="tag tag-red">Verificada</span></td>
+                            <td>123456</td>
+                            <td>asdasd123456</td>
+                            <td>US-123456</td>
+                            <td>Usuario Ejemplo1</td>
+                            <td>123456789</td>
+                                                                        
+                            <td>Plata</td>
+                            <td>$45</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form action="">
+                    <button type="button" class="btn bg-green text-white float-right">Reversa</button>
+                </form>
+            </div>                   
+        </div>
+    </div>
+</div>    
 
 <!-- jQuery and bootstrtap js -->
 <script src="./assets/bundles/lib.vendor.bundle.js"></script>
