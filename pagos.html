@@ -353,58 +353,15 @@
                                                         <span class="custom-control-label">Selección</span>
                                                     </label>
                                                 </td>
-                                                <td>Inversión</td>
-                                                <td>1/1/21 </td>
-                                                <td>- - - - </td>
-                                                <td>123456 </td>
-                                                <td>Usuario Ejemplo </td>
-                                                <td>1234567890 </td>
-                                                <td>+571 300 123 4567 </td>
-                                                <td>Efecty </td>
-                                                <!-- <td>NO </td>
-                                                <td>NO </td>
-                                                <td>NO </td>
-                                                <td>NO </td> -->
-                                                <td>$ 100.000</td>
-                                                <td><span class="tag tag-lime">Por realizar</span></span></td>                                                
-                                                <td>
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive"
-                                                       >
-                                                        <i class="fa fa-money"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Pagar"></i>
-                                                    </button>      
-                                                    <button type="button" 
-                                                        class="btn" 
-                                                        data-toggle="modal" 
-                                                        data-target="#exampleModalLive2"
-                                                       >
-                                                        <i class="fa fa-rotate-left"  data-toggle="tooltip"
-                                                        title
-                                                        data-original-title="Reversa de Pago"></i>
-                                                    </button>  
-                                                   
-                                                </td>
-                                            </tr>                                          
-                                            <tr>
-                                                <td>
-                                                    <label class="custom-control custom-checkbox custom-control-inline">
-                                                        <input type="checkbox" class="custom-control-input" name="example-inline-checkbox1" value="option1">
-                                                        <span class="custom-control-label">Selección</span>
-                                                    </label>
-                                                </td>
-                                                <td>Bono de Bienvenida</td>
-                                                <td>1/1/21 </td>
-                                                <td>- - - - </td>
-                                                <td>123456 </td>
-                                                <td>+571 300 123 4567 </td>
+                                                <td><span class="tag tag-lime">Por pagar</span></span></td>
+                                                <td>123456-AU</td>
+                                                <td>Usuario Ejemplo 1</td>
+                                                <td>123456</td>
+                                                <td>U3001234567</td>
                                                 <td>Plata</td>
-                                                <td>Pago 1 </td>
+                                                <td>Pago 1</td>
                                                 <td>1/1/21</td>
-                                                <td>Por pagar </td>
+                                                <td>Por pagar</td>
                                                 <td>No</td>
                                                 <td>$ 45</td>
                                                 <td>
@@ -846,7 +803,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLiveLabel">Acreditar</h5>
+                <h5 class="modal-title" id="exampleModalLiveLabel">Pagar</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -856,32 +813,32 @@
                     <thead>
                         <tr>
                             <th>Estado</th>
-                            <th>Numero</th>
-                            <th>Dir. Pago</th>
                             <th>Contrato</th>
                             <th>Nombre</th>
                             <th>Documento</th>
-                         
                             <th>Rango</th>
+                            <th>T. pago</th>
+                            <th>Causado</th>
+                            <th>Reversado</th>
                             <th>Valor</th>
                         </tr>
                     </thead>                             
                     <tbody>
                         <tr>
-                            <td><span class="tag tag-yellow">Acreditada</span></td>
-                            <td>123456</td>
-                            <td>asdasd123456</td>
-                            <td>US-123456</td>
+                            <td><span class="tag tag-yellow">Por pagar</span></td>
+                            <td>123456-AU</td>
                             <td>Usuario Ejemplo1</td>
                             <td>123456789</td>
-                                                                        
                             <td>Plata</td>
-                            <td>$45</td>
+                            <td>Pago 1</td>
+                            <td>1/1/21</td>                                            
+                            <td>No</td>
+                            <td>$ 45</td>
                         </tr>
                     </tbody>
                 </table>
                 <form action="">
-                    <button type="button" class="btn bg-green text-white float-right">Acreditar</button>
+                    <button type="button" class="btn bg-green text-white float-right">Pagar</button>
                 </form>
             </div>                   
         </div>
@@ -891,7 +848,7 @@
     <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLiveLabel">Reversa</h5>
+                <h5 class="modal-title" id="exampleModalLiveLabel">Reversar</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -901,32 +858,32 @@
                     <thead>
                         <tr>
                             <th>Estado</th>
-                            <th>Numero</th>
-                            <th>Dir. Pago</th>
                             <th>Contrato</th>
                             <th>Nombre</th>
                             <th>Documento</th>
-                         
                             <th>Rango</th>
+                            <th>T. pago</th>
+                            <th>Causado</th>
+                            <th>Reversado</th>
                             <th>Valor</th>
                         </tr>
                     </thead>                             
                     <tbody>
                         <tr>
-                            <td><span class="tag tag-red">Verificada</span></td>
-                            <td>123456</td>
-                            <td>asdasd123456</td>
-                            <td>US-123456</td>
+                            <td><span class="tag tag-red">Pagado</span></td>
+                            <td>123456-AU</td>
                             <td>Usuario Ejemplo1</td>
                             <td>123456789</td>
-                                                                        
                             <td>Plata</td>
-                            <td>$45</td>
+                            <td>Pago 1</td>
+                            <td>1/1/21</td>                                            
+                            <td>No</td>
+                            <td>$ 45</td>
                         </tr>
                     </tbody>
                 </table>
                 <form action="">
-                    <button type="button" class="btn bg-green text-white float-right">Reversa</button>
+                    <button type="button" class="btn bg-green text-white float-right">Reversar</button>
                 </form>
             </div>                   
         </div>
