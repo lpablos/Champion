@@ -326,6 +326,64 @@
                                         </thead>                             
                                         <tbody>
                                             <tr>
+                                                <td><span class="tag tag-green">Inscrito</span></td>
+                                                <td>US-123456</td>
+                                                <td>Usuario Ejemplo</td>
+                                                <td>123456</td>
+                                                <!-- <td>US-0123456</td> -->
+                                                <!-- <td>Lider Ejemplo 1</td> -->
+                                                <!-- <td>1/1/21</td> -->
+                                                <td>3</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>2</td>                                                
+                                                <td>
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive"
+                                                       >
+                                                        <i class="fa fa-cog"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Editar Perfil"></i>
+                                                    </button>    
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive2"
+                                                       >
+                                                        <i class="fa fa-search"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Detalles"></i>
+                                                    </button>  
+                                                    
+                                                    <a class="bnt btn-link" href="usuarios_contrato.html" role="button"> 
+                                                        <i class="fa fa-files-o"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Contratos"></i></a>    
+                                                   
+                                                    <button type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#exampleModalLive5"
+                                                       >
+                                                        <i class="fa fa-usd"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Pagos"></i>
+                                                    </button>  
+                                                    <button 
+                                                        type="button" 
+                                                        class="btn" 
+                                                        data-toggle="modal" 
+                                                        data-target="#eexampleModalLive_vi"
+                                                       >
+                                                        <i class="fa fa-user"  data-toggle="tooltip"
+                                                        title
+                                                        data-original-title="Ver Perfil"></i>
+                                                    </button>    
+                                                </td>
+                                            </tr>
+                                            <tr>
                                                 <td><span class="tag tag-lime">Activo</span></td>
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
@@ -375,7 +433,7 @@
                                                         type="button" 
                                                         class="btn" 
                                                         data-toggle="modal" 
-                                                        data-target="#exampleModalLive"
+                                                        data-target="#exampleModalLive_vi"
                                                        >
                                                         <i class="fa fa-user"  data-toggle="tooltip"
                                                         title
@@ -384,7 +442,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><span class="tag tag-red">Finalizado</span></td>
+                                                <td><span class="tag tag-red">Inactivo por referidos</span></td>
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td>123456</td>
@@ -443,7 +501,7 @@
                                                 
                                             </tr>
                                             <tr>
-                                                <td><span class="tag tag-yellow">Finalizado Anticipado</span></td>
+                                                <td><span class="tag tag-yellow">Inactivo permanente</span></td>
                                                 <td>US-123456</td>
                                                 <td>Usuario Ejemplo</td>
                                                 <td>123456</td>
@@ -501,7 +559,7 @@
                                                         type="button" 
                                                         class="btn" 
                                                         data-toggle="modal" 
-                                                        data-target="#exampleModalLive"
+                                                        data-target="#exampleModalLive_vi"
                                                        >
                                                         <i class="fa fa-user"  data-toggle="tooltip"
                                                         title
@@ -582,6 +640,17 @@
                             </div>
                             <div class="col-sm-3 col-md-3">
                                 <div class="form-group">
+                                    <label class="form-label">País</label>
+                                    <select class="form-control custom-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Germany</option>
+                                        <option value="1">USA</option>
+                                        <option value="1">Canada</option>
+                                    </select>                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
                                     <label class="form-label">Ciudad</label>
                                     <select class="form-control custom-select">
                                         <option value="">Seleccione</option>
@@ -601,17 +670,6 @@
                                 <div class="form-group">
                                     <label class="form-label">Nombre Líder</label>
                                     <input type="text" class="form-control" placeholder="Nombre Líder" value="Lider Ejemplo 1">
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-md-3">
-                                <div class="form-group">
-                                    <label class="form-label">País</label>
-                                    <select class="form-control custom-select">
-                                        <option value="">Seleccione</option>
-                                        <option value="1" selected>Germany</option>
-                                        <option value="1">USA</option>
-                                        <option value="1">Canada</option>
-                                    </select>                                    
                                 </div>
                             </div>
                             <hr>
@@ -759,6 +817,246 @@
                 </div>
             </div>
         </div>
+        <div id="exampleModalLive_vi" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLiveLabel">Ver Perfil 1</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">                                
+                                <div class="btn-group float-right" role="group" aria-label="Button group with nested dropdown">
+                                    <button type="button" class="btn btn-primary" id="general-btn">Datos Generales</button>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Canal de Pago
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                            <a class="dropdown-item" id="pago-btn" >Efecty</a>
+                                            <a class="dropdown-item" id="cuenta-btn">Cuenta Bancaria</a>
+                                            <a class="dropdown-item" id="billetera-btn">Billetera Virtual</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" class="row" id="general">
+                            <div class="col-sm-12 col-md-12">
+                                <h5>Datos Generales</h5>                                        
+                            </div>
+                            <div class="col-sm-3 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Documento</label>
+                                    <input type="text" class="form-control" placeholder="Documento" value="US-123456" maxlength="10" readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre" value="Usuario Ejemplo" readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Clave</label>
+                                    <input type="text" class="form-control" placeholder="Clave" value="2313313" readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="Email" value="user@testdemo.com" readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" placeholder="Teléfono" value="3131123123" readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">País</label>
+                                    <select class="form-control custom-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Germany</option>
+                                        <option value="1">USA</option>
+                                        <option value="1">Canada</option>
+                                    </select>                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Ciudad</label>
+                                    <select class="form-control custom-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Nueva York</option>
+                                        <option value="1">Paris</option>
+                                        <option value="1">Tokio</option>
+                                    </select>                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Contrato Líder</label>
+                                    <input type="text" class="form-control" placeholder="Código Líder" value="US-0123456" readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Nombre Líder</label>
+                                    <input type="text" class="form-control" placeholder="Nombre Líder" value="Lider Ejemplo 1" readonly>
+                                </div>
+                            </div>
+                            <hr>
+                            
+                            <div class="col-12 text-right">
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </form> 
+                        <form action="" class="row" style="display: none;" id="pago">                            
+                            <div class="col-sm-12 col-md-12 mb-2">
+                                <h5>Efecty</h5>                                        
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Documento</label>
+                                    <select class="form-control custom-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Identidad</option>
+                                        <option value="1">Pasaporte</option>
+                                        <option value="1">Visa</option>
+                                    </select>                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre" value="Usuario Ejemplo">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Telefono</label>
+                                    <input type="tel" class="form-control" placeholder="Telefono" value="123123123">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                              <div class="form-group">
+                                    <label class="form-label">Ciudad</label>
+                                    <select class="form-control custom-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Germany</option>
+                                        <option value="1">USA</option>
+                                        <option value="1">Canada</option>
+                                    </select>                                    
+                                </div>
+                            </div>
+                            <div class="col-12 text-right">
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </form>
+                        <form action="" class="row" id="cuenta" style="display: none;">
+                            <div class="col-sm-12 col-md-12">
+                                <h5>Cuenta Bancaria</h5>                                        
+                            </div> 
+                            <div class="col-sm-12 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Entidad Bancaria</label>
+                                    <select class="form-control custom-select">
+                                        <option value='BBVA '>BBVA </option>
+                                        <option value='Bancamia'>Bancamia</option>
+                                        <option value='Banco AV Villas'>Banco AV Villas</option>
+                                        <option value='Banco Agrario'>Banco Agrario</option>
+                                        <option value='Banco Caja Social'>Banco Caja Social</option>
+                                        <option value='Banco Coperativo Copcentral'>Banco Coperativo Copcentral</option>
+                                        <option value='Banco Credifinaciera'>Banco Credifinaciera</option>
+                                        <option value='Banco Davivienda'>Banco Davivienda</option>
+                                        <option value='Banco Falabella'>Banco Falabella</option>
+                                        <option value='Banco GNB Sudameris'>Banco GNB Sudameris</option>
+                                        <option value='Banco Pichicha'>Banco Pichicha</option>
+                                        <option value='Banco Popular'>Banco Popular</option>
+                                        <option value='Banco Procredit'>Banco Procredit</option>
+                                        <option value='Banco Santander'>Banco Santander</option>
+                                        <option value='Banco Serfinanza'>Banco Serfinanza</option>
+                                        <option value='Banco W S.A.'>Banco W S.A.</option>
+                                        <option value='Banco de Bogotá'>Banco de Bogotá</option>
+                                        <option value='Banco de Occidente'>Banco de Occidente</option>
+                                        <option value='Bancoldex'>Bancoldex</option>
+                                        <option value='Bancolombia'>Bancolombia</option>
+                                        <option value='Bancomeva'>Bancomeva</option>
+                                        <option value='Coltefinanciera'>Coltefinanciera</option>
+                                        <option value='Confiar Cooperativa Financiera'>Confiar Cooperativa Financiera</option>
+                                        <option value='Daviplata'>Daviplata</option>
+                                        <option value='Giros y Finanzas CF'>Giros y Finanzas CF</option>
+                                        <option value='IRIS'>IRIS</option>
+                                        <option value='Itau'>Itau</option>
+                                        <option value='J.P. Morgan'>J.P. Morgan</option>
+                                        <option value='Nequi'>Nequi</option>
+                                        <option value='Rappipay'>Rappipay</option>
+                                        <option value='Scotianbank Colpartria'>Scotianbank Colpartria</option>
+                                    </select>   
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Tipo de cuenta</label>
+                                    <select class="form-control custom-select">
+                                        <option value='Ahorro'>Ahorro</option>
+                                        <option value='Corriente'>Corriente</option>
+                                    </select>                                    
+                                </div>
+                              
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Numero</label>
+                                    <input type="text" class="form-control" placeholder="Numero">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label">Documento</label>
+                                    <select class="form-control custom-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="1" selected>Identidad</option>
+                                        <option value="1">Pasaporte</option>
+                                        <option value="1">Visa</option>
+                                    </select>                                    
+                                </div>
+                            </div>
+                            <div class="col-12 text-right">
+                                <button type="submit" class="btn btn-primary">Editar</button>
+                            </div>
+                        </form>
+                        <form action="" class="row" id="billetera" style="display: none;">
+                              <div class="col-sm-12 col-md-12">
+                                <h5>Billetera Virtual</h5>                                        
+                            </div>      
+                            <div class="col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Numero Biletera</label>
+                                    <input type="text" class="form-control" placeholder="Numero Biletera">
+                                </div>
+                            </div>
+                            <div class="col-12 text-right">
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </form>     
+                    </div>                   
+                </div>
+            </div>
+        </div>        
         <div id="exampleModalLive2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel2" style="display: none;" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
